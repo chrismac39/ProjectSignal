@@ -20,8 +20,6 @@ public partial class Main : Node
 			worldState.Wildlife.Add(wildlife);
 		}
 
-		var firstWildlife = worldState.Wildlife[0];
-
 		var migrationEvent = new MigrationEvent
 		{
 			Id = 1,
@@ -32,11 +30,14 @@ public partial class Main : Node
 
 		GD.Print("ProjectSignal Prototype 0 started.");
 		GD.Print($"World contains {worldState.Wildlife.Count} wildlife entities.");
-		GD.Print($"First wildlife starting position: {firstWildlife.Position}");
 
 		migrationEvent.Apply(worldState);
+		var firstSignal = worldState.Signals[0];
 
 		GD.Print($"Applied migration event: {migrationEvent.Name}");
-		GD.Print($"First wildlife ending position: {firstWildlife.Position}");
+		GD.Print($"Signal count: {worldState.Signals.Count}");
+		GD.Print($"Signal type: {firstSignal.SignalType}");
+		GD.Print($"Signal description: {firstSignal.Description}");
+		GD.Print($"Signal position: {firstSignal.Position}");
 	}
 }

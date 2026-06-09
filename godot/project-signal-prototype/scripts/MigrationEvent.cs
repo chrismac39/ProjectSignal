@@ -15,5 +15,29 @@ public class MigrationEvent
         {
             wildlife.Position += offset;
         }
+
+        if (worldState.Wildlife.Count == 0)
+        {
+            return;
+        }
+
+        var sum = Vector2.Zero;
+
+        foreach (var wildlife in worldState.Wildlife)
+        {
+            sum += wildlife.Position;
+        }
+
+        var averagePosition = sum / worldState.Wildlife.Count;
+
+        var signal = new SignalEvent
+        {
+            Id = worldState.Signals.Count + 1,
+            SignalType = "Migration",
+            Position = averagePosition,
+            Description = "Large wildlife migration detected."
+        };
+
+        worldState.Signals.Add(signal);
     }
 }
