@@ -36,6 +36,9 @@ Represent observations as uncertain records rather than facts.
 - Includes noise and ambiguity.
 - Should support multiple plausible explanations.
 - Starts hypothesis generation, not conclusion.
+- Signal variety should come from different causes and world states.
+- Signal variety should come from different combinations of observations.
+- Avoid generating variety through large synonym libraries alone.
 
 ### Investigation
 - Player assigns attention and assets.

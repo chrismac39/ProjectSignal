@@ -34,6 +34,8 @@ public class OmniscientReality
             {
                 Id = signal.Id,
                 EventType = signal.EventType,
+                Category = signal.Category,
+                Clarity = signal.Clarity,
                 SignalType = signal.SignalType,
                 Position = signal.Position,
                 Description = BuildOmniscientDescription(signal)
@@ -49,18 +51,26 @@ public class OmniscientReality
         {
             case WorldEventType.HerbivoreMigration:
                 return "10 herbivores migrated east.";
+            case WorldEventType.AlienResourceGathering:
+                return "Alien resource-gathering organisms harvesting biomass.";
             case WorldEventType.AlienWarriorMovement:
                 return "20 warrior organisms moving toward refinery.";
+            case WorldEventType.TitanNursery:
+                return "Titan nursery under active biome restructuring.";
             case WorldEventType.HumanConvoyMovement:
                 return "Fuel convoy departed refinery carrying supplies.";
             case WorldEventType.RefineryStartup:
                 return "Refinery online and producing fuel.";
+            case WorldEventType.HumanIndustrialExpansion:
+                return "Human industrial zone expanded with new structures.";
+            case WorldEventType.MajorHumanFacility:
+                return "Major human infrastructure complex established.";
             case WorldEventType.IndustrialActivity:
                 return "Refinery online and producing fuel.";
             case WorldEventType.UnknownDisturbance:
-                return "Unknown disturbance source.";
+                return "Unknown atmospheric event damaged the valley ecosystem.";
             default:
-                return "Unknown disturbance source.";
+                return "Unknown atmospheric event damaged the valley ecosystem.";
         }
     }
 }

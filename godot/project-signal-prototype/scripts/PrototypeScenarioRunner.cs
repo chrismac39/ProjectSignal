@@ -80,6 +80,8 @@ public class PrototypeScenarioRunner
         {
             Id = worldState.Signals.Count + 1,
             EventType = WorldEventType.RefineryStartup,
+            Category = EventCategory.HumanCivilization,
+            Clarity = GetEventClarity(WorldEventType.RefineryStartup),
             SignalType = "Industrial",
             Description = "Refinery startup detected.",
             Position = new Vector2(600f, 300f)
@@ -89,6 +91,8 @@ public class PrototypeScenarioRunner
         {
             Id = worldState.Signals.Count + 1,
             EventType = WorldEventType.UnknownDisturbance,
+            Category = EventCategory.Unknown,
+            Clarity = GetEventClarity(WorldEventType.UnknownDisturbance),
             SignalType = "Unknown",
             Description = "Unclassified disturbance.",
             Position = new Vector2(200f, 700f)
@@ -98,6 +102,8 @@ public class PrototypeScenarioRunner
         {
             Id = worldState.Signals.Count + 1,
             EventType = WorldEventType.AlienWarriorMovement,
+            Category = EventCategory.AlienCivilization,
+            Clarity = GetEventClarity(WorldEventType.AlienWarriorMovement),
             SignalType = "Movement",
             Description = "Warrior caste movement toward refinery.",
             Position = new Vector2(650f, 340f)
@@ -107,10 +113,39 @@ public class PrototypeScenarioRunner
         {
             Id = worldState.Signals.Count + 1,
             EventType = WorldEventType.HumanConvoyMovement,
+            Category = EventCategory.HumanCivilization,
+            Clarity = GetEventClarity(WorldEventType.HumanConvoyMovement),
             SignalType = "Movement",
             Description = "Fuel convoy departed refinery.",
             Position = new Vector2(620f, 320f)
         });
+    }
+
+    private static EventClarity GetEventClarity(WorldEventType eventType)
+    {
+        switch (eventType)
+        {
+            case WorldEventType.HerbivoreMigration:
+                return EventClarity.HighAmbiguity;
+            case WorldEventType.AlienResourceGathering:
+                return EventClarity.ModerateAmbiguity;
+            case WorldEventType.AlienWarriorMovement:
+                return EventClarity.LowAmbiguity;
+            case WorldEventType.TitanNursery:
+                return EventClarity.Clear;
+            case WorldEventType.HumanConvoyMovement:
+                return EventClarity.HighAmbiguity;
+            case WorldEventType.RefineryStartup:
+                return EventClarity.ModerateAmbiguity;
+            case WorldEventType.HumanIndustrialExpansion:
+                return EventClarity.LowAmbiguity;
+            case WorldEventType.MajorHumanFacility:
+                return EventClarity.Clear;
+            case WorldEventType.UnknownDisturbance:
+                return EventClarity.HighAmbiguity;
+            default:
+                return EventClarity.ModerateAmbiguity;
+        }
     }
 
     private static (HumanReality humanReality, AlienReality alienReality, OmniscientReality omniscientReality)

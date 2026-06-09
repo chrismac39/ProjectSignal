@@ -30,6 +30,12 @@ Signal -> Investigation -> Confirmation -> Action -> Assessment
 - Players confirm or reject hypotheses.
 - The game should rarely provide certainty from a single observation.
 
+## Signal Variety Rule
+- Replayability should come primarily from different causes.
+- Replayability should come primarily from different world states.
+- Replayability should come primarily from different combinations of observations.
+- Replayability should not rely on large libraries of synonymous descriptions.
+
 ## Practical Constraints
 - Keep the prototype information-first: dots, shapes, overlays, and map readability over visual polish.
 - Do not design toward conventional RTS map control loops.

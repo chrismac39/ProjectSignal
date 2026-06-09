@@ -1,9 +1,13 @@
 public enum WorldEventType
 {
     HerbivoreMigration,
+    AlienResourceGathering,
+    TitanNursery,
     IndustrialActivity,
     RefineryStartup,
     UnknownDisturbance,
     AlienWarriorMovement,
-    HumanConvoyMovement
+    HumanConvoyMovement,
+    HumanIndustrialExpansion,
+    MajorHumanFacility
 }

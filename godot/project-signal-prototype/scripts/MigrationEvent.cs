@@ -34,6 +34,8 @@ public class MigrationEvent
         {
             Id = worldState.Signals.Count + 1,
             EventType = WorldEventType.HerbivoreMigration,
+            Category = EventCategory.Natural,
+            Clarity = EventClarity.HighAmbiguity,
             SignalType = "Migration",
             Position = averagePosition,
             Description = "Large wildlife migration detected."
