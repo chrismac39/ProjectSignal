@@ -25,7 +25,7 @@ public class HumanReality
                 Clarity = signal.Clarity,
                 SignalType = signal.SignalType,
                 Position = signal.Position,
-                Description = BuildHumanDescription(signal.EventType, signal.Clarity, expertise)
+                Description = BuildHumanDescription(signal.EventType, signal.Category, signal.Clarity, expertise)
             };
 
             visibleSignals.Add(interpretedSignal);
@@ -36,6 +36,7 @@ public class HumanReality
 
     private static string BuildHumanDescription(
         WorldEventType eventType,
+        EventCategory category,
         EventClarity clarity,
         ExpertiseLevel expertise)
     {
@@ -62,16 +63,17 @@ public class HumanReality
             case WorldEventType.UnknownDisturbance:
                 return "Severe atmospheric anomaly detected.";
             default:
-                return BuildFallbackDescription(clarity, expertise, "ecological disturbance", "infrastructure disturbance");
+                return BuildFallbackDescription(category, clarity, expertise);
         }
     }
 
-    private static string BuildFallbackDescription(
-        EventClarity clarity,
-        ExpertiseLevel expertise,
-        string ecologicalNoun,
-        string industrialNoun)
+    private static string BuildFallbackDescription(EventCategory category, EventClarity clarity, ExpertiseLevel expertise)
     {
+        var ecologicalNoun = category == EventCategory.Natural ? "ecological disturbance" : "movement anomaly";
+        var industrialNoun = category == EventCategory.HumanCivilization
+            ? "infrastructure disturbance"
+            : "infrastructure anomaly";
+
         if (expertise == ExpertiseLevel.High)
         {
             return $"Confirmed {industrialNoun}.";

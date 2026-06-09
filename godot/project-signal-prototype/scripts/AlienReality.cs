@@ -25,7 +25,7 @@ public class AlienReality
                 Clarity = signal.Clarity,
                 SignalType = signal.SignalType,
                 Position = signal.Position,
-                Description = BuildAlienDescription(signal.EventType, signal.Clarity, expertise)
+                Description = BuildAlienDescription(signal.EventType, signal.Category, signal.Clarity, expertise)
             };
 
             visibleSignals.Add(interpretedSignal);
@@ -36,6 +36,7 @@ public class AlienReality
 
     private static string BuildAlienDescription(
         WorldEventType eventType,
+        EventCategory category,
         EventClarity clarity,
         ExpertiseLevel expertise)
     {
@@ -62,16 +63,17 @@ public class AlienReality
             case WorldEventType.UnknownDisturbance:
                 return "Abnormal environmental disruption sensed.";
             default:
-                return BuildFallbackDescription(clarity, expertise, "ecosystem anomaly", "industrial disturbance");
+                return BuildFallbackDescription(category, clarity, expertise);
         }
     }
 
-    private static string BuildFallbackDescription(
-        EventClarity clarity,
-        ExpertiseLevel expertise,
-        string ecologicalNoun,
-        string industrialNoun)
+    private static string BuildFallbackDescription(EventCategory category, EventClarity clarity, ExpertiseLevel expertise)
     {
+        var ecologicalNoun = category == EventCategory.Natural ? "ecosystem anomaly" : "environmental anomaly";
+        var industrialNoun = category == EventCategory.HumanCivilization
+            ? "industrial disturbance"
+            : "human disturbance";
+
         if (expertise == ExpertiseLevel.High && clarity == EventClarity.Clear)
         {
             return $"Confirmed {ecologicalNoun}.";

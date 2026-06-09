@@ -31,6 +31,13 @@ public class PrototypeScenarioRunner
             omniscientReality);
 
         PrintRealityLayerSwitching(humanReality, alienReality, omniscientReality);
+        PrintVerificationSummary(
+            worldState,
+            replayTimeline,
+            firstWildlifeXMovement,
+            humanReality,
+            alienReality,
+            omniscientReality);
     }
 
     private static WorldState CreateWorldStateWithWildlife()
@@ -80,7 +87,7 @@ public class PrototypeScenarioRunner
         {
             Id = worldState.Signals.Count + 1,
             EventType = WorldEventType.RefineryStartup,
-            Category = EventCategory.HumanCivilization,
+            Category = GetEventCategory(WorldEventType.RefineryStartup),
             Clarity = GetEventClarity(WorldEventType.RefineryStartup),
             SignalType = "Industrial",
             Description = "Refinery startup detected.",
@@ -91,7 +98,7 @@ public class PrototypeScenarioRunner
         {
             Id = worldState.Signals.Count + 1,
             EventType = WorldEventType.UnknownDisturbance,
-            Category = EventCategory.Unknown,
+            Category = GetEventCategory(WorldEventType.UnknownDisturbance),
             Clarity = GetEventClarity(WorldEventType.UnknownDisturbance),
             SignalType = "Unknown",
             Description = "Unclassified disturbance.",
@@ -102,7 +109,7 @@ public class PrototypeScenarioRunner
         {
             Id = worldState.Signals.Count + 1,
             EventType = WorldEventType.AlienWarriorMovement,
-            Category = EventCategory.AlienCivilization,
+            Category = GetEventCategory(WorldEventType.AlienWarriorMovement),
             Clarity = GetEventClarity(WorldEventType.AlienWarriorMovement),
             SignalType = "Movement",
             Description = "Warrior caste movement toward refinery.",
@@ -113,12 +120,35 @@ public class PrototypeScenarioRunner
         {
             Id = worldState.Signals.Count + 1,
             EventType = WorldEventType.HumanConvoyMovement,
-            Category = EventCategory.HumanCivilization,
+            Category = GetEventCategory(WorldEventType.HumanConvoyMovement),
             Clarity = GetEventClarity(WorldEventType.HumanConvoyMovement),
             SignalType = "Movement",
             Description = "Fuel convoy departed refinery.",
             Position = new Vector2(620f, 320f)
         });
+    }
+
+    private static EventCategory GetEventCategory(WorldEventType eventType)
+    {
+        switch (eventType)
+        {
+            case WorldEventType.HerbivoreMigration:
+                return EventCategory.Natural;
+            case WorldEventType.RefineryStartup:
+            case WorldEventType.HumanConvoyMovement:
+            case WorldEventType.HumanIndustrialExpansion:
+            case WorldEventType.MajorHumanFacility:
+            case WorldEventType.IndustrialActivity:
+                return EventCategory.HumanCivilization;
+            case WorldEventType.AlienResourceGathering:
+            case WorldEventType.AlienWarriorMovement:
+            case WorldEventType.TitanNursery:
+                return EventCategory.AlienCivilization;
+            case WorldEventType.UnknownDisturbance:
+                return EventCategory.Unknown;
+            default:
+                return EventCategory.Unknown;
+        }
     }
 
     private static EventClarity GetEventClarity(WorldEventType eventType)
@@ -317,5 +347,87 @@ public class PrototypeScenarioRunner
         }
 
         GD.Print(string.Empty);
+    }
+
+    private static void PrintVerificationSummary(
+        WorldState worldState,
+        ReplayTimeline replayTimeline,
+        float firstWildlifeXMovement,
+        HumanReality humanReality,
+        AlienReality alienReality,
+        OmniscientReality omniscientReality)
+    {
+        GD.Print("Prototype 0 Verification Summary:");
+
+        var hasWildlife = worldState.Wildlife.Count > 0;
+        var hasReplaySnapshots = replayTimeline.Snapshots.Count >= 2;
+        var migrationMovedByExpectedX = Mathf.IsEqualApprox(firstWildlifeXMovement, 50f);
+        var allLayersHaveSignals =
+            humanReality.VisibleSignals.Count > 0 &&
+            alienReality.VisibleSignals.Count > 0 &&
+            omniscientReality.Signals.Count > 0;
+        var differentDescriptionsAcrossLayers = HasDifferentDescriptionsAcrossLayers(
+            humanReality,
+            alienReality,
+            omniscientReality);
+        var hasNoDisallowedTerms = !ContainsDisallowedTerms(worldState.Signals) &&
+            !ContainsDisallowedTerms(humanReality.VisibleSignals) &&
+            !ContainsDisallowedTerms(alienReality.VisibleSignals) &&
+            !ContainsDisallowedTerms(omniscientReality.Signals);
+
+        PrintCheckResult("WorldState contains wildlife", hasWildlife);
+        PrintCheckResult("ReplayTimeline has at least two snapshots", hasReplaySnapshots);
+        PrintCheckResult("Migration moved first wildlife entity on X by 50", migrationMovedByExpectedX);
+        PrintCheckResult("Human, Alien, Omniscient realities have visible signals", allLayersHaveSignals);
+        PrintCheckResult("Same world events produce different layer descriptions", differentDescriptionsAcrossLayers);
+        PrintCheckResult("No recommendations/threat/importance/confidence terms in signals", hasNoDisallowedTerms);
+
+        GD.Print(string.Empty);
+    }
+
+    private static bool HasDifferentDescriptionsAcrossLayers(
+        HumanReality humanReality,
+        AlienReality alienReality,
+        OmniscientReality omniscientReality)
+    {
+        for (var i = 0; i < omniscientReality.Signals.Count; i++)
+        {
+            var eventId = omniscientReality.Signals[i].Id;
+            var humanDescription = GetSignalDescriptionById(humanReality.VisibleSignals, eventId);
+            var alienDescription = GetSignalDescriptionById(alienReality.VisibleSignals, eventId);
+            var omniscientDescription = omniscientReality.Signals[i].Description;
+
+            if (humanDescription != alienDescription ||
+                humanDescription != omniscientDescription ||
+                alienDescription != omniscientDescription)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private static bool ContainsDisallowedTerms(System.Collections.Generic.List<SignalEvent> signals)
+    {
+        for (var i = 0; i < signals.Count; i++)
+        {
+            var description = signals[i].Description.ToLowerInvariant();
+
+            if (description.Contains("recommend") ||
+                description.Contains("threat") ||
+                description.Contains("importance") ||
+                description.Contains("confidence"))
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private static void PrintCheckResult(string name, bool passed)
+    {
+        GD.Print($"{name}: {(passed ? "PASS" : "FAIL")}");
     }
 }
