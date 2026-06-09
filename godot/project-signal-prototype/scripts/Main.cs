@@ -33,11 +33,15 @@ public partial class Main : Node
 
 		migrationEvent.Apply(worldState);
 		var firstSignal = worldState.Signals[0];
+		var humanReality = HumanReality.GenerateFrom(worldState);
+		var firstVisibleSignal = humanReality.VisibleSignals[0];
 
 		GD.Print($"Applied migration event: {migrationEvent.Name}");
 		GD.Print($"Signal count: {worldState.Signals.Count}");
 		GD.Print($"Signal type: {firstSignal.SignalType}");
 		GD.Print($"Signal description: {firstSignal.Description}");
 		GD.Print($"Signal position: {firstSignal.Position}");
+		GD.Print($"Human Reality visible signals: {humanReality.VisibleSignals.Count}");
+		GD.Print($"First visible signal description: {firstVisibleSignal.Description}");
 	}
 }
