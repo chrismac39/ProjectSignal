@@ -2,5 +2,6 @@ public enum WorldEventType
 {
     HerbivoreMigration,
     IndustrialActivity,
-    UnknownDisturbance
+    UnknownDisturbance,
+    AlienWarriorMovement
 }

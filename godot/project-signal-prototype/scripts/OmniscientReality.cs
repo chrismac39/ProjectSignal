@@ -49,6 +49,8 @@ public class OmniscientReality
         {
             case WorldEventType.HerbivoreMigration:
                 return "10 herbivores migrated east.";
+            case WorldEventType.AlienWarriorMovement:
+                return "20 warrior organisms moving toward refinery.";
             case WorldEventType.IndustrialActivity:
                 return "Refinery online and producing fuel.";
             case WorldEventType.UnknownDisturbance:

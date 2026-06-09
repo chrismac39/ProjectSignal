@@ -36,6 +36,8 @@ public class HumanReality
         {
             case WorldEventType.HerbivoreMigration:
                 return "Large animal movement observed.";
+            case WorldEventType.AlienWarriorMovement:
+                return "Large animal movement observed.";
             case WorldEventType.IndustrialActivity:
                 return "Refinery construction completed.";
             case WorldEventType.UnknownDisturbance:

@@ -93,6 +93,15 @@ public class PrototypeScenarioRunner
             Description = "Unclassified disturbance.",
             Position = new Vector2(200f, 700f)
         });
+
+        worldState.Signals.Add(new SignalEvent
+        {
+            Id = worldState.Signals.Count + 1,
+            EventType = WorldEventType.AlienWarriorMovement,
+            SignalType = "Movement",
+            Description = "Warrior caste movement toward refinery.",
+            Position = new Vector2(650f, 340f)
+        });
     }
 
     private static (HumanReality humanReality, AlienReality alienReality, OmniscientReality omniscientReality)

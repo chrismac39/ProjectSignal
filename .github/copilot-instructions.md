@@ -43,6 +43,41 @@ The game should not provide automated strategic recommendations.
 
 ---
 
+## Perception Asymmetry Rule
+
+Faction asymmetry comes from expertise and interpretation, not arbitrary confidence scores.
+
+Do not add:
+
+* Confidence scores
+* Probability values
+* Threat ratings
+* Importance ratings
+* Reliability scores
+* Automated recommendations
+
+The player must determine confidence, importance, and threat level themselves.
+
+Humans are strong at interpreting industrial systems and weak at interpreting ecological or alien biological systems.
+
+Aliens are strong at interpreting ecological systems and weak at interpreting industrial systems.
+
+The same World Event should produce different interpretations depending on faction expertise.
+
+Example:
+
+* Omniscient Reality: 10 herbivores migrated east.
+* Human Reality: Large animal movement observed.
+* Alien Reality: Docile herbivore migration detected.
+
+Example:
+
+* Omniscient Reality: Refinery online and producing fuel.
+* Human Reality: Refinery construction completed.
+* Alien Reality: Persistent industrial disturbance detected.
+
+---
+
 ## Battlefield Realities
 
 The game contains:

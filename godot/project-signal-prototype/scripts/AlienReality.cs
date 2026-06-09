@@ -36,6 +36,8 @@ public class AlienReality
         {
             case WorldEventType.HerbivoreMigration:
                 return "Docile herbivore migration detected.";
+            case WorldEventType.AlienWarriorMovement:
+                return "Warrior caste movement.";
             case WorldEventType.IndustrialActivity:
                 return "Persistent industrial disturbance detected.";
             case WorldEventType.UnknownDisturbance:
