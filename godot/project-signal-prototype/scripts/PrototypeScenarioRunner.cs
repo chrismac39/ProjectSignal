@@ -79,6 +79,7 @@ public class PrototypeScenarioRunner
         worldState.Signals.Add(new SignalEvent
         {
             Id = worldState.Signals.Count + 1,
+            EventType = WorldEventType.IndustrialActivity,
             SignalType = "Industrial",
             Description = "Refinery construction completed.",
             Position = new Vector2(600f, 300f)
@@ -87,6 +88,7 @@ public class PrototypeScenarioRunner
         worldState.Signals.Add(new SignalEvent
         {
             Id = worldState.Signals.Count + 1,
+            EventType = WorldEventType.UnknownDisturbance,
             SignalType = "Unknown",
             Description = "Unclassified disturbance.",
             Position = new Vector2(200f, 700f)
@@ -133,6 +135,45 @@ public class PrototypeScenarioRunner
         GD.Print($"Omniscient wildlife count: {omniscientReality.Wildlife.Count}");
         GD.Print($"Omniscient signal count: {omniscientReality.Signals.Count}");
         GD.Print(string.Empty);
+
+        PrintCrossLayerInterpretation(humanReality, alienReality, omniscientReality);
+        GD.Print(string.Empty);
+    }
+
+    private static void PrintCrossLayerInterpretation(
+        HumanReality humanReality,
+        AlienReality alienReality,
+        OmniscientReality omniscientReality)
+    {
+        GD.Print("Same world events interpreted by each reality layer:");
+
+        for (var i = 0; i < omniscientReality.Signals.Count; i++)
+        {
+            var eventId = omniscientReality.Signals[i].Id;
+            var humanDescription = GetSignalDescriptionById(humanReality.VisibleSignals, eventId);
+            var alienDescription = GetSignalDescriptionById(alienReality.VisibleSignals, eventId);
+            var omniscientDescription = omniscientReality.Signals[i].Description;
+
+            GD.Print($"Event #{eventId} Human: {humanDescription}");
+            GD.Print($"Event #{eventId} Alien: {alienDescription}");
+            GD.Print($"Event #{eventId} Omniscient: {omniscientDescription}");
+            GD.Print(string.Empty);
+        }
+    }
+
+    private static string GetSignalDescriptionById(
+        System.Collections.Generic.List<SignalEvent> signals,
+        int id)
+    {
+        for (var i = 0; i < signals.Count; i++)
+        {
+            if (signals[i].Id == id)
+            {
+                return signals[i].Description;
+            }
+        }
+
+        return "No visible interpretation.";
     }
 
     private static string JoinSignalDescriptions(System.Collections.Generic.List<SignalEvent> signals)

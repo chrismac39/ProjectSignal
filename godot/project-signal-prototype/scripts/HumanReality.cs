@@ -15,24 +15,33 @@ public class HumanReality
 
         foreach (var signal in worldState.Signals)
         {
-            if (signal.SignalType != "Migration" && signal.SignalType != "Industrial")
-            {
-                continue;
-            }
-
             var interpretedSignal = new SignalEvent
             {
                 Id = signal.Id,
+                EventType = signal.EventType,
                 SignalType = signal.SignalType,
                 Position = signal.Position,
-                Description = signal.SignalType == "Migration"
-                    ? "Large wildlife migration observed."
-                    : signal.Description
+                Description = BuildHumanDescription(signal.EventType)
             };
 
             visibleSignals.Add(interpretedSignal);
         }
 
         return new HumanReality(visibleSignals);
+    }
+
+    private static string BuildHumanDescription(WorldEventType eventType)
+    {
+        switch (eventType)
+        {
+            case WorldEventType.HerbivoreMigration:
+                return "Large animal movement observed.";
+            case WorldEventType.IndustrialActivity:
+                return "Refinery construction completed.";
+            case WorldEventType.UnknownDisturbance:
+                return "Unclassified disturbance detected.";
+            default:
+                return "Unclassified disturbance detected.";
+        }
     }
 }

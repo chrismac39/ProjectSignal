@@ -33,6 +33,7 @@ public class MigrationEvent
         var signal = new SignalEvent
         {
             Id = worldState.Signals.Count + 1,
+            EventType = WorldEventType.HerbivoreMigration,
             SignalType = "Migration",
             Position = averagePosition,
             Description = "Large wildlife migration detected."

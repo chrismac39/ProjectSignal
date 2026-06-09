@@ -33,6 +33,7 @@ public class OmniscientReality
             signals.Add(new SignalEvent
             {
                 Id = signal.Id,
+                EventType = signal.EventType,
                 SignalType = signal.SignalType,
                 Position = signal.Position,
                 Description = BuildOmniscientDescription(signal)
@@ -44,8 +45,16 @@ public class OmniscientReality
 
     private static string BuildOmniscientDescription(SignalEvent signal)
     {
-        return
-            $"SignalEvent #{signal.Id} recorded as {signal.SignalType}.\n" +
-            $"Observed position: ({signal.Position.X:0.##}, {signal.Position.Y:0.##}).";
+        switch (signal.EventType)
+        {
+            case WorldEventType.HerbivoreMigration:
+                return "10 herbivores migrated east.";
+            case WorldEventType.IndustrialActivity:
+                return "Refinery online and producing fuel.";
+            case WorldEventType.UnknownDisturbance:
+                return "Unknown disturbance source.";
+            default:
+                return "Unknown disturbance source.";
+        }
     }
 }

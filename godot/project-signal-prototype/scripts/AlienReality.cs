@@ -15,24 +15,33 @@ public class AlienReality
 
         foreach (var signal in worldState.Signals)
         {
-            if (signal.SignalType != "Migration" && signal.SignalType != "Ecological")
-            {
-                continue;
-            }
-
             var interpretedSignal = new SignalEvent
             {
                 Id = signal.Id,
+                EventType = signal.EventType,
                 SignalType = signal.SignalType,
                 Position = signal.Position,
-                Description = signal.SignalType == "Migration"
-                    ? "Docile herbivore movement pattern sensed."
-                    : signal.Description
+                Description = BuildAlienDescription(signal.EventType)
             };
 
             visibleSignals.Add(interpretedSignal);
         }
 
         return new AlienReality(visibleSignals);
+    }
+
+    private static string BuildAlienDescription(WorldEventType eventType)
+    {
+        switch (eventType)
+        {
+            case WorldEventType.HerbivoreMigration:
+                return "Docile herbivore migration detected.";
+            case WorldEventType.IndustrialActivity:
+                return "Persistent industrial disturbance detected.";
+            case WorldEventType.UnknownDisturbance:
+                return "Unknown environmental anomaly sensed.";
+            default:
+                return "Unknown environmental anomaly sensed.";
+        }
     }
 }
