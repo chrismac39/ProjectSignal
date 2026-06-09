@@ -222,6 +222,9 @@ Before implementing significant features, consult:
 * docs/prototype-roadmap.md
 * docs/information-model.md
 * docs/technical-architecture.md
+* docs/implementation-status.md
+
+Always consult docs/implementation-status.md for the latest completed and next Prototype 0 items.
 
 The documentation is authoritative.
 
