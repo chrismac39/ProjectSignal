@@ -5,6 +5,43 @@ public class PrototypeScenarioRunner
 {
     public void Run()
     {
+        var worldState = CreateWorldStateWithWildlife();
+        var migrationEvent = CreatePrototypeMigrationEvent();
+        var replayTimeline = new ReplayTimeline();
+
+        GD.Print($"World contains {worldState.Wildlife.Count} wildlife entities.");
+
+        RecordMigrationSnapshots(worldState, migrationEvent, replayTimeline);
+
+        var firstSnapshot = replayTimeline.Snapshots[0];
+        var lastSnapshot = replayTimeline.Snapshots[replayTimeline.Snapshots.Count - 1];
+        var firstWildlifeXMovement = lastSnapshot.FirstWildlifePosition.X - firstSnapshot.FirstWildlifePosition.X;
+        var firstSignal = worldState.Signals[0];
+        var (humanReality, alienReality, omniscientReality) = GenerateRealities(worldState);
+        var firstVisibleSignal = humanReality.VisibleSignals[0];
+        var firstAlienSignal = alienReality.VisibleSignals[0];
+        var firstOmniscientSignal = omniscientReality.Signals[0];
+
+        PrintScenarioSummary(
+            worldState,
+            migrationEvent,
+            replayTimeline,
+            firstSignal,
+            firstSnapshot,
+            lastSnapshot,
+            firstWildlifeXMovement,
+            humanReality,
+            firstVisibleSignal,
+            alienReality,
+            firstAlienSignal,
+            omniscientReality,
+            firstOmniscientSignal);
+
+        PrintRealityLayerSwitching(humanReality, alienReality, omniscientReality);
+    }
+
+    private static WorldState CreateWorldStateWithWildlife()
+    {
         var worldState = new WorldState();
         var rng = new RandomNumberGenerator();
 
@@ -20,34 +57,55 @@ public class PrototypeScenarioRunner
             worldState.Wildlife.Add(wildlife);
         }
 
-        var migrationEvent = new MigrationEvent
+        return worldState;
+    }
+
+    private static MigrationEvent CreatePrototypeMigrationEvent()
+    {
+        return new MigrationEvent
         {
             Id = 1,
             Name = "Prototype Migration",
             Direction = Vector2.Right,
             Distance = 50f
         };
-        var replayTimeline = new ReplayTimeline();
+    }
 
-        GD.Print($"World contains {worldState.Wildlife.Count} wildlife entities.");
-
+    private static void RecordMigrationSnapshots(
+        WorldState worldState,
+        MigrationEvent migrationEvent,
+        ReplayTimeline replayTimeline)
+    {
         replayTimeline.AddSnapshot(0, worldState);
-
         migrationEvent.Apply(worldState);
         replayTimeline.AddSnapshot(1, worldState);
+    }
 
-        var firstSnapshot = replayTimeline.Snapshots[0];
-        var lastSnapshot = replayTimeline.Snapshots[replayTimeline.Snapshots.Count - 1];
-        var firstWildlifeXMovement = lastSnapshot.FirstWildlifePosition.X - firstSnapshot.FirstWildlifePosition.X;
-        var firstSignal = worldState.Signals[0];
+    private static (HumanReality humanReality, AlienReality alienReality, OmniscientReality omniscientReality)
+        GenerateRealities(WorldState worldState)
+    {
         var humanReality = HumanReality.GenerateFrom(worldState);
-        var firstVisibleSignal = humanReality.VisibleSignals[0];
         var alienReality = AlienReality.GenerateFrom(worldState);
-        var firstAlienSignal = alienReality.VisibleSignals[0];
         var omniscientReality = OmniscientReality.GenerateFrom(worldState);
-        var firstOmniscientSignal = omniscientReality.Signals[0];
-        var currentLayer = RealityLayerType.Human;
 
+        return (humanReality, alienReality, omniscientReality);
+    }
+
+    private static void PrintScenarioSummary(
+        WorldState worldState,
+        MigrationEvent migrationEvent,
+        ReplayTimeline replayTimeline,
+        SignalEvent firstSignal,
+        ReplaySnapshot firstSnapshot,
+        ReplaySnapshot lastSnapshot,
+        float firstWildlifeXMovement,
+        HumanReality humanReality,
+        SignalEvent firstVisibleSignal,
+        AlienReality alienReality,
+        SignalEvent firstAlienSignal,
+        OmniscientReality omniscientReality,
+        SignalEvent firstOmniscientSignal)
+    {
         GD.Print($"Applied migration event: {migrationEvent.Name}");
         GD.Print(string.Empty);
         GD.Print($"Replay snapshot count: {replayTimeline.Snapshots.Count}");
@@ -71,6 +129,14 @@ public class PrototypeScenarioRunner
         GD.Print($"Omniscient signal count: {omniscientReality.Signals.Count}");
         GD.Print($"First omniscient signal description: {firstOmniscientSignal.Description}");
         GD.Print(string.Empty);
+    }
+
+    private static void PrintRealityLayerSwitching(
+        HumanReality humanReality,
+        AlienReality alienReality,
+        OmniscientReality omniscientReality)
+    {
+        var currentLayer = RealityLayerType.Human;
 
         PrintCurrentRealityLayer(currentLayer, humanReality, alienReality, omniscientReality);
         currentLayer = RealityLayerType.Alien;
