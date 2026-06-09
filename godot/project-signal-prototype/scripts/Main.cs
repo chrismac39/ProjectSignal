@@ -3,6 +3,30 @@ using Godot;
 
 public partial class Main : Node
 {
+	private static void PrintCurrentRealityLayer(
+		RealityLayerType currentLayer,
+		HumanReality humanReality,
+		AlienReality alienReality,
+		OmniscientReality omniscientReality)
+	{
+		GD.Print($"Active Reality Layer: {currentLayer}");
+
+		switch (currentLayer)
+		{
+			case RealityLayerType.Human:
+				GD.Print($"Layer signal: {(humanReality.VisibleSignals.Count > 0 ? humanReality.VisibleSignals[0].Description : "No visible signals.")}");
+				break;
+			case RealityLayerType.Alien:
+				GD.Print($"Layer signal: {(alienReality.VisibleSignals.Count > 0 ? alienReality.VisibleSignals[0].Description : "No visible signals.")}");
+				break;
+			case RealityLayerType.Omniscient:
+				GD.Print($"Layer signal: {(omniscientReality.Signals.Count > 0 ? omniscientReality.Signals[0].Description : "No factual signals.")}");
+				break;
+		}
+
+		GD.Print(string.Empty);
+	}
+
 	public override void _Ready()
 	{
 		var worldState = new WorldState();
@@ -47,6 +71,7 @@ public partial class Main : Node
 		var firstAlienSignal = alienReality.VisibleSignals[0];
 		var omniscientReality = OmniscientReality.GenerateFrom(worldState);
 		var firstOmniscientSignal = omniscientReality.Signals[0];
+		var currentLayer = RealityLayerType.Human;
 
 		GD.Print($"Applied migration event: {migrationEvent.Name}");
 		GD.Print(string.Empty);
@@ -70,5 +95,12 @@ public partial class Main : Node
 		GD.Print($"Omniscient wildlife count: {omniscientReality.Wildlife.Count}");
 		GD.Print($"Omniscient signal count: {omniscientReality.Signals.Count}");
 		GD.Print($"First omniscient signal description: {firstOmniscientSignal.Description}");
+		GD.Print(string.Empty);
+
+		PrintCurrentRealityLayer(currentLayer, humanReality, alienReality, omniscientReality);
+		currentLayer = RealityLayerType.Alien;
+		PrintCurrentRealityLayer(currentLayer, humanReality, alienReality, omniscientReality);
+		currentLayer = RealityLayerType.Omniscient;
+		PrintCurrentRealityLayer(currentLayer, humanReality, alienReality, omniscientReality);
 	}
 }
