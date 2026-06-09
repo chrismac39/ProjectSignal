@@ -39,6 +39,7 @@ public partial class Main : Node
 
 		var firstSnapshot = replayTimeline.Snapshots[0];
 		var lastSnapshot = replayTimeline.Snapshots[replayTimeline.Snapshots.Count - 1];
+		var firstWildlifeXMovement = lastSnapshot.FirstWildlifePosition.X - firstSnapshot.FirstWildlifePosition.X;
 		var firstSignal = worldState.Signals[0];
 		var humanReality = HumanReality.GenerateFrom(worldState);
 		var firstVisibleSignal = humanReality.VisibleSignals[0];
@@ -52,6 +53,9 @@ public partial class Main : Node
 		GD.Print($"Replay snapshot count: {replayTimeline.Snapshots.Count}");
 		GD.Print($"First snapshot tick: {firstSnapshot.Tick}");
 		GD.Print($"Last snapshot tick: {lastSnapshot.Tick}");
+		GD.Print($"Tick 0 first wildlife position: {firstSnapshot.FirstWildlifePosition}");
+		GD.Print($"Tick 1 first wildlife position: {lastSnapshot.FirstWildlifePosition}");
+		GD.Print($"First wildlife X movement: {firstWildlifeXMovement:0.##}");
 		GD.Print(string.Empty);
 		GD.Print($"Signal count: {worldState.Signals.Count}");
 		GD.Print($"Signal type: {firstSignal.SignalType}");

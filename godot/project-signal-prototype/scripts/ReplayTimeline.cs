@@ -11,10 +11,6 @@ public class ReplayTimeline
 
     public void AddSnapshot(int tick, WorldState worldState)
     {
-        Snapshots.Add(new ReplaySnapshot
-        {
-            Tick = tick,
-            WorldState = worldState
-        });
+        Snapshots.Add(ReplaySnapshot.Capture(tick, worldState));
     }
 }
