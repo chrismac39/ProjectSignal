@@ -15,6 +15,11 @@ public class HumanReality
 
         foreach (var signal in worldState.Signals)
         {
+            if (signal.SignalType != "Migration" && signal.SignalType != "Industrial")
+            {
+                continue;
+            }
+
             var interpretedSignal = new SignalEvent
             {
                 Id = signal.Id,
@@ -22,7 +27,7 @@ public class HumanReality
                 Position = signal.Position,
                 Description = signal.SignalType == "Migration"
                     ? "Large wildlife migration observed."
-                    : "Unidentified activity observed."
+                    : signal.Description
             };
 
             visibleSignals.Add(interpretedSignal);

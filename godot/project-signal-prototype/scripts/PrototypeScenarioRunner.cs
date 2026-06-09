@@ -12,30 +12,23 @@ public class PrototypeScenarioRunner
         GD.Print($"World contains {worldState.Wildlife.Count} wildlife entities.");
 
         RecordMigrationSnapshots(worldState, migrationEvent, replayTimeline);
+        AddPerceptionTestSignals(worldState);
 
         var firstSnapshot = replayTimeline.Snapshots[0];
         var lastSnapshot = replayTimeline.Snapshots[replayTimeline.Snapshots.Count - 1];
         var firstWildlifeXMovement = lastSnapshot.FirstWildlifePosition.X - firstSnapshot.FirstWildlifePosition.X;
-        var firstSignal = worldState.Signals[0];
         var (humanReality, alienReality, omniscientReality) = GenerateRealities(worldState);
-        var firstVisibleSignal = humanReality.VisibleSignals[0];
-        var firstAlienSignal = alienReality.VisibleSignals[0];
-        var firstOmniscientSignal = omniscientReality.Signals[0];
 
         PrintScenarioSummary(
             worldState,
             migrationEvent,
             replayTimeline,
-            firstSignal,
             firstSnapshot,
             lastSnapshot,
             firstWildlifeXMovement,
             humanReality,
-            firstVisibleSignal,
             alienReality,
-            firstAlienSignal,
-            omniscientReality,
-            firstOmniscientSignal);
+            omniscientReality);
 
         PrintRealityLayerSwitching(humanReality, alienReality, omniscientReality);
     }
@@ -81,6 +74,25 @@ public class PrototypeScenarioRunner
         replayTimeline.AddSnapshot(1, worldState);
     }
 
+    private static void AddPerceptionTestSignals(WorldState worldState)
+    {
+        worldState.Signals.Add(new SignalEvent
+        {
+            Id = worldState.Signals.Count + 1,
+            SignalType = "Industrial",
+            Description = "Refinery construction completed.",
+            Position = new Vector2(600f, 300f)
+        });
+
+        worldState.Signals.Add(new SignalEvent
+        {
+            Id = worldState.Signals.Count + 1,
+            SignalType = "Unknown",
+            Description = "Unclassified disturbance.",
+            Position = new Vector2(200f, 700f)
+        });
+    }
+
     private static (HumanReality humanReality, AlienReality alienReality, OmniscientReality omniscientReality)
         GenerateRealities(WorldState worldState)
     {
@@ -95,16 +107,12 @@ public class PrototypeScenarioRunner
         WorldState worldState,
         MigrationEvent migrationEvent,
         ReplayTimeline replayTimeline,
-        SignalEvent firstSignal,
         ReplaySnapshot firstSnapshot,
         ReplaySnapshot lastSnapshot,
         float firstWildlifeXMovement,
         HumanReality humanReality,
-        SignalEvent firstVisibleSignal,
         AlienReality alienReality,
-        SignalEvent firstAlienSignal,
-        OmniscientReality omniscientReality,
-        SignalEvent firstOmniscientSignal)
+        OmniscientReality omniscientReality)
     {
         GD.Print($"Applied migration event: {migrationEvent.Name}");
         GD.Print(string.Empty);
@@ -115,20 +123,33 @@ public class PrototypeScenarioRunner
         GD.Print($"Tick 1 first wildlife position: {lastSnapshot.FirstWildlifePosition}");
         GD.Print($"First wildlife X movement: {firstWildlifeXMovement:0.##}");
         GD.Print(string.Empty);
-        GD.Print($"Signal count: {worldState.Signals.Count}");
-        GD.Print($"Signal type: {firstSignal.SignalType}");
-        GD.Print($"Signal description: {firstSignal.Description}");
-        GD.Print($"Signal position: {firstSignal.Position}");
+        GD.Print($"WorldState signal count: {worldState.Signals.Count}");
         GD.Print($"Human Reality visible signals: {humanReality.VisibleSignals.Count}");
-        GD.Print($"First visible signal description: {firstVisibleSignal.Description}");
+        GD.Print($"Human visible signal descriptions: {JoinSignalDescriptions(humanReality.VisibleSignals)}");
         GD.Print(string.Empty);
         GD.Print($"Alien Reality visible signals: {alienReality.VisibleSignals.Count}");
-        GD.Print($"First alien signal description: {firstAlienSignal.Description}");
+        GD.Print($"Alien visible signal descriptions: {JoinSignalDescriptions(alienReality.VisibleSignals)}");
         GD.Print(string.Empty);
         GD.Print($"Omniscient wildlife count: {omniscientReality.Wildlife.Count}");
         GD.Print($"Omniscient signal count: {omniscientReality.Signals.Count}");
-        GD.Print($"First omniscient signal description: {firstOmniscientSignal.Description}");
         GD.Print(string.Empty);
+    }
+
+    private static string JoinSignalDescriptions(System.Collections.Generic.List<SignalEvent> signals)
+    {
+        if (signals.Count == 0)
+        {
+            return "None";
+        }
+
+        var descriptions = new string[signals.Count];
+
+        for (var i = 0; i < signals.Count; i++)
+        {
+            descriptions[i] = signals[i].Description;
+        }
+
+        return string.Join(" | ", descriptions);
     }
 
     private static void PrintRealityLayerSwitching(

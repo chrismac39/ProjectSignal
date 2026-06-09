@@ -6,6 +6,4 @@ public class SignalEvent
     public string SignalType { get; set; } = string.Empty;
     public Vector2 Position { get; set; }
     public string Description { get; set; } = string.Empty;
-    public int? AffectedWildlifeCount { get; set; }
-    public Vector2? AverageMovement { get; set; }
 }

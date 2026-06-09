@@ -15,6 +15,11 @@ public class AlienReality
 
         foreach (var signal in worldState.Signals)
         {
+            if (signal.SignalType != "Migration" && signal.SignalType != "Ecological")
+            {
+                continue;
+            }
+
             var interpretedSignal = new SignalEvent
             {
                 Id = signal.Id,
@@ -22,7 +27,7 @@ public class AlienReality
                 Position = signal.Position,
                 Description = signal.SignalType == "Migration"
                     ? "Docile herbivore movement pattern sensed."
-                    : "Unknown ecological disturbance sensed."
+                    : signal.Description
             };
 
             visibleSignals.Add(interpretedSignal);
