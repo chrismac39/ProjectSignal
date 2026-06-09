@@ -21,7 +21,7 @@ public class AlienReality
                 SignalType = signal.SignalType,
                 Position = signal.Position,
                 Description = signal.SignalType == "Migration"
-                    ? "Docile herbavore movement pattern sensed."
+                    ? "Docile herbivore movement pattern sensed."
                     : "Unknown ecological disturbance sensed."
             };
 
