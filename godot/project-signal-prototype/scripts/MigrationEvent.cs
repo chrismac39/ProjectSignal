@@ -35,7 +35,9 @@ public class MigrationEvent
             Id = worldState.Signals.Count + 1,
             SignalType = "Migration",
             Position = averagePosition,
-            Description = "Large wildlife migration detected."
+            Description = "Large wildlife migration detected.",
+            AffectedWildlifeCount = worldState.Wildlife.Count,
+            AverageMovement = offset
         };
 
         worldState.Signals.Add(signal);
