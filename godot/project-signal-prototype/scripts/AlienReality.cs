@@ -38,6 +38,10 @@ public class AlienReality
                 return "Docile herbivore migration detected.";
             case WorldEventType.AlienWarriorMovement:
                 return "Warrior caste movement.";
+            case WorldEventType.HumanConvoyMovement:
+                return "Large ground disturbance detected.";
+            case WorldEventType.RefineryStartup:
+                return "Persistent localized industrial disturbance detected.";
             case WorldEventType.IndustrialActivity:
                 return "Persistent industrial disturbance detected.";
             case WorldEventType.UnknownDisturbance:

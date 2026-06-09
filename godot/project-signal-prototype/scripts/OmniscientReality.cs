@@ -51,6 +51,10 @@ public class OmniscientReality
                 return "10 herbivores migrated east.";
             case WorldEventType.AlienWarriorMovement:
                 return "20 warrior organisms moving toward refinery.";
+            case WorldEventType.HumanConvoyMovement:
+                return "Fuel convoy departed refinery carrying supplies.";
+            case WorldEventType.RefineryStartup:
+                return "Refinery online and producing fuel.";
             case WorldEventType.IndustrialActivity:
                 return "Refinery online and producing fuel.";
             case WorldEventType.UnknownDisturbance:

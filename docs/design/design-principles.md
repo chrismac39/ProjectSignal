@@ -22,6 +22,14 @@ Signal -> Investigation -> Confirmation -> Action -> Assessment
 10. The player should not be told "attack here" or "build this now".
 11. Postgame replay can reveal missed opportunities and wrong assumptions.
 
+## Signal Ambiguity Principle
+- Signals should not have a single obvious interpretation.
+- A good signal supports multiple plausible explanations.
+- Players generate hypotheses.
+- Players investigate hypotheses.
+- Players confirm or reject hypotheses.
+- The game should rarely provide certainty from a single observation.
+
 ## Practical Constraints
 - Keep the prototype information-first: dots, shapes, overlays, and map readability over visual polish.
 - Do not design toward conventional RTS map control loops.

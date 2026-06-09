@@ -34,14 +34,19 @@ Represent observations as uncertain records rather than facts.
 ### Signal
 - A lead appears, not proof.
 - Includes noise and ambiguity.
+- Should support multiple plausible explanations.
+- Starts hypothesis generation, not conclusion.
 
 ### Investigation
 - Player assigns attention and assets.
 - Investigation narrows interpretations.
+- Investigation tests hypotheses.
 
 ### Confirmation
 - Dedicated scouting or corroboration verifies or disproves.
 - Confirmation may still decay over time.
+- Confirmation rejects or accepts hypotheses.
+- Single observations should rarely resolve certainty.
 
 ### Action
 - Orders are issued based on current belief, not omniscient truth.

@@ -79,9 +79,9 @@ public class PrototypeScenarioRunner
         worldState.Signals.Add(new SignalEvent
         {
             Id = worldState.Signals.Count + 1,
-            EventType = WorldEventType.IndustrialActivity,
+            EventType = WorldEventType.RefineryStartup,
             SignalType = "Industrial",
-            Description = "Refinery construction completed.",
+            Description = "Refinery startup detected.",
             Position = new Vector2(600f, 300f)
         });
 
@@ -101,6 +101,15 @@ public class PrototypeScenarioRunner
             SignalType = "Movement",
             Description = "Warrior caste movement toward refinery.",
             Position = new Vector2(650f, 340f)
+        });
+
+        worldState.Signals.Add(new SignalEvent
+        {
+            Id = worldState.Signals.Count + 1,
+            EventType = WorldEventType.HumanConvoyMovement,
+            SignalType = "Movement",
+            Description = "Fuel convoy departed refinery.",
+            Position = new Vector2(620f, 320f)
         });
     }
 
@@ -146,7 +155,42 @@ public class PrototypeScenarioRunner
         GD.Print(string.Empty);
 
         PrintCrossLayerInterpretation(humanReality, alienReality, omniscientReality);
+        PrintRefineryStartupInterpretation(humanReality, alienReality, omniscientReality);
         GD.Print(string.Empty);
+    }
+
+    private static void PrintRefineryStartupInterpretation(
+        HumanReality humanReality,
+        AlienReality alienReality,
+        OmniscientReality omniscientReality)
+    {
+        var refineryEventId = FindEventIdByType(omniscientReality.Signals, WorldEventType.RefineryStartup);
+
+        if (refineryEventId < 0)
+        {
+            return;
+        }
+
+        GD.Print("Refinery startup interpretation:");
+        GD.Print($"Human: {GetSignalDescriptionById(humanReality.VisibleSignals, refineryEventId)}");
+        GD.Print($"Alien: {GetSignalDescriptionById(alienReality.VisibleSignals, refineryEventId)}");
+        GD.Print($"Omniscient: {GetSignalDescriptionById(omniscientReality.Signals, refineryEventId)}");
+        GD.Print(string.Empty);
+    }
+
+    private static int FindEventIdByType(
+        System.Collections.Generic.List<SignalEvent> signals,
+        WorldEventType eventType)
+    {
+        for (var i = 0; i < signals.Count; i++)
+        {
+            if (signals[i].EventType == eventType)
+            {
+                return signals[i].Id;
+            }
+        }
+
+        return -1;
     }
 
     private static void PrintCrossLayerInterpretation(

@@ -38,6 +38,10 @@ public class HumanReality
                 return "Large animal movement observed.";
             case WorldEventType.AlienWarriorMovement:
                 return "Large animal movement observed.";
+            case WorldEventType.HumanConvoyMovement:
+                return "Fuel convoy departed refinery.";
+            case WorldEventType.RefineryStartup:
+                return "Refinery construction completed.";
             case WorldEventType.IndustrialActivity:
                 return "Refinery construction completed.";
             case WorldEventType.UnknownDisturbance:
