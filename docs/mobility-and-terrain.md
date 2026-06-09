@@ -1,48 +1,102 @@
-# Mobility and Terrain
+## Ecological Access And Expansion
 
-## Design Intent
-The same physical terrain has different strategic meaning for each faction because movement systems and perception systems are asymmetric.
+Terrain is not the only factor determining mobility.
 
-## Human Mobility Logic
-Humans primarily project force and sustain operations through infrastructure:
-- Roads
-- Rail
-- Bridges
-- Airfields
-- Convoys
-- Maritime routes
+The world contains ecological barriers that may restrict movement and expansion.
 
-## Alien Mobility Logic
-Aliens primarily project force and sustain adaptation through ecological channels:
-- Migration corridors
-- Burrow networks
-- Forest canopies
-- River ecosystems
-- Underground passages
-- Symbiotic wildlife paths
+Examples:
 
-## Shared Map, Different Access
-- Both sides traverse one map.
-- Both sides can reach places the other side treats as inaccessible or low-risk.
-- Perceived safety depends on faction-specific assumptions.
+* Predator territories
+* Migration corridors
+* Breeding grounds
+* Hostile megafauna
+* Environmentally hazardous regions
 
-## Example Asymmetries
-- A human commander treats a valley as blocked and safe; aliens burrow under a mountain and observe from a forest.
-- An alien commander focuses on one ecosystem and misses human activity elsewhere because ecological disturbance is low.
+These barriers may affect factions differently.
 
-## Operational Scale Constraints
-- 2D bird's-eye operational perspective.
-- Potentially large theater-scale maps.
-- Realistic travel time and route dependency are first principles.
-- Weapon ranges and signal ranges should reflect operational scale.
+A region that is dangerous for Humans may be relatively safe for Aliens.
 
-## Time and Planning Model
-- Turn-based or simultaneous planning/execution both remain valid options.
-- Details of turn timers are unresolved and intentionally flexible.
-- Planning phases may include time pressure.
-- Avoid reminder systems that force rote per-turn checklists.
+A region that is safe for Humans may be avoided by Aliens.
 
-## Interactions With Other Systems
-- Mobility determines which signals can be investigated in time: see [Information Model](information-model.md).
-- Route exposure and chokepoints create deception opportunities: see [Deception and Recon](deception-and-recon.md).
-- Logistical reach is a human vulnerability and objective enabler: see [Factions](factions.md).
+Mobility is therefore influenced by both geography and ecology.
+
+---
+
+## Mobility As Information Access
+
+Mobility determines more than movement.
+
+Mobility determines what information can be acquired and how quickly it can be verified.
+
+Examples:
+
+* A signal observed near a road may be investigated rapidly by Humans.
+* A signal observed deep within a forest ecosystem may be investigated rapidly by Aliens.
+* A distant event may remain unresolved simply because neither faction can reach it in time.
+
+The ability to move is closely linked to the ability to understand the world.
+
+---
+
+## Shared Geography, Different Maps
+
+Humans and Aliens occupy the same physical world.
+
+However, they do not experience the same map.
+
+Humans naturally perceive:
+
+* Road networks
+* Resource deposits
+* Infrastructure corridors
+* Logistics hubs
+
+Aliens naturally perceive:
+
+* Nutrient flows
+* Migration routes
+* Predator territories
+* Ecological connectivity
+
+The same valley may represent:
+
+* A logistics corridor to Humans.
+* A migration bottleneck to Aliens.
+
+The same forest may represent:
+
+* An obstacle to Humans.
+* A transportation network to Aliens.
+
+Each faction navigates a different strategic landscape despite sharing the same terrain.
+
+---
+
+## Mobility Creates Deception
+
+Movement pathways create assumptions.
+
+Humans may assume an area is secure because it lacks road access.
+
+Aliens may assume an area is unimportant because ecological activity is minimal.
+
+Both assumptions can be exploited.
+
+A core goal of asymmetric mobility is to create opportunities for surprise, infiltration, and misinterpretation without requiring artificial stealth mechanics.
+
+---
+
+## Mobility And Signals
+
+Signals are constrained by mobility.
+
+A signal that cannot be investigated remains ambiguous.
+
+This creates a direct relationship between:
+
+* Movement
+* Reconnaissance
+* Decision making
+* Information quality
+
+Players should frequently face situations where a potentially important signal exists but reaching it requires significant time, risk, or resource commitment.
