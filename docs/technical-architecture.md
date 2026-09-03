@@ -2,408 +2,109 @@
 
 ## Purpose
 
-This document describes the intended architecture for ProjectSignal.
+ProjectSignal is organized to enforce one rule: faction decision code cannot access objective reality.
 
-The architecture exists to support the core design principle:
+The runtime is a standalone `net8.0` console application. Domain logic has no dependency on a game engine, renderer, terminal UI, or filesystem. See [Headless Simulation Design](headless-simulation-design.md) for the product and scenario rules.
 
-Players do not interact with objective reality.
+## Runtime Components
 
-Players interact with their perception of reality.
+### Domain
 
-The simulation should therefore be built around a single authoritative world state that generates multiple faction-specific views.
+Owns deterministic value types and rules:
 
----
+* Turn and location
+* World state
+* Orders and validation
+* Objective events and outcomes
+* Physical signatures
+* Collection capabilities and observations
+* Faction reports
 
-# Core Architecture
+The domain does not print or serialize itself.
 
-## One World
+### Simulation
 
-ProjectSignal contains a single authoritative simulation.
+Owns WEGO orchestration:
 
-There is only one true battlefield.
+`Situation -> Orders -> Commit -> Execution -> Signatures -> Collection -> Interpretation -> Assessment -> Record`
 
-Everything that exists in the game exists within this world.
+The simulation receives a scenario and scripted orders, advances one turn at a time, and returns a run record. Randomness is explicit and seeded. Stable identifiers and iteration order are required for deterministic output.
 
-Examples:
+### Scenarios
 
-* Terrain
-* Wildlife
-* Human units
-* Alien organisms
-* Logistics routes
-* Structures
-* Ecosystems
-* Reconnaissance assets
-* Signals
+Owns hand-authored initial state, faction objectives, prior assumptions, and scripted decisions. Prototype scenarios are C# fixtures while the model is changing. External scenario schemas are deferred until several scenarios prove which fields are stable.
 
-The world state is the source of truth.
+### Artifacts
 
----
+Owns serialization of the completed run into JSON Lines technical logs and a Markdown AAR. Artifact writers may consume objective and faction records only after a turn is resolved. They do not participate in adjudication.
 
-## Three Realities
+### Tests
 
-The game presents three different realities.
+Owns invariant, unit, determinism, information-isolation, artifact, and scenario characterization tests.
 
-### Omniscient Reality
+## Information Boundaries
 
-The complete simulation.
+The runtime uses distinct types for each stage:
 
-Contains:
+1. `ObjectiveEvent` describes an authoritative occurrence.
+2. `PhysicalSignature` describes a detectable consequence without granting knowledge of its cause.
+3. `Observation` records what a particular collector encountered.
+4. `FactionReport` translates observations into faction-legible evidence.
+5. `FactionSituation` contains only reports delivered by that turn plus faction-owned objectives and working interpretations.
 
-* All entities
-* All events
-* All movement
-* All hidden information
+Objective IDs must not be reused as faction report IDs. Faction code must not correlate reports through hidden shared identity.
 
-Used for:
+## Dependency Direction
 
-* Replay
-* Development
-* Debugging
-* Spectating
+`Scenarios -> Simulation -> Domain`
 
-Never available during normal gameplay.
+`Console -> Scenarios + Simulation + Artifacts`
 
----
+`Artifacts -> Simulation records + Domain values`
 
-### Human Reality
+`Tests -> all standalone projects`
 
-The battlefield as understood by the human commander.
+Nothing in `Domain`, `Simulation`, or `Scenarios` references the archived Godot prototype.
 
-Generated from:
+## State And Replay
 
-* Sensors
-* Reconnaissance
-* Observation
-* Reports
-* Assumptions
+World state is authoritative and mutable only through adjudication. Each completed turn emits an immutable turn record containing:
 
-May be incomplete.
+* Committed orders
+* Objective events
+* Generated signatures
+* Collected observations
+* Delivered faction reports
+* Turn-boundary snapshot
 
-May be incorrect.
+Replay is record-based, not UI-based. Re-simulation from the same versioned inputs is a determinism check; snapshots and chronological records are the durable analysis source.
 
----
-
-### Alien Reality
-
-The battlefield as understood by the alien intelligence.
-
-Generated from:
-
-* Ecological sensing
-* Scout organisms
-* Disturbances
-* Observation
-* Assumptions
-
-May be incomplete.
-
-May be incorrect.
-
----
-
-# Information Flow
-
-The simulation should follow the pattern:
-
-World State
-
-↓
-
-Perception Systems
-
-↓
-
-Faction Reality
-
-↓
-
-Player Decisions
-
-↓
-
-Orders
-
-↓
-
-World State
-
-The player never interacts directly with the World State.
-
-The player interacts with a faction-specific interpretation of the World State.
-
----
-
-# Perception Systems
-
-## Human Perception Generator
-
-Transforms objective events into human observations.
-
-Examples:
-
-World State:
-
-* Wildlife migration
-
-Human Reality:
-
-* Large animal concentrations
-
----
-
-World State:
-
-* Alien activity
-
-Human Reality:
-
-* Thermal signature
-* Sensor contact
-* Reconnaissance report
-
-The generator produces observations.
-
-Not conclusions.
-
----
-
-## Alien Perception Generator
-
-Transforms objective events into alien observations.
-
-Examples:
-
-World State:
-
-* Human logistics route
-
-Alien Reality:
-
-* Ecological disruption
-* Mechanical vibration
-* Wildlife avoidance
-
----
-
-World State:
-
-* Human refinery
-
-Alien Reality:
-
-* Persistent heat
-* Habitat collapse
-* Nutrient disruption
-
-Again:
-
-Observations.
-
-Not conclusions.
-
----
-
-# Signals
-
-Signals are generated from world events.
-
-Examples:
-
-* Migration
-* Heat
-* Convoy movement
-* Habitat disruption
-* Predator activity
-* Industrial activity
-
-Signals are observations.
-
-Signals are not strategic recommendations.
-
-The game should never automatically conclude:
-
-"Enemy activity detected."
-
-The player performs the interpretation.
-
----
-
-# Reconnaissance
-
-Reconnaissance improves information quality.
-
-It does not reveal objective reality instantly.
-
-Examples:
-
-Signal
-
-↓
-
-Scout
-
-↓
-
-Observation
-
-↓
-
-Understanding
-
-Reconnaissance should generally provide:
-
-* Better observations
-* Better positioning
-* Better targeting
-
-It should not eliminate uncertainty completely.
-
----
-
-# Deception
-
-Deception exists within the World State.
-
-Decoys are real entities.
-
-Examples:
-
-* Fake refinery
-* Fake logistics activity
-* Fake biological activity
-
-The perception systems observe decoys exactly as they observe legitimate assets.
-
-Players must determine the difference through investigation.
-
----
-
-# Replay System
-
-## Replay Recorder
-
-The replay system records:
-
-* World State events
-* Perception events
-* Orders
-* Reconnaissance results
-
-The replay should allow inspection of:
-
-* Omniscient Reality
-* Human Reality
-* Alien Reality
-
-for any point in time.
-
----
-
-## Replay Purpose
-
-The replay is not simply a combat log.
-
-The replay exists to reveal:
-
-* What happened.
-* What each commander believed happened.
-* Why decisions were made.
-
-The replay is a learning tool.
-
----
-
-# Separation Of Concerns
-
-## Simulation Layer
-
-Responsible for:
-
-* World State
-* Movement
-* Ecology
-* Logistics
-* Combat
-* Reconnaissance
-
-Contains objective reality.
-
----
-
-## Perception Layer
-
-Responsible for:
-
-* Human observations
-* Alien observations
-* Signal generation
-
-Contains subjective reality.
-
----
-
-## Presentation Layer
-
-Responsible for:
-
-* UI
-* Map rendering
-* Visual overlays
-* Controls
-
-Contains no game logic.
-
----
-
-## Replay Layer
-
-Responsible for:
-
-* Historical recording
-* Timeline playback
-* Reality comparison
-
-Contains no simulation logic.
-
----
-
-# Prototype 0 Architecture
-
-Prototype 0 should remain extremely small.
+## Prototype 0 Boundary
 
 Included:
 
-* Terrain
-* Wildlife
-* Human perception
-* Alien perception
-* Omniscient view
-* Replay timeline
+* Deterministic multi-turn WEGO orchestration
+* Small hand-authored geography
+* Scripted human and alien orders
+* Wildlife and one biological process
+* One human industrial or logistics process
+* Signatures, collection, and expertise-driven reports
+* Objective, human, and alien chronological records
+* Markdown AAR generation
 
 Excluded:
 
-* Combat
-* Production
-* Logistics
+* Visualization and interactive UI
+* Combat resolution
+* Production economy
+* Full logistics network simulation
 * Victory conditions
-* Titans
 * Multiplayer
+* Procedural geography
+* Complex AI
 
-The goal is to validate the information model.
+## Core Principle
 
-Nothing else.
+World state creates events. Events create signatures. Collectors create observations. Expertise creates reports. Commanders create interpretations and orders.
 
----
-
-# Core Principle
-
-The most important architectural rule in ProjectSignal is:
-
-There is one truth.
-
-Every faction-specific experience is generated from that truth.
-
-Players do not fight over the same information.
-
-Players fight over their understanding of the same reality.
+Skipping any boundary makes information leakage or arbitrary misinformation likely.

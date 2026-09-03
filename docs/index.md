@@ -1,19 +1,23 @@
 # ProjectSignal Docs Index
 
-[Design Summary](design-summary.md)
+[Headless Simulation Design](headless-simulation-design.md)
 
-[Design Principles](design-principles.md)
-	↓
+[Design Summary](design/design-summary.md)
+
+[Design Principles](design/design-principles.md)
+
 [Information Model](information-model.md)
-	↓
-[World & Ecology](world-and-ecology.md)
-	↓
-[Factions](factions.md)
-	↓
+
+[World & Ecology](design/desing-world-and-ecology.md)
+
+[Human Faction](design/design-factions-human.md)
+
+[Alien Faction](design/design-factions-alien.md)
+
 [Mobility](mobility-and-terrain.md)
-	↓
-[Recon & Deception](deception-and-recon.md)
-	↓
+
+[Recon & Deception](design/design-deception-and-recon.md)
+
 [Examples](examples/)
-	↓
+
 [Prototype Roadmap](prototype-roadmap.md)

@@ -1,31 +1,36 @@
 # Prototype Roadmap
 
-This roadmap keeps the prototype focused on information and asymmetric perception before full combat economy complexity.
+This roadmap keeps the headless simulation focused on information and asymmetric perception before combat or economy complexity.
 
-## Milestone 0: Battlefield Reality Test
+## Milestone 0: Headless Information Loop
 ### Goal
-Prove that Human Reality, Alien Reality, and Omniscient Reality can coexist on one map.
+Prove that objective, human, and alien records can diverge for traceable reasons and affect scripted operational decisions.
 
 ### Include
-- One physical map
-- Human Reality layer
-- Alien Reality layer
-- Omniscient Reality layer
-- Simple signals
-- Simple investigation/scouting
-- Simple confirmation
+- Standalone .NET solution
+- Deterministic WEGO turn sequence
+- Hand-authored operational area
+- Objective events and physical signatures
+- Human and alien collection and reporting
+- Scripted investigation and commitment
+- JSON Lines run records and Markdown AAR
 
 ### Exclude
 - No combat
 - No full resource system
 - No victory condition
+- No visualization layer
+
+### Exit Focus
+- `The Empty Corridor` runs end to end, passes information-isolation and determinism tests, and produces a useful three-perspective AAR.
 
 ## Milestone 1: Signal Loop Prototype
 ### Include
-- Signal freshness, confidence, and source quality
-- False positives and noise
+- Report age, observation time, concrete source class, and collection conditions
+- Overlapping causes, missed collection, false positives, and noise
 - Scouting assets
-- Basic replay timeline
+- Scripted working interpretations
+- Assessment of prior orders
 
 ### Exit Focus
 - The full Signal -> Investigation -> Confirmation -> Action -> Assessment loop is testable.
@@ -68,7 +73,9 @@ Prove that Human Reality, Alien Reality, and Omniscient Reality can coexist on o
 - Avoid annihilation victory as the core win condition.
 
 ## Cross-References
-- [Design Principles](design-principles.md)
+- [Headless Simulation Design](headless-simulation-design.md)
+- [Design Principles](design/design-principles.md)
 - [Information Model](information-model.md)
-- [Factions](factions.md)
+- [Human Faction](design/design-factions-human.md)
+- [Alien Faction](design/design-factions-alien.md)
 - [Replay System](replay-system.md)

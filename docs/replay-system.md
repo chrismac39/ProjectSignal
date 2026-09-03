@@ -1,7 +1,7 @@
 # Replay System
 
 ## Purpose
-Provide postgame truth so players can compare what happened against what they believed happened.
+Provide post-simulation truth so players and designers can compare objective events, collected evidence, working interpretations, orders, and outcomes.
 
 ## Core Requirements
 - Omniscient replay reveals the true battlefield after the match.
@@ -9,33 +9,39 @@ Provide postgame truth so players can compare what happened against what they be
 - Replay shows what each side missed.
 - Replay shows where assumptions were wrong.
 
-## Views
-### Omniscient View
-- True simulation timeline.
+## Records
+### Objective Record
+- True simulation events, signatures, orders, outcomes, and snapshots.
 
-### Human Knowledge View
-- Human Reality state over time.
+### Human Record
+- Reports and scripted working interpretations available to humans at each decision point.
 
-### Alien Knowledge View
-- Alien Reality state over time.
+### Alien Record
+- Reports and scripted working interpretations available to aliens at each decision point.
 
-## Timeline Expectations
-- Scrubbable timeline for events and knowledge changes.
-- Event markers for signal creation, investigation, confirmation, actions, and outcomes.
-- Optional filters for deception events, recon penetrations, and route disruptions.
+## Artifact Expectations
+- Versioned manifest with scenario, engine, schema, seed, and run status.
+- JSON Lines logs for orders, objective events, signatures, faction reports, and snapshots.
+- Stable chronological ordering within every turn.
+- Markdown AAR with a turn-by-turn three-perspective comparison.
+- Traceability from every faction report to its observations and collection conditions.
+- Traceability from signatures to causes only in the objective record.
 
 ## Analysis Use Cases
 - Identify missed opportunities.
-- Identify overconfidence in stale or weak signals.
+- Identify interpretations that outlived the evidence supporting them.
 - Identify successful or failed deception.
-- Understand objective progress versus battlefield attrition.
+- Understand why an order was reasonable, reckless, or ineffective given information available at commitment time.
+- Compare legal alternative collection choices without pretending there was one required move.
 
 ## Constraints
 - No omniscient hints during gameplay.
 - Any highlight of missed actions belongs postgame only.
-- Replay is for learning and strategic killcam-style understanding, not in-match assistance.
+- AAR analysis may use objective state only after the run is complete.
+- Replay is record-based in Prototype 0; it does not require a visual or scrubbable interface.
 
 ## Related Documents
 - [Information Model](information-model.md)
-- [Deception and Recon](deception-and-recon.md)
-- [Design Principles](design-principles.md)
+- [Deception and Recon](design/design-deception-and-recon.md)
+- [Headless Simulation Design](headless-simulation-design.md)
+- [Design Principles](design/design-principles.md)

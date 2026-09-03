@@ -44,6 +44,6 @@ Recon and deception are competing methods for shaping confidence under uncertain
 A player can believe a decoy worked while the opponent already confirmed it as false and is preparing to strike the real target.
 
 ## Related Documents
-- [Information Model](information-model.md)
-- [Replay System](replay-system.md)
-- [Mobility and Terrain](mobility-and-terrain.md)
+- [Information Model](../information-model.md)
+- [Replay System](../replay-system.md)
+- [Mobility and Terrain](../mobility-and-terrain.md)

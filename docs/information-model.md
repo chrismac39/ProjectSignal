@@ -10,25 +10,52 @@ Define how knowledge is represented, updated, and acted on without giving player
 - Not exposed during normal play.
 
 ### Human Reality
-- What the human commander currently believes.
-- Built from sensors, reports, logistics telemetry, and reconnaissance.
+- Reports and explicit working interpretations available to the human commander.
+- Built from human observations, logistics telemetry, and reconnaissance.
 
 ### Alien Reality
-- What the alien intelligence currently believes.
-- Built from ecological signals, disturbance patterns, and alien scouting.
+- Reports and explicit working interpretations available to the alien intelligence.
+- Built from alien observations, disturbance patterns, and scouting.
 
 ## Core Knowledge Units
-Represent observations as uncertain records rather than facts.
+Do not use one generic signal record for every stage. Preserve the causal chain so replay can explain where divergence occurred.
+
+### Objective Event
+- An occurrence in authoritative world state.
+- Contains its actual participants, cause, time, and outcome.
+- Never available to faction logic.
+
+### Physical Signature
+- A detectable physical consequence of an objective event.
+- Examples include heat, vibration, residue, movement, sound, chemical change, and species redistribution.
+- Does not expose its hidden cause to collection or faction logic.
+
+### Observation
+- Evidence actually encountered by a faction collector.
+- Records observed qualities, time, place, collector class, and collection conditions.
+- Is immutable; later evidence does not rewrite it.
+
+### Faction Report
+- A faction-legible description produced from one or more observations.
+- Uses distinctions available to that faction's expertise.
+- May be delayed, coarse, incomplete, or compatible with several causes.
+
+### Working Interpretation
+- A player-authored or scenario-scripted claim about what reports mean.
+- Remains separate from reports so the simulation never presents a conclusion as sensed fact.
 
 ### Recommended Fields
-- Signal type
-- Location
-- Time observed
-- Freshness
-- Confidence
-- Source quality
-- Owning reality layer (human or alien)
-- Status: uninvestigated, investigated, confirmed, disproven, stale
+- Faction-local record ID
+- Observed qualities
+- Reported location or area
+- Observation turn
+- Delivery turn
+- Concrete source class
+- Collection method and relevant conditions
+- Owning faction
+- Links to faction-visible corroborating or contradicting reports
+
+Age is derived from observation and current turns. The system does not convert age, source, or conditions into confidence, reliability, importance, or threat scores.
 
 ## Core Loop Mapping
 ### Signal
@@ -47,9 +74,9 @@ Represent observations as uncertain records rather than facts.
 
 ### Confirmation
 - Dedicated scouting or corroboration verifies or disproves.
-- Confirmation may still decay over time.
-- Confirmation rejects or accepts hypotheses.
-- Single observations should rarely resolve certainty.
+- Confirmation means obtaining discriminating evidence, not filling a certainty meter.
+- Working interpretations can be supported, contradicted, or left unresolved.
+- Old reports remain historically true accounts of what was observed even when their interpretation changes.
 
 ### Action
 - Orders are issued based on current belief, not omniscient truth.
@@ -84,12 +111,12 @@ Model natural and incidental events that can be misread:
 - Abandoned sites
 
 ## UI and Decision Support Constraints
-- Present observations, confidence, and freshness.
+- Present reports, timestamps, source classes, collection conditions, and explicit working interpretations.
 - Do not tell players what to do.
 - Do not provide checklist reminders as a crutch.
 - Allow players to fail through missed signals and poor prioritization.
 
 ## Cross-System Dependencies
 - Mobility and access constraints shape what can be investigated: see [Mobility and Terrain](mobility-and-terrain.md).
-- Decoys and counter-recon alter confidence and interpretation: see [Deception and Recon](deception-and-recon.md).
+- Decoys and counter-recon alter available evidence and interpretation: see [Deception and Recon](design/design-deception-and-recon.md).
 - Replay compares belief layers against truth: see [Replay System](replay-system.md).

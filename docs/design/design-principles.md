@@ -53,9 +53,10 @@ Signal -> Investigation -> Confirmation -> Action -> Assessment
 - Do not turn this into a 4X map-control game.
 
 ## Related Documents
-- [Information Model](information-model.md)
-- [Factions](factions.md)
-- [Mobility and Terrain](mobility-and-terrain.md)
-- [Deception and Recon](deception-and-recon.md)
-- [Replay System](replay-system.md)
-- [Prototype Roadmap](prototype-roadmap.md)
+- [Information Model](../information-model.md)
+- [Human Faction](design-factions-human.md)
+- [Alien Faction](design-factions-alien.md)
+- [Mobility and Terrain](../mobility-and-terrain.md)
+- [Deception and Recon](design-deception-and-recon.md)
+- [Replay System](../replay-system.md)
+- [Prototype Roadmap](../prototype-roadmap.md)

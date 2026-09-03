@@ -11,3 +11,10 @@ export_presets.cfg
 .DS_Store
 Thumbs.db
 .vscode/
+
+# .NET
+**/bin/
+**/obj/
+
+# Headless simulation output
+artifacts/

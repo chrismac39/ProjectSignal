@@ -2,7 +2,7 @@
 
 ## Project Summary
 
-ProjectSignal is a prototype operational strategy game focused on:
+ProjectSignal is a headless operational strategy simulation focused on:
 
 * Imperfect information
 * Asymmetric perception
@@ -11,7 +11,7 @@ ProjectSignal is a prototype operational strategy game focused on:
 * Adaptation
 * Replay analysis
 
-The project is currently in design and Prototype 0 validation.
+The project is currently in design and Prototype 0 validation. The active runtime target is a deterministic standalone .NET console application with no visualization layer.
 
 The goal is to prove the information model before implementing complex gameplay systems.
 
@@ -104,13 +104,12 @@ Prototype 0 must prove:
 
 * One World State
 * Wildlife entities
-* Migration events
-* Basic signal generation
-* Human Reality layer
-* Alien Reality layer
-* Omniscient Reality layer
-* Reality layer switching
-* Replay timeline
+* Deterministic WEGO turns
+* Objective events and physical signatures
+* Human and alien collection
+* Faction-specific observations and reports
+* Objective, human, and alien chronological records
+* Human-readable after-action report
 
 Prototype 0 explicitly excludes:
 
@@ -120,8 +119,7 @@ Prototype 0 explicitly excludes:
 * Titans
 * Victory conditions
 * Multiplayer
-* Large UI systems
-* Advanced graphics
+* Visualization and interactive UI
 * Complex AI
 * Save/load systems
 
@@ -131,27 +129,16 @@ When uncertain, choose the smallest implementation that advances Prototype 0.
 
 ## Current Implementation Status
 
-Completed:
+The Godot implementation is historical validation work and migration reference. It is not the active runtime foundation.
 
-* Godot .NET setup
-* Main scene
-* Main.cs startup execution
-* WorldState
-* WildlifeEntity
-* MigrationEvent
-* SignalEvent
-* Migration-generated signal event
+Current priorities:
 
-Next priorities:
-
-* HumanReality
-* AlienReality
-* OmniscientReality
-* Basic reality layer switching
-* ReplaySnapshot
-* ReplayTimeline
-
-Current priority is proving asymmetric perception.
+* Standalone .NET domain, console runner, and tests
+* Deterministic WEGO turn orchestration
+* Objective event -> physical signature -> collection -> observation -> faction report pipeline
+* `The Empty Corridor` multi-turn vertical slice
+* JSON Lines technical artifacts
+* Markdown AAR comparing objective, human, and alien records
 
 ---
 
@@ -177,22 +164,14 @@ Do not implement combat until the information model is proven.
 Authoritative architecture:
 
 World State
-↓
-Human Perception Generator
-↓
-Human Reality
-
-World State
-↓
-Alien Perception Generator
-↓
-Alien Reality
-
-World State
-↓
-Replay Recorder
-↓
-Omniscient Reality
+-> Objective Event
+-> Physical Signature
+-> Faction Collection
+-> Observation
+-> Faction Report
+-> Scripted Decision
+-> Order
+-> World State
 
 Prefer:
 
@@ -200,10 +179,11 @@ Prefer:
 * Plain data structures
 * Small incremental changes
 * Readable C#
-* Godot 4 C# conventions
 * World State as the source of truth
-* Pure simulation logic before visuals
+* Pure `net8.0` simulation logic
 * Explicit, understandable code
+* Deterministic runs and stable artifact ordering
+* Separate types for objective events, signatures, observations, and faction reports
 
 Avoid:
 
@@ -222,29 +202,26 @@ The project should remain understandable by a single developer.
 
 ---
 
-## Godot Implementation Guidance
+## Headless Implementation Guidance
 
-Use Godot 4 with C#.
+Use a standalone .NET 8 solution with plain C# domain classes.
 
-Prefer C# unless there is a compelling reason not to.
+Do not add a game engine, rendering framework, interactive UI, or visualization dependency.
 
-Do not generate large amounts of code by default.
-
-Before creating new scenes, scripts, or systems, prefer the next smallest prototype step.
-
-Do not create Godot Nodes unless they are needed for the current milestone.
-
-For Prototype 0, domain model classes should usually be plain C# classes unless they need to interact directly with the Godot scene tree.
+Do not generate large amounts of framework code by default. Prefer the smallest deterministic scenario behavior that proves one information mechanism.
 
 The first working path should be:
 
 WorldState
-→ Event
-→ Signal
-→ Perception Layer
-→ Replay Snapshot
+-> ObjectiveEvent
+-> PhysicalSignature
+-> Collection
+-> Observation
+-> FactionReport
+-> RunRecord
+-> AfterActionReport
 
-Visuals should come after the data/simulation model is proven.
+Faction code must never receive objective events, hidden causes, opposing orders, or authoritative identifiers without an in-world collection reason.
 
 ---
 
@@ -252,7 +229,8 @@ Visuals should come after the data/simulation model is proven.
 
 Before implementing significant features, consult:
 
-* docs/design-principles.md
+* docs/design/design-principles.md
+* docs/headless-simulation-design.md
 * docs/prototype-spec.md
 * docs/prototype-roadmap.md
 * docs/information-model.md
