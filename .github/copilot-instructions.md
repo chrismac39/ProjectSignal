@@ -229,17 +229,21 @@ Faction code must never receive objective events, hidden causes, opposing orders
 
 Before implementing significant features, consult:
 
+* docs/documentation-guide.md
+* docs/north-star.md
 * docs/design/design-principles.md
 * docs/headless-simulation-design.md
 * docs/prototype-spec.md
 * docs/prototype-roadmap.md
 * docs/information-model.md
+* docs/operational-turn-model.md
+* docs/scenario-design.md
 * docs/technical-architecture.md
 * docs/implementation-status.md
 
 Always consult docs/implementation-status.md for the latest completed and next Prototype 0 items.
 
-The documentation is authoritative.
+Follow the authority order in docs/documentation-guide.md when documents differ.
 
 If generated code conflicts with the documentation, follow the documentation.
 

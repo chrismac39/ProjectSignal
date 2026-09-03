@@ -1,5 +1,7 @@
 # Prototype Specification
 
+> Status: Current acceptance contract for Prototype 0.
+
 ## Objective
 
 Validate that one deterministic operational simulation can produce materially different, causally traceable human and alien understandings of the same objective events.
@@ -51,7 +53,7 @@ A completed scripted scenario can:
 7. Generate an AAR that reconstructs why the sides acted differently.
 8. Produce equivalent chronological artifacts when rerun with the same inputs and seed.
 
-The first acceptance scenario is `The Empty Corridor`, defined in [Headless Simulation Design](headless-simulation-design.md).
+The first acceptance scenario is `The Empty Corridor`, defined in [Scenario Design](scenario-design.md).
 
 If this creates an interesting information decision in script and AAR form, proceed to Milestone 1.
 If not, redesign before expanding scope.

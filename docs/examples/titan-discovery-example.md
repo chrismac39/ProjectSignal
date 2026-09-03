@@ -1,5 +1,7 @@
 # Titan Discovery Example
 
+> Status: Illustrative future example. Titans and combat are outside Prototype 0.
+
 ## Purpose
 
 This example demonstrates how major threats emerge gradually through signals, assumptions, investigation, and interpretation.

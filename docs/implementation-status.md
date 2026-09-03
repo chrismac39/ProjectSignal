@@ -1,8 +1,10 @@
 # Implementation Status
 
+> Status: Current verified project state. Update this document when behavior changes.
+
 ## Current Direction
 
-ProjectSignal is pivoting from a Godot prototype to a deterministic, headless .NET operational simulation. [Headless Simulation Design](headless-simulation-design.md) is authoritative for this phase.
+ProjectSignal is a deterministic, headless .NET operational simulation. [North Star](north-star.md) defines the enduring direction; [Prototype 0 Specification](prototype-spec.md) defines the active acceptance contract.
 
 ## Historical Godot Validation
 
@@ -44,11 +46,12 @@ Completed in the active headless runtime:
 * Run artifact and AAR generation
 * `The Empty Corridor` three-turn vertical slice
 * Information-isolation, determinism, scenario, and artifact tests
+* Documentation authority hierarchy and status model
+* Canonical operational-turn and scenario-design specifications
 
 ## Next Priorities
 
-* Compare historical Godot behavior with the new report model
 * Add an overlapping-cause false-positive scenario
 * Add delayed reports and masked collection conditions
 * Add explicit order validation and turn-phase records
-* Archive the Godot directory after equivalent headless behavior is verified
+* Decide whether any remaining Godot behavior merits characterization before archival

@@ -1,5 +1,7 @@
 # Alien Faction
 
+> Status: Future design reference. Titans, resources, castes, expansion, and victory systems are outside Prototype 0.
+
 ## Purpose
 
 The Alien Faction represents a native intelligent species embedded within the planet's ecology.
@@ -200,7 +202,7 @@ Expansion into biologically diverse regions creates strategic opportunities.
 
 Alien Castes should appear as natural products of the world's ecology.
 
-They should not appear visually distinct from the planet's broader biosphere.
+Their observable signatures should not make them trivially distinct from the planet's broader biosphere.
 
 Humans should struggle to distinguish:
 
@@ -301,11 +303,11 @@ Human intentions are not automatically known.
 
 ## Signals And Interpretation
 
-A signal is not information.
+A physical signature is a potentially detectable consequence in the world.
 
-A signal is an observation.
+An observation is evidence an alien collector actually acquired from a signature.
 
-Information emerges through interpretation.
+A report describes that observation in alien terms. Meaning emerges through commander interpretation.
 
 This principle applies to both factions.
 

@@ -1,5 +1,7 @@
 # Headless Simulation Design
 
+> Status: Current design rationale for the Prototype 0 headless pivot. Focused specifications own subsystem details.
+
 ## Decision
 
 ProjectSignal is a headless operational simulation.
@@ -88,6 +90,8 @@ Randomly replacing a correct report with an incorrect report is not an acceptabl
 
 ## Operational Turn
 
+The canonical phase and timing contract is [Operational Turn Model](operational-turn-model.md).
+
 Prototype 0 uses deterministic WEGO turns. Both factions commit orders without seeing the other faction's current orders. The simulation then adjudicates all orders in a stable sequence.
 
 Each turn contains these phases:
@@ -144,140 +148,20 @@ The engine must never silently rewrite an old report when better evidence arrive
 
 ## Scenario Design Standard
 
-A scenario is not complete merely because the human, alien, and objective descriptions use different words. It must create a consequential divergence in what the sides can reasonably infer or choose to investigate.
+Different wording alone is not sufficient. Scenarios must create consequential, causally traceable differences in what each faction can collect and reasonably infer.
 
-Every scenario definition must state:
+[Scenario Design](scenario-design.md) owns the scenario checklist, active acceptance scenario, and future catalog.
 
-* The objective situation and active processes.
-* What each side is trying to accomplish.
-* What each side currently believes or assumes.
-* Which actions produce signatures.
-* Which collection capabilities can encounter each signature.
-* How human and alien expertise describe collected evidence.
-* At least two materially plausible explanations for key early evidence.
-* Which follow-up action could distinguish those explanations.
-* What decision each side makes under incomplete information.
-* What later evidence assesses that decision.
-* What the objective record reveals in the AAR.
+## Focused Specifications
 
-### Scenario quality tests
+The pivot established the overall direction. Current implementation contracts are maintained in focused documents:
 
-A strong ProjectSignal scenario passes all of these tests:
-
-1. **Same cause, different legibility** - at least one objective process is legible to one faction and coarse or ambiguous to the other.
-2. **Different causes, similar signature** - at least one observation has multiple plausible objective causes.
-3. **Actionable uncertainty** - a commander can spend time, exposure, position, or resources to investigate.
-4. **Consequential commitment** - acting before confirmation has a meaningful possible benefit and cost.
-5. **No privileged narrator** - faction reports do not explain what the player should conclude.
-6. **Traceable divergence** - the AAR can trace different beliefs back to specific signatures, collection conditions, and expertise.
-7. **Counterfactual value** - replay can show how a different collection or order choice could have exposed other evidence.
-
-## Initial Scenario Suite
-
-The first suite should cover distinct mechanisms rather than retell one migration event.
-
-### 1. The Empty Corridor
-
-**Objective reality:** Herbivores abandon a valley because alien nursery growth changes soil chemistry. A human convoy is scheduled to cross the valley.
-
-**Human view:** Sparse animal movement, intermittent sensor returns, and an unusually quiet corridor. The evidence does not identify the nursery growth.
-
-**Alien view:** A normal nursery-driven trophic displacement moving through a known ecological sequence. Human route preparation appears as repeated hard-surface disturbance.
-
-**Decision pressure:** Humans must choose whether the quiet corridor is safe, environmentally unstable, or deliberately cleared. Alien forces must decide whether the industrial disturbance is transit, extraction, or preparation for habitat destruction.
-
-**Discriminating investigation:** Soil sampling exposes the chemical gradient; persistent observation of the human route exposes convoy periodicity.
-
-### 2. Ashfall Ledger
-
-**Objective reality:** A lightning fire damages alien feeding growth near a human refinery. Refinery emissions and ash overlap in time and area.
-
-**Human view:** Thermal activity, particulate density, and altered animal movement resemble industrial sabotage or a secondary refinery incident.
-
-**Alien view:** Fire stress and feeding-growth collapse are clear. The nearby refinery is perceived as a persistent, poorly differentiated source of heat and contamination.
-
-**Decision pressure:** Humans can halt production and expose repair teams, while aliens can divert organisms to attack an industrial site that did not cause the fire.
-
-**Discriminating investigation:** Chemical residue separates combustion sources; ecological recovery patterns separate acute fire damage from chronic industrial effects.
-
-### 3. The False Artery
-
-**Objective reality:** Humans operate a decoy supply route while moving critical material through a low-throughput alternate path.
-
-**Human view:** Route schedules, transponder traffic, and stock movements clearly identify the deception plan and its leakage risks.
-
-**Alien view:** Both routes are recurring lines of compression, vibration, waste, and habitat interruption. The decoy is busier, but its flows do not sustain the surrounding industrial ecology in the expected way.
-
-**Decision pressure:** Aliens must choose which disturbance to constrict. Humans must decide how much real activity the decoy needs to remain biologically convincing.
-
-**Discriminating investigation:** Long observation of waste, maintenance, and return traffic reveals that the busy route has little metabolic equivalent of consumption.
-
-### 4. Nursery Echo
-
-**Objective reality:** Alien scouts seed harmless organisms that mimic the early ecological effects of nursery establishment. The real nursery develops elsewhere.
-
-**Human view:** Two areas show vegetation loss, animal displacement, and unusual moisture change. Available sensors cannot initially separate mimic growth from nursery support organisms.
-
-**Alien view:** The mimic and nursery are categorically different living systems. Human reconnaissance patterns reveal which signatures humans consider meaningful.
-
-**Decision pressure:** Humans must split reconnaissance or commit against one site. Aliens must balance the decoy's value against what human collection behavior teaches them.
-
-**Discriminating investigation:** Repeated samples reveal no maturation sequence at the mimic site; alien counter-recon can infer human sensor priorities from dwell time and approach direction.
-
-### 5. Broken Cadence
-
-**Objective reality:** A human maintenance failure interrupts pumping at a remote station. The interruption changes water flow, machinery vibration, vehicle visits, and local wildlife behavior.
-
-**Human view:** The failure mode and repair burden are recognizable, but the ecological consequences are not.
-
-**Alien view:** A familiar pulse in the watershed stops, several species redistribute, and human activity converges on the station. Whether this is failure, abandonment, or a trap is unclear.
-
-**Decision pressure:** Aliens can exploit the disruption, observe the response, or avoid a possible ambush. Humans can perform a fast exposed repair or a slower concealed one.
-
-**Discriminating investigation:** Observing replacement-part handling distinguishes repair from military concentration; downstream species response reveals the station's hidden ecological reach.
-
-### 6. Lessons That Do Not Transfer
-
-**Objective reality:** After prior encounters, each faction applies a previously useful explanation to a new event with a different cause.
-
-**Human view:** A migration pattern resembles an earlier nursery event but is now caused by seasonal pressure.
-
-**Alien view:** A logistics signature resembles an earlier offensive buildup but is now evacuation and salvage.
-
-**Decision pressure:** Both sides benefit from adaptation, but overgeneralizing learned patterns creates new blind spots.
-
-**Discriminating investigation:** Each side must seek a second signature that its prior model did not require.
-
-## Run Artifacts
-
-Each run writes a versioned artifact directory containing:
-
-* `manifest.json` - scenario ID, schema version, engine version, seed, and run status.
-* `orders.jsonl` - committed faction orders in adjudication order.
-* `objective-events.jsonl` - objective events and outcomes.
-* `signatures.jsonl` - generated physical signatures and their causes.
-* `human-reports.jsonl` - reports delivered to the human side.
-* `alien-reports.jsonl` - reports delivered to the alien side.
-* `snapshots.jsonl` - authoritative turn-boundary state for replay and debugging.
-* `aar.md` - a human-readable after-action report generated from the completed run.
-
-JSON Lines is preferred for chronological records because it is diffable, streamable, and easy to inspect with scripts. Scenario definitions should begin as code-owned fixtures until the domain stabilizes; a data format should be introduced only after repeated scenarios reveal a stable schema.
-
-## After-Action Report
-
-The AAR is the primary human-facing output. It is generated after a run and may use objective information.
-
-The AAR contains:
-
-1. Scenario intent and outcome.
-2. A turn-by-turn three-column comparison of objective events, human reports, and alien reports.
-3. The orders each faction committed with the information then available.
-4. Key divergences between observation, working interpretation, and reality.
-5. Evidence that was missed, delayed, masked, or misclassified and the concrete reason why.
-6. Decision consequences, including effects that remained unknown to the acting faction.
-7. Counterfactual collection opportunities grounded in legal alternative orders.
-
-The AAR must explain causality without grading players through a single score.
+* [Prototype 0 Specification](prototype-spec.md) owns scope and acceptance.
+* [Technical Architecture](technical-architecture.md) owns runtime boundaries.
+* [Information Model](information-model.md) owns evidence and knowledge vocabulary.
+* [Operational Turn Model](operational-turn-model.md) owns WEGO timing and ordering.
+* [Replay System](replay-system.md) owns artifacts and AAR requirements.
+* [Implementation Status](implementation-status.md) records what is complete and what comes next.
 
 ## Determinism And Isolation
 
@@ -294,29 +178,6 @@ The architecture enforces information isolation:
 
 Tests must fail if a faction-facing type exposes an objective event reference, hidden cause, opposing order, or authoritative entity identifier without an in-world collection reason.
 
-## Prototype 0 Completion Criteria
+## Current State
 
-Prototype 0 is complete when a standalone .NET console command can:
-
-1. Run one deterministic, scripted, multi-turn scenario without a game engine.
-2. Resolve committed orders through an explicit WEGO turn sequence.
-3. Generate objective events and one-to-many physical signatures.
-4. Collect different evidence for human and alien observers.
-5. Produce faction reports whose differences follow from collection and expertise.
-6. Preserve objective, human, and alien records without information leakage.
-7. Generate the complete artifact set and a readable AAR.
-8. Re-run with the same inputs and produce equivalent chronological records.
-9. Demonstrate at least one missed signal, one ambiguous shared signature, one expertise-driven distinction, and one consequential decision made before confirmation.
-
-Combat, production economies, strategic victory conditions, multiplayer, procedural maps, and visualization remain outside Prototype 0.
-
-## Implementation Sequence
-
-1. Establish a standalone solution with domain, console runner, and test projects.
-2. Define turn, faction, location, order, objective event, signature, observation, report, and run-record types.
-3. Implement deterministic turn orchestration and artifact recording.
-4. Migrate the existing migration example as a characterization test.
-5. Implement `The Empty Corridor` as the first complete multi-turn vertical slice.
-6. Generate the first three-perspective AAR.
-7. Add scenarios one mechanism at a time: overlapping causes, logistics deception, counter-recon, then repeated-encounter adaptation.
-8. Archive the Godot prototype after the headless characterization tests pass.
+The standalone solution, deterministic engine, first vertical slice, artifacts, AAR, and focused tests now exist. See [Implementation Status](implementation-status.md) for the verified inventory and next priorities.

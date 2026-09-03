@@ -1,5 +1,7 @@
 # Hidden Logistics Example
 
+> Status: Illustrative future example. Full logistics systems are outside Prototype 0.
+
 ## Purpose
 
 This example demonstrates how logistics can be more important than frontline forces.

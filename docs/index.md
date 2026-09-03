@@ -1,23 +1,49 @@
-# ProjectSignal Docs Index
+# ProjectSignal Documentation
 
-[Headless Simulation Design](headless-simulation-design.md)
+> Status: Current navigation index.
 
-[Design Summary](design/design-summary.md)
+Start with [Documentation Guide](documentation-guide.md) for authority and maintenance rules.
 
-[Design Principles](design/design-principles.md)
+## North Star
 
-[Information Model](information-model.md)
+* [ProjectSignal North Star](north-star.md) - enduring product identity and design tests.
+* [Design Summary](design/design-summary.md) - one-page orientation.
+* [Design Principles](design/design-principles.md) - concise guardrails derived from the north star.
 
-[World & Ecology](design/desing-world-and-ecology.md)
+## Current Specifications
 
-[Human Faction](design/design-factions-human.md)
+* [Prototype 0 Specification](prototype-spec.md) - active scope and acceptance criteria.
+* [Headless Simulation Design](headless-simulation-design.md) - rationale for the headless pivot and initial design.
+* [Technical Architecture](technical-architecture.md) - runtime boundaries and dependency direction.
+* [Information Model](information-model.md) - objective events, signatures, observations, reports, and interpretations.
+* [Operational Turn Model](operational-turn-model.md) - deterministic WEGO phases and timing.
+* [Replay System](replay-system.md) - chronological records, artifacts, and AAR requirements.
+* [Scenario Design](scenario-design.md) - scenario standard and current catalog.
 
-[Alien Faction](design/design-factions-alien.md)
+## Project State
 
-[Mobility](mobility-and-terrain.md)
+* [Implementation Status](implementation-status.md) - verified current behavior and immediate priorities.
+* [Prototype Roadmap](prototype-roadmap.md) - planned sequence after Prototype 0.
+* [Open Questions](open-questions.md) - resolved and deferred decisions.
+* [Non-Goals](non-goals.md) - explicit product exclusions.
 
-[Recon & Deception](design/design-deception-and-recon.md)
+## Future Design References
 
-[Examples](examples/)
+These documents explore later systems. They are directional, not current implementation commitments.
 
-[Prototype Roadmap](prototype-roadmap.md)
+* [Human Faction](design/design-factions-human.md)
+* [Alien Faction](design/design-factions-alien.md)
+* [World and Ecology](design/design-world-and-ecology.md)
+* [Mobility and Terrain](mobility-and-terrain.md)
+* [Deception and Reconnaissance](design/design-deception-and-recon.md)
+
+## Illustrative Examples
+
+Examples demonstrate possible information problems but do not define current mechanics.
+
+* [Decoy](examples/decoy-example.md)
+* [False Positive](examples/false-positive-example.md)
+* [Hidden Logistics](examples/hidden-logistics-example.md)
+* [Human and Alien Scouting](examples/human-vs-alien-scouting.md)
+* [Replay](examples/replay-example.md)
+* [Titan Discovery](examples/titan-discovery-example.md)

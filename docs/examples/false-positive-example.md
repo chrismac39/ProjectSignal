@@ -1,5 +1,7 @@
 # False Positive Example
 
+> Status: Illustrative future example. This is not an implemented scenario contract.
+
 ## Purpose
 
 This example demonstrates that not every observation is meaningful.

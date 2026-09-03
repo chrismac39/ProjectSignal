@@ -1,5 +1,7 @@
 # Human Faction
 
+> Status: Future design reference. This defines long-term faction identity, not implemented Prototype 0 systems.
+
 ## Purpose
 
 The Human Faction represents an industrial expeditionary civilization arriving on an inhabited and poorly understood world.
@@ -171,7 +173,7 @@ Logistics are a strategic asset rather than a background mechanic.
 
 ## Civilization Made Visible
 
-Human power should have physical presence on the map.
+Human power should have physical presence in the simulated world.
 
 Examples include:
 
@@ -209,7 +211,7 @@ Humans begin with incomplete understanding.
 
 Reconnaissance is necessary because:
 
-* The map is large.
+* The operational area is large.
 * The world is active.
 * Signals are ambiguous.
 * Ecological activity is constant.
@@ -327,11 +329,11 @@ The ecosystem generates uncertainty.
 
 ## Signals And Interpretation
 
-A signal is not information.
+A physical signature is a potentially detectable consequence in the world.
 
-A signal is an observation.
+An observation is evidence a human collector actually acquired from a signature.
 
-Information emerges when players interpret observations and act upon them.
+A report describes that observation in human terms. Meaning emerges when commanders interpret reports and act upon them.
 
 This principle is central to Project Signal.
 
@@ -408,7 +410,7 @@ Human expansion is a process of development.
 
 ## Frontier Regions
 
-Large portions of the map may remain:
+Large portions of the operational area may remain:
 
 * Poorly understood
 * Poorly monitored

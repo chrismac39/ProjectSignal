@@ -1,8 +1,10 @@
 # Human vs Alien Scouting Example
 
+> Status: Illustrative future example. General movement and scouting systems are not implemented in Prototype 0.
+
 ## Purpose
 
-This example shows the same area of the map being interpreted differently by each faction.
+This example shows the same operational area being interpreted differently by each faction.
 
 The goal is to demonstrate that humans and aliens follow the same intelligence loop:
 
@@ -43,7 +45,7 @@ The human commander sees:
 * No hostile contacts.
 * Wildlife movement slightly reduced near the forest.
 
-Human conclusion:
+Human working interpretation:
 
 The refinery is secure.
 
@@ -61,7 +63,7 @@ The alien intelligence sees:
 * Wildlife avoidance around the refinery.
 * Burrow scouts established in nearby forest.
 
-Alien conclusion:
+Alien working interpretation:
 
 A significant human industrial node exists in the valley.
 
@@ -97,7 +99,7 @@ Alien view:
 
 Mechanical disturbance increases.
 
-Alien confidence rises.
+The repeated disturbance corroborates the earlier report.
 
 ---
 
@@ -138,13 +140,13 @@ Alien action options:
 
 ## Design Lesson
 
-The human player was not defeated because the UI hid a warning.
+The human player was not defeated because the simulation hid evidence their collectors acquired.
 
-The human player was defeated because their version of the map was incomplete.
+The human player was defeated because their operational picture was incomplete.
 
 The alien player did not have perfect knowledge.
 
-The alien had a signal, chose to investigate, and built confidence over time.
+The alien had a signal, chose to investigate, and accumulated corroborating evidence over time.
 
 The core gameplay is not vision versus fog.
 

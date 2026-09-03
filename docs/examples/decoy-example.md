@@ -1,5 +1,7 @@
 # Decoy Example
 
+> Status: Illustrative future example. The described deception mechanics are not implemented in Prototype 0.
+
 ## Purpose
 
 This example demonstrates how deception works in ProjectSignal.

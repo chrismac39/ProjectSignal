@@ -1,5 +1,7 @@
 # Replay Example
 
+> Status: Illustrative future example. The current replay interface is a Markdown AAR and JSON Lines records.
+
 ## Purpose
 
 This example demonstrates the role of the Omniscient Replay.

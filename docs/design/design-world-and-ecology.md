@@ -1,5 +1,7 @@
 # World and Ecology
 
+> Status: Future design reference. Prototype 0 currently models only the ecological behavior required by its active scenario.
+
 ## Core Principle
 
 The world is not a backdrop.
@@ -42,13 +44,13 @@ The planet should never feel like empty terrain waiting for players.
 
 ## Large Operational Scale
 
-Maps represent operational rather than tactical space.
+The simulated geography represents operational rather than tactical space.
 
 Example target scale:
 
 * 100 km x 100 km
 
-The map should be large enough that:
+The operational area should be large enough that:
 
 * Reconnaissance matters.
 * Logistics matter.
@@ -62,7 +64,7 @@ Uncertainty is a feature, not a limitation.
 
 ## Geography Matters
 
-Maps should contain meaningful geographic features.
+Operational areas should contain meaningful geographic features.
 
 Examples:
 
@@ -238,7 +240,7 @@ A region that is dangerous for Humans may be relatively safe for Aliens.
 
 A region that is safe for Humans may be avoided by Aliens.
 
-The map is experienced differently by each faction.
+The same geography is understood differently by each faction.
 
 ---
 

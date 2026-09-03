@@ -1,12 +1,14 @@
 # Deception and Recon
 
+> Status: Future design reference. The active prototype has scripted collection but no general reconnaissance or deception system.
+
 ## Role in the Game
-Recon and deception are competing methods for shaping confidence under uncertainty.
+Reconnaissance acquires discriminating evidence. Deception shapes the signatures available to collect.
 
 ## Recon Principles
 - Both factions use Signal -> Investigation -> Confirmation.
-- Signals are leads, not proof.
-- Dedicated scouting can confirm or disprove signals.
+- Reports are leads, not proof.
+- Dedicated scouting can support, contradict, or narrow working interpretations.
 - Successful scouting generally does not alert the target.
 - Scout penetration of a decoy should not notify the decoy owner.
 
@@ -37,7 +39,7 @@ Recon and deception are competing methods for shaping confidence under uncertain
 
 ## Counter-Recon Behavior
 - Invest in dedicated scouting to penetrate decoys.
-- Use corroboration from multiple signal types before committing force.
+- Seek corroboration from multiple signature types before committing force.
 - Accept that some deception outcomes remain unknown until replay.
 
 ## Failure Case to Preserve

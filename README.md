@@ -12,14 +12,10 @@ Headless simulation design and Prototype 0 scaffolding.
 The authoritative runtime target is a deterministic .NET console application. The existing Godot project is retained only as historical prototype material while useful domain behavior is migrated.
 
 ## Documentation
-- [Headless Simulation Design](docs/headless-simulation-design.md)
-- [Design Principles](docs/design/design-principles.md)
-- [Information Model](docs/information-model.md)
-- [Technical Architecture](docs/technical-architecture.md)
-- [Mobility and Terrain](docs/mobility-and-terrain.md)
-- [Deception and Recon](docs/design/design-deception-and-recon.md)
-- [Replay System](docs/replay-system.md)
-- [Prototype Roadmap](docs/prototype-roadmap.md)
+- [Documentation Index](docs/index.md)
+- [ProjectSignal North Star](docs/north-star.md)
+- [Prototype 0 Specification](docs/prototype-spec.md)
+- [Implementation Status](docs/implementation-status.md)
 
 ## Runtime Layout
 

@@ -1,7 +1,11 @@
 # Information Model
 
+> Status: Current specification.
+
 ## Purpose
 Define how knowledge is represented, updated, and acted on without giving players automated strategic recommendations.
+
+This document owns the vocabulary for the evidence pipeline. See [Technical Architecture](technical-architecture.md) for type boundaries and [North Star](north-star.md) for the design rationale.
 
 ## Battlefield Realities
 ### Omniscient Reality
@@ -59,6 +63,7 @@ Age is derived from observation and current turns. The system does not convert a
 
 ## Core Loop Mapping
 ### Signal
+- `Signal` is the player-facing loop concept: one or more delivered reports that create a lead. It is not a domain record type and is not synonymous with `PhysicalSignature`.
 - A lead appears, not proof.
 - Includes noise and ambiguity.
 - Should support multiple plausible explanations.
@@ -73,7 +78,7 @@ Age is derived from observation and current turns. The system does not convert a
 - Investigation tests hypotheses.
 
 ### Confirmation
-- Dedicated scouting or corroboration verifies or disproves.
+- Dedicated scouting or corroboration acquires evidence that can discriminate between explanations.
 - Confirmation means obtaining discriminating evidence, not filling a certainty meter.
 - Working interpretations can be supported, contradicted, or left unresolved.
 - Old reports remain historically true accounts of what was observed even when their interpretation changes.
@@ -118,5 +123,5 @@ Model natural and incidental events that can be misread:
 
 ## Cross-System Dependencies
 - Mobility and access constraints shape what can be investigated: see [Mobility and Terrain](mobility-and-terrain.md).
-- Decoys and counter-recon alter available evidence and interpretation: see [Deception and Recon](design/design-deception-and-recon.md).
+- Decoys and counter-recon alter available evidence and interpretation: see [Deception and Reconnaissance](design/design-deception-and-recon.md).
 - Replay compares belief layers against truth: see [Replay System](replay-system.md).

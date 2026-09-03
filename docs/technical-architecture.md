@@ -1,5 +1,7 @@
 # Technical Architecture
 
+> Status: Current specification.
+
 ## Purpose
 
 ProjectSignal is organized to enforce one rule: faction decision code cannot access objective reality.
@@ -29,6 +31,8 @@ Owns WEGO orchestration:
 `Situation -> Orders -> Commit -> Execution -> Signatures -> Collection -> Interpretation -> Assessment -> Record`
 
 The simulation receives a scenario and scripted orders, advances one turn at a time, and returns a run record. Randomness is explicit and seeded. Stable identifiers and iteration order are required for deterministic output.
+
+See [Operational Turn Model](operational-turn-model.md) for the canonical phase and information-timing contract.
 
 ### Scenarios
 

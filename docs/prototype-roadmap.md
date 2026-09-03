@@ -1,5 +1,7 @@
 # Prototype Roadmap
 
+> Status: Current planning sequence. Only Milestone 0 is active.
+
 This roadmap keeps the headless simulation focused on information and asymmetric perception before combat or economy complexity.
 
 ## Milestone 0: Headless Information Loop
@@ -26,14 +28,14 @@ Prove that objective, human, and alien records can diverge for traceable reasons
 
 ## Milestone 1: Signal Loop Prototype
 ### Include
-- Report age, observation time, concrete source class, and collection conditions
-- Overlapping causes, missed collection, false positives, and noise
-- Scouting assets
-- Scripted working interpretations
-- Assessment of prior orders
+- At least one implemented overlapping-cause false positive
+- Delayed delivery and masked or missed collection
+- Reusable collector capabilities beyond scenario-specific filtering
+- Explicit report-to-observation provenance in artifacts
+- Assessment evidence linked to prior orders
 
 ### Exit Focus
-- The full Signal -> Investigation -> Confirmation -> Action -> Assessment loop is testable.
+- The full Signal -> Investigation -> Confirmation -> Action -> Assessment loop is testable across more than one scenario mechanism.
 
 ## Milestone 2: Human Logistics Skeleton
 ### Include

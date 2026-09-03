@@ -1,3 +1,7 @@
+# Mobility and Terrain
+
+> Status: Future design reference. No general terrain or movement model is implemented in Prototype 0.
+
 ## Ecological Access And Expansion
 
 Terrain is not the only factor determining mobility.
@@ -38,11 +42,11 @@ The ability to move is closely linked to the ability to understand the world.
 
 ---
 
-## Shared Geography, Different Maps
+## Shared Geography, Different Operational Pictures
 
 Humans and Aliens occupy the same physical world.
 
-However, they do not experience the same map.
+However, they do not understand or traverse it in the same way.
 
 Humans naturally perceive:
 
@@ -88,15 +92,15 @@ A core goal of asymmetric mobility is to create opportunities for surprise, infi
 
 ## Mobility And Signals
 
-Signals are constrained by mobility.
+Collection is constrained by mobility.
 
-A signal that cannot be investigated remains ambiguous.
+Evidence that cannot be reached or revisited may remain ambiguous.
 
 This creates a direct relationship between:
 
 * Movement
 * Reconnaissance
 * Decision making
-* Information quality
+* Available evidence
 
 Players should frequently face situations where a potentially important signal exists but reaching it requires significant time, risk, or resource commitment.

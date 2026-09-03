@@ -1,62 +1,54 @@
-# ProjectSignal Design Principles
+# Design Principles
+
+> Status: North-star companion. The [ProjectSignal North Star](../north-star.md) owns the full rationale.
 
 ## Central Thesis
-"Humans fight an intelligence war against an unknown biological system. Aliens fight an evolutionary war against an industrial system."
 
-## Project Scope
-ProjectSignal is a 2D operational command game focused on imperfect information, asymmetric perception, logistics, reconnaissance, deception, and adaptation.
+Humans fight an intelligence war against an unknown biological system.
+
+Aliens fight an evolutionary war against an industrial system.
 
 ## Core Loop
-Signal -> Investigation -> Confirmation -> Action -> Assessment
 
-## Core Principles
-1. Information is imperfect.
-2. Information decays over time.
-3. Attention is a strategic resource.
-4. Players interact with their version of the map.
-5. There is one battlefield but three realities: Human Reality, Alien Reality, and Omniscient Reality.
-6. The omniscient reality exists only for replay, spectating, development, and analysis.
-7. The game should present observations, not recommendations.
-8. The game should allow failure through oversight.
-9. The game should avoid reminder/checklist gameplay.
-10. The player should not be told "attack here" or "build this now".
-11. Postgame replay can reveal missed opportunities and wrong assumptions.
+`Signal -> Investigation -> Confirmation -> Action -> Assessment`
 
-## Signal Ambiguity Principle
-- Signals should not have a single obvious interpretation.
-- A good signal supports multiple plausible explanations.
-- Players generate hypotheses.
-- Players investigate hypotheses.
-- Players confirm or reject hypotheses.
-- The game should rarely provide certainty from a single observation.
+## Principles
 
-## Signal Variety Rule
-- Replayability should come primarily from different causes.
-- Replayability should come primarily from different world states.
-- Replayability should come primarily from different combinations of observations.
-- Replayability should not rely on large libraries of synonymous descriptions.
+1. There is one objective world and no faction has direct access to it.
+2. Factions receive observations and reports, not strategic conclusions.
+3. Human and alien asymmetry comes from access, expertise, vocabulary, mobility, and emitted signatures.
+4. A useful early observation supports more than one plausible cause.
+5. Uncertainty must follow from physical and informational causes, not arbitrary error rolls.
+6. Investigation costs time, access, attention, position, or exposure.
+7. Old reports remain immutable when later evidence changes their interpretation.
+8. Actions create signatures and can reveal intent to an opponent.
+9. The independent world creates meaningful events that are not disguised faction actions.
+10. Deception reproduces physical evidence imperfectly and at a cost.
+11. Replay reveals information gaps and consequences without scoring the player's judgment.
+12. Combat and economy remain subordinate to the information game.
 
-## Practical Constraints
-- Keep the prototype information-first: dots, shapes, overlays, and map readability over visual polish.
-- Do not design toward conventional RTS map control loops.
-- Do not re-skin industrial extraction into an alien equivalent.
-- Avoid deterministic certainty from a single signal.
+## Guardrails
 
-## What Victory Means
-- Victory is not primarily achieved by destroying the enemy.
-- Each faction pursues a distinct strategic objective.
-- Warfare exists to delay, disrupt, understand, and protect.
+Do not add:
 
-## Design Guardrails
-- Do not turn this into a conventional RTS.
-- Do not turn this into a Factorio-style optimization loop.
-- Do not turn this into a 4X map-control game.
+* Confidence, probability, reliability, importance, or threat ratings.
+* Automated recommendations or checklist-driven command play.
+* Perfect identification from a single generic observation.
+* Symmetric factions with biological and industrial nouns swapped.
+* Omniscient identifiers in faction-facing records.
+* Visualization dependencies in simulation logic.
+* Combat, production, or map-control systems before their information role is proven.
 
-## Related Documents
-- [Information Model](../information-model.md)
-- [Human Faction](design-factions-human.md)
-- [Alien Faction](design-factions-alien.md)
-- [Mobility and Terrain](../mobility-and-terrain.md)
-- [Deception and Recon](design-deception-and-recon.md)
-- [Replay System](../replay-system.md)
-- [Prototype Roadmap](../prototype-roadmap.md)
+## Scenario Test
+
+Before approving a scenario, identify:
+
+* The objective cause.
+* The signatures it physically creates.
+* The collection conditions available to each faction.
+* The plausible competing explanations.
+* The investigation that can distinguish them.
+* The consequential commitment made before complete confirmation.
+* The divergence the AAR will reveal.
+
+See [Scenario Design](../scenario-design.md) for the full standard.
