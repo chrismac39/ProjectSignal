@@ -150,7 +150,7 @@ Consumed by:
 
 ## Nutrients
 
-Represents the energy required to sustain alien systems.
+Represents the energy required to sustain Plastai systems.
 
 May originate from:
 
@@ -276,7 +276,7 @@ Plastai interaction with native life can include:
 * Acquiring genetic material for adaptations and Titan development.
 * Cultivating symbiotic species and trophic relationships.
 * Redirecting populations through chemical or ecological cues.
-* Protecting organisms that sustain alien infrastructure.
+* Protecting organisms that sustain Plastai infrastructure.
 * Suppressing predators, competitors, disease, or uncontrolled species.
 * Integrating exceptional organisms into direct command systems.
 
@@ -325,7 +325,7 @@ Vanguard intentions are not automatically known.
 
 Plastai observers may detect heat, vibration, waste, repetition, and habitat change while remaining unable to distinguish production from storage, maintenance from failure, or routine traffic from strategic preparation.
 
-Their collection advantage is local ecological context, not universal awareness. Living networks notice departures from familiar baselines, but provide poor coverage in sterile, distant, newly transformed, or biologically disconnected areas. Close investigation of industrial purpose requires time and exposure just as human ecological investigation does.
+Their collection advantage is local ecological context, not universal awareness. Living networks notice departures from familiar baselines, but provide poor coverage in sterile, distant, newly transformed, or biologically disconnected areas. Close investigation of industrial purpose requires time and exposure just as Vanguard ecological investigation does.
 
 ---
 
@@ -432,7 +432,7 @@ They represent:
 * Ecological disruption
 * Strategic risk
 
-The Plastai relationship with humanity is more complex than simple territorial conflict.
+The Plastai relationship with the future colony is more complex than simple territorial conflict.
 
 ---
 

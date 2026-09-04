@@ -130,7 +130,7 @@ Different interface architectures may change the exact dependency graph without 
 
 Vanguard victory occurs when the interface completes terminal commissioning and establishes secure connection.
 
-Future colonists, replacement personnel, and heavy equipment can now arrive reliably enough that the human presence is no longer a fragile isolated expedition. The Vanguard does not need to exterminate the Plastai or dominate every region.
+Future colonists, replacement personnel, and heavy equipment can now arrive reliably enough that the colonial presence is no longer a fragile isolated expedition. The Vanguard does not need to exterminate the Plastai or dominate every region.
 
 The game ends because the original strategic condition has changed, not because every future conflict is resolved.
 
@@ -235,7 +235,7 @@ The design must preserve:
 
 ## Decisions Still Open
 
-* The specific architecture of the first human planet-space interface.
+* The specific architecture of the first Vanguard planet-space interface.
 * The strategic ecological function chosen for the first Titan design.
 * The number and duration of terminal-crisis turns.
 * Whether partial project damage changes the completed capability if neutralization fails.

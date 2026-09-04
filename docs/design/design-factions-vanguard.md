@@ -4,7 +4,7 @@
 
 ## Purpose
 
-The Vanguard is the industrial advance force of a future human colonial effort arriving on an inhabited and poorly understood world.
+The Vanguard is the industrial advance force of a future colonial effort arriving on an inhabited and poorly understood world.
 
 Unlike the Plastai, Vanguard forces solve problems through technology, logistics, infrastructure, and organization.
 
@@ -24,7 +24,7 @@ The Vanguard is newly arrived.
 
 The planet existed long before their arrival.
 
-Humanity enters the world with:
+The arriving civilization enters the world with:
 
 * Limited knowledge
 * Limited infrastructure
@@ -64,7 +64,7 @@ Vanguard strength comes from organization and technology rather than ecological 
 
 The Vanguard arrives with incomplete knowledge.
 
-Prior to arrival, humanity possesses:
+Prior to arrival, the expedition's civilization possesses:
 
 * Orbital imagery
 * Spectral analysis
@@ -98,7 +98,7 @@ This requires:
 * Territorial expansion
 * Risk management
 
-The Vanguard's long-term objective is to secure humanity's future on the planet.
+The Vanguard's long-term objective is to secure the future colony on the planet.
 
 ---
 
@@ -169,7 +169,7 @@ Examples include:
 
 Logistics are a strategic asset rather than a background mechanic.
 
-There is no global human inventory. Material exists at extraction sites, production facilities, depots, carriers, and consuming units. Industrial ownership without physical delivery does not enable construction, movement, or fire.
+There is no global Vanguard inventory. Material exists at extraction sites, production facilities, depots, carriers, and consuming units. Industrial ownership without physical delivery does not enable construction, movement, or fire.
 
 ---
 
@@ -238,7 +238,7 @@ The challenge is deciding which observations deserve attention.
 
 The Vanguard compensates for weak ecological intuition with reach, instrumentation, and forensic depth.
 
-They can survey broad unfamiliar areas, preserve exact measurements, compare distant records, isolate compounds, dissect remains, and conduct intensive study of a selected site or specimen. These methods can reveal physical distinctions an alien ecological network does not naturally collect.
+They can survey broad unfamiliar areas, preserve exact measurements, compare distant records, isolate compounds, dissect remains, and conduct intensive study of a selected site or specimen. These methods can reveal physical distinctions a Plastai ecological network does not naturally collect.
 
 The tradeoff is commitment. Detailed Vanguard investigation often requires access, specialist time, equipment, logistics, and an observable presence. The Vanguard can learn deeply about one chosen problem while missing changes elsewhere.
 
@@ -248,7 +248,7 @@ The tradeoff is commitment. Detailed Vanguard investigation often requires acces
 
 ## Observations Rather Than Classifications
 
-Humans do not automatically understand the planet's life.
+Vanguard personnel do not automatically understand the planet's life.
 
 Vanguard systems report observations.
 
@@ -462,7 +462,7 @@ The Vanguard views the planet as:
 * A future home
 * A strategic opportunity
 
-The Vanguard seeks to understand and exploit the environment for humanity's future.
+The Vanguard seeks to understand and exploit the environment for the future colony.
 
 ---
 
@@ -505,7 +505,7 @@ See [World and Ecology](design-world-and-ecology.md) for the shared interaction 
 
 ## An Uncertain Presence
 
-The Vanguard does not begin with confirmed knowledge of an intelligent alien civilization.
+The Vanguard does not begin with confirmed knowledge of the Plastai civilization.
 
 Instead, Vanguard personnel encounter:
 

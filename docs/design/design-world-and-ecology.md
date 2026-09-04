@@ -53,7 +53,7 @@ The environment should be able to:
 
 ## Environmental Agency
 
-Each modeled species or process needs only enough behavior to create operational consequences. It does not need human-level planning.
+Each modeled species or process needs only enough behavior to create operational consequences. It does not need commander-level planning.
 
 Useful environmental drives include:
 
@@ -211,7 +211,7 @@ Resources are not universally faction-locked, but each faction has a primary con
 * The Plastai efficiently convert biomass, living relationships, nutrients, and genetic traits through harvest, cultivation, and growth.
 * Both may use water, territory, organisms, and captured opposing material, but doing so outside their native pathway is slower, narrower, or requires specialized capability.
 
-This is an asymmetry of systems and dependencies rather than an arbitrary prohibition. Vanguard personnel can farm native life, but cannot instantly integrate its genes into new units. A Plastai entity can disrupt or repurpose human material, but cannot automatically operate an industrial supply chain.
+This is an asymmetry of systems and dependencies rather than an arbitrary prohibition. Vanguard personnel can farm native life, but cannot instantly integrate its genes into new units. A Plastai entity can disrupt or repurpose Vanguard material, but cannot automatically operate an industrial supply chain.
 
 ---
 
@@ -251,7 +251,7 @@ Mining, water withdrawal, logging, fuel collection, and soil use alter habitat a
 
 ### Barriers and access control
 
-Fences, trenches, roads, culverts, lights, acoustic deterrents, and cleared corridors can protect infrastructure or redirect organisms. They can also divide migration routes, concentrate predators, create choke points, and expose human priorities.
+Fences, trenches, roads, culverts, lights, acoustic deterrents, and cleared corridors can protect infrastructure or redirect organisms. They can also divide migration routes, concentrate predators, create choke points, and expose Vanguard priorities.
 
 ### Capture and study
 
@@ -353,18 +353,18 @@ Geography should influence:
 
 ## Vanguard Taxonomy Blindness
 
-Humanity arrives with limited biological knowledge.
+The Vanguard arrives with limited biological knowledge.
 
-Prior to arrival, humans possess only:
+Prior to arrival, the Vanguard possesses only:
 
 * Orbital imagery
 * Spectral analysis
 * Atmospheric readings
 * Long-range observation
 
-Humans know the planet contains extensive life.
+The Vanguard knows the planet contains extensive life.
 
-Humans do not possess a complete biological catalog.
+The Vanguard does not possess a complete biological catalog.
 
 The Vanguard cannot automatically distinguish:
 
@@ -662,7 +662,7 @@ Important events should emerge naturally from interactions between:
 
 Examples:
 
-* A migration reveals an alien operation.
+* A migration reveals a Plastai operation.
 * A predator population disrupts reconnaissance.
 * A drought changes expansion priorities.
 * A dangerous species creates a temporary frontier.

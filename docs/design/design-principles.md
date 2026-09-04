@@ -16,7 +16,7 @@ The Plastai fight an evolutionary war against an industrial system.
 
 1. There is one objective world and no faction has direct access to it.
 2. Factions receive observations and reports, not strategic conclusions.
-3. Human and alien asymmetry comes from access, expertise, vocabulary, mobility, and emitted signatures.
+3. Vanguard and Plastai asymmetry comes from access, expertise, vocabulary, mobility, and emitted signatures.
 4. A useful early observation supports more than one plausible cause.
 5. Uncertainty must follow from physical and informational causes, not arbitrary error rolls.
 6. Investigation costs time, access, attention, position, or exposure.
