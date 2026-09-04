@@ -18,7 +18,7 @@ ProjectSignal is an operational command simulation about making consequential de
 
 **Vanguard** is the proper name of the human expeditionary faction. **Plastai** is the proper name of the native alien civilization whose members consciously shape living systems.
 
-Use these names for the organized command factions. Use **human** and **alien** when describing biology, expertise, artifacts, perspectives, or information-layer identifiers. Not every alien organism belongs to the Plastai, just as not every future human presence is part of the Vanguard.
+Use these names for organized command factions, commanders, players, units, actions, objectives, records, and information layers. Use **human** and **alien** only for biological or descriptive categories. Not every alien organism belongs to the Plastai, just as not every future human presence is part of the Vanguard.
 
 ## The Central Experience
 
@@ -37,7 +37,7 @@ The simulation succeeds when a decision is understandable from the evidence avai
 
 ### One world, unequal access
 
-There is one objective world state. Humans and aliens do not receive filtered copies of it. Each faction constructs its situation from evidence acquired through its own collectors, access, expertise, and reporting delays.
+There is one objective world state. The Vanguard and Plastai do not receive filtered copies of it. Each faction constructs its situation from evidence acquired through its own collectors, access, expertise, and reporting delays.
 
 ### Evidence is not a conclusion
 
@@ -45,7 +45,7 @@ The simulation presents observations and reports. It does not assign confidence,
 
 ### Asymmetry comes from ways of knowing
 
-Humans are fluent in industrial systems and comparatively weak at ecological interpretation. Aliens are fluent in ecological systems and comparatively weak at industrial interpretation.
+The Vanguard is fluent in industrial systems and comparatively weak at ecological interpretation. The Plastai are fluent in ecological systems and comparatively weak at industrial interpretation.
 
 The factions should differ in what distinctions they can perceive, what relationships they notice, how they move through the world, and what signatures their own activity creates. They should not be symmetric rulesets with renamed resources.
 
@@ -63,7 +63,7 @@ Wildlife, ecology, weather, terrain, and other processes create real events and 
 
 ProjectSignal is therefore a three-sided world with two command factions. Vanguard and Plastai commanders issue strategic orders. The environment has no unified commander or victory condition, but its organisms and systems act from their own drives and can oppose, assist, expose, or outlast either faction.
 
-Aliens are native and ecologically fluent, not owners of the biosphere. Humans are newcomers and industrially capable, not limited to passive observation. Both factions can observe, avoid, deter, fight, redirect, exploit, and protect environmental life. Their methods, costs, knowledge, and consequences differ.
+The Plastai are native and ecologically fluent, not owners of the biosphere. The Vanguard is newly arrived and industrially capable, not limited to passive observation. Both factions can observe, avoid, deter, fight, redirect, exploit, and protect environmental life. Their methods, costs, knowledge, and consequences differ.
 
 Alien control of an organism must be caused by a specific biological mechanism and paid for through collection, cultivation, or adaptation. Human alteration of an ecosystem must likewise be caused by physical activity such as extraction, fencing, clearance, containment, transport, or habitat modification.
 

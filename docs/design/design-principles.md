@@ -4,9 +4,9 @@
 
 ## Central Thesis
 
-Humans fight an intelligence war against an unknown biological system.
+The Vanguard fights an intelligence war against an unknown biological system.
 
-Aliens fight an evolutionary war against an industrial system.
+The Plastai fight an evolutionary war against an industrial system.
 
 ## Core Loop
 

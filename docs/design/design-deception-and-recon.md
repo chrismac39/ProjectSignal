@@ -13,14 +13,14 @@ Reconnaissance acquires discriminating evidence. Deception shapes the signatures
 - Scout penetration of a decoy should not notify the decoy owner.
 
 ## Signal Examples
-### Human-Oriented Signals
+### Vanguard-Oriented Signals
 - Wildlife anomalies
 - Thermal signatures
 - Sensor contacts
 - Destroyed outposts
 - Missing convoys
 
-### Alien-Oriented Signals
+### Plastai-Oriented Signals
 - Migration disruption
 - Ecological silence
 - Habitat collapse

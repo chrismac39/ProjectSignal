@@ -60,7 +60,7 @@ Objective IDs must not be reused as faction report IDs. Faction code must not co
 
 ## Environmental Actor Boundary
 
-`Faction` represents command and knowledge ownership and therefore remains `Human` or `Alien`. The environment should not be added as `Faction.Environment` because it does not submit strategic orders, receive reports, form a unified situation, or share knowledge.
+`Faction` represents command and knowledge ownership and therefore contains `Vanguard` and `Plastai`. Human and alien remain biological descriptors, not faction identifiers. The environment should not be added as `Faction.Environment` because it does not submit strategic orders, receive reports, form a unified situation, or share knowledge.
 
 Future autonomous-environment work should instead add objective-state concepts for environmental actors and processes. Those concepts need to represent:
 
@@ -109,7 +109,7 @@ Included:
 * Wildlife and one biological process
 * One human industrial or logistics process
 * Signatures, collection, and expertise-driven reports
-* Objective, human, and alien chronological records
+* Objective, Vanguard, and Plastai chronological records
 * Markdown AAR generation
 
 Excluded:

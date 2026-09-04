@@ -29,10 +29,10 @@ If an action consumes something, that thing has a physical source and operationa
 
 Examples include:
 
-* Human fuel in tanks, depots, vehicles, and convoys.
+* Vanguard fuel in tanks, depots, vehicles, and convoys.
 * Ammunition at factories, storage sites, transport columns, and firing units.
 * Structural material at extraction sites, refineries, staging areas, and construction zones.
-* Alien biomass in living populations, carcasses, harvest carriers, stores, and nurseries.
+* Plastai biomass in living populations, carcasses, harvest carriers, stores, and nurseries.
 * Genetic material in organisms, gathered specimens, living repositories, and developmental lines.
 * Nutrients and water moving through ecological or industrial networks.
 * Personnel, specialists, castes, and support organisms located where they perform work.
@@ -100,13 +100,13 @@ The opponent may see only part of this chain. A shipment can be detected without
 
 ### Vanguard condition
 
-Humans are the advance force for a future colonial presence. They possess sophisticated technology and external knowledge but begin with limited people, equipment, replacement parts, and local industrial depth.
+The Vanguard is the advance force for a future colonial presence. It possesses sophisticated technology and external knowledge but begins with limited people, equipment, replacement parts, and local industrial depth.
 
 Their initial weakness is isolation. Losses that would be routine for an established civilization may be strategically serious for the vanguard.
 
 ### Planet-space interface
 
-The canonical objective is a **planet-space interface**: infrastructure capable of supporting secure, sustained transfer between the surface and human space operations.
+The canonical objective is a **planet-space interface**: infrastructure capable of supporting secure, sustained transfer between the surface and Vanguard space operations.
 
 The exact architecture remains open. It may eventually be expressed as a heavy shuttle complex, orbital tether, space elevator, mass driver, or another physically plausible system appropriate to the setting.
 
@@ -126,11 +126,11 @@ A planet-space interface should require connected physical systems such as:
 
 Different interface architectures may change the exact dependency graph without changing the strategic objective.
 
-### Human victory meaning
+### Vanguard victory meaning
 
-Human victory occurs when the interface completes terminal commissioning and establishes secure connection.
+Vanguard victory occurs when the interface completes terminal commissioning and establishes secure connection.
 
-Future colonists, replacement personnel, and heavy equipment can now arrive reliably enough that the human presence is no longer a fragile isolated expedition. Humans do not need to exterminate aliens or dominate every region.
+Future colonists, replacement personnel, and heavy equipment can now arrive reliably enough that the human presence is no longer a fragile isolated expedition. The Vanguard does not need to exterminate the Plastai or dominate every region.
 
 The game ends because the original strategic condition has changed, not because every future conflict is resolved.
 
@@ -138,13 +138,13 @@ The game ends because the original strategic condition has changed, not because 
 
 ### Native but constrained
 
-Aliens begin integrated into the biosphere but remain vulnerable to predators, disease, climate, incompatible environments, ecological collapse, and limits on coordinated biological power.
+The Plastai begin integrated into the biosphere but remain vulnerable to predators, disease, climate, incompatible environments, ecological collapse, and limits on coordinated biological power.
 
 Their initial weakness is not isolation. It is that they remain one civilization operating inside environmental systems they understand but do not dominate.
 
 ### Conscious Titan design
 
-The Titan is an intentional strategic organism. Alien commanders choose a developmental objective and assemble a design through known biological capabilities.
+The Titan is an intentional strategic organism. Plastai commanders choose a developmental objective and assemble a design through known biological capabilities.
 
 Genetic assimilation can reveal unknown traits, symbioses, structures, or developmental pathways. Newly acquired possibilities may be incorporated into the Titan design, but they do not generate random automatic upgrades. Incorporation requires a design choice, compatible biology, physical genetic material or a maintained repository, nursery work, and time.
 
@@ -161,13 +161,13 @@ Titan development should require connected physical systems such as:
 
 The Titan's chosen design changes which dependencies matter and which signatures it creates.
 
-### Alien victory meaning
+### Plastai victory meaning
 
-Alien victory occurs when the Titan survives terminal maturation and becomes operational.
+Plastai victory occurs when the Titan survives terminal maturation and becomes operational.
 
-The mature Titan gives alien civilization a permanent advantage over the environment and enough strategic power to clear opposing forces from the operational world if the alien player chooses. Using that power to exterminate humans is optional and occurs after the victory condition has already been established.
+The mature Titan gives Plastai civilization a permanent advantage over the environment and enough strategic power to clear opposing forces from the operational world if the Plastai player chooses. Using that power to exterminate the Vanguard is optional and occurs after the victory condition has already been established.
 
-The Titan must therefore be more than a large combat unit. Its successful maturation changes what alien civilization can survive, control, and accomplish at planetary scale.
+The Titan must therefore be more than a large combat unit. Its successful maturation changes what Plastai civilization can survive, control, and accomplish at planetary scale.
 
 ## Escalating Legibility
 

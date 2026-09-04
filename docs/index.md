@@ -31,8 +31,8 @@ Start with [Documentation Guide](documentation-guide.md) for authority and maint
 
 These documents explore later systems. They are directional, not current implementation commitments.
 
-* [Vanguard](design/design-factions-human.md)
-* [Plastai](design/design-factions-alien.md)
+* [Vanguard](design/design-factions-vanguard.md)
+* [Plastai](design/design-factions-plastai.md)
 * [World and Ecology](design/design-world-and-ecology.md)
 * [Mobility and Terrain](mobility-and-terrain.md)
 * [Deception and Reconnaissance](design/design-deception-and-recon.md)
@@ -45,6 +45,6 @@ Examples demonstrate possible information problems but do not define current mec
 * [Decoy](examples/decoy-example.md)
 * [False Positive](examples/false-positive-example.md)
 * [Hidden Logistics](examples/hidden-logistics-example.md)
-* [Human and Alien Scouting](examples/human-vs-alien-scouting.md)
+* [Vanguard and Plastai Scouting](examples/vanguard-vs-plastai-scouting.md)
 * [Replay](examples/replay-example.md)
 * [Titan Discovery](examples/titan-discovery-example.md)

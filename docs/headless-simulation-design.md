@@ -14,9 +14,9 @@ The existing Godot prototype is historical validation work. It may be used as mi
 
 ProjectSignal is a command simulation about acting on incomplete, asymmetric, and sometimes misleading evidence.
 
-Humans fight an intelligence war against an unknown biological system.
+The Vanguard fights an intelligence war against an unknown biological system.
 
-Aliens fight an evolutionary war against an industrial system.
+The Plastai fight an evolutionary war against an industrial system.
 
 The simulation is not primarily about moving pieces. It is about how each side:
 
@@ -68,9 +68,9 @@ The simulation may model concrete physical quantities internally. It must not tu
 
 Faction expertise controls which distinctions can be observed and how evidence can be described. It does not apply an arbitrary accuracy percentage.
 
-Humans can distinguish industrial processes, machinery, emissions, communications, and logistics patterns more precisely than alien ecology.
+The Vanguard can distinguish industrial processes, machinery, emissions, communications, and logistics patterns more precisely than alien ecology.
 
-Aliens can distinguish biological state, ecological relationships, stress, migration, propagation, and habitat change more precisely than human industry.
+The Plastai can distinguish biological state, ecological relationships, stress, migration, propagation, and habitat change more precisely than human industry.
 
 Low expertise should produce coarser but still evidential descriptions. It must not automatically produce random falsehoods.
 

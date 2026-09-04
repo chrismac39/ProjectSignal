@@ -20,7 +20,7 @@ The planet possesses:
 
 The world continues functioning whether players interact with it or not.
 
-The battlefield emerges from the interaction of Humans, Aliens, and the environment.
+The battlefield emerges from the interaction of the Vanguard, the Plastai, and the environment.
 
 ---
 
@@ -73,7 +73,7 @@ Environmental behavior should be condition-driven rather than scripted as disgui
 
 ## Independence, Influence, And Control
 
-Native origin does not grant alien ownership. Industrial capability does not grant human mastery. Relationships with environmental organisms exist on a spectrum:
+Native origin does not grant Plastai ownership. Industrial capability does not grant Vanguard mastery. Relationships with environmental organisms exist on a spectrum:
 
 ### Independent
 
@@ -93,11 +93,11 @@ A faction invests in physical infrastructure or biological relationships that co
 
 ### Influenced
 
-Alien biology alters signaling, development, or behavior through an explicit mechanism. Influence may bias a species toward scouting, transport, defense, distraction, or resource production, but the mechanism has range, upkeep, and failure conditions.
+Plastai biology alters signaling, development, or behavior through an explicit mechanism. Influence may bias a species toward scouting, transport, defense, distraction, or resource production, but the mechanism has range, upkeep, and failure conditions.
 
 ### Directly controlled
 
-An organism is part of a faction's command system and can receive orders. This is exceptional. Alien castes and deliberately integrated organisms may qualify; ordinary wildlife does not. Direct control must be represented in objective state and produce physical signatures.
+An organism is part of a faction's command system and can receive orders. This is exceptional. Plastai castes and deliberately integrated organisms may qualify; ordinary wildlife does not. Direct control must be represented in objective state and produce physical signatures.
 
 The state must never change from independent to controlled merely because the Plastai have ecological expertise. Knowledge makes manipulation more precise; it does not replace mechanism or cost.
 
@@ -121,7 +121,7 @@ Every non-independent relationship states what sustains it and how it ends.
 * Attraction and redirection persist only while the altered incentive remains relevant.
 * Containment depends on maintained barriers, habitat, and supply.
 * Cultivation depends on the health of the managed ecological relationship.
-* Alien influence depends on a living mechanism, compatible organism, and continued biological support.
+* Plastai influence depends on a living mechanism, compatible organism, and continued biological support.
 * Direct integration may persist without continuous command contact, but damage, disease, adaptation, or severed support can degrade command response.
 
 Failure does not restore a neutral game piece. An escaped, starving, injured, displaced, or suddenly unguided organism resumes behavior from its resulting condition.
@@ -157,7 +157,7 @@ Direct environmental combat should use the same information rules as faction con
 
 The shared verbs should not collapse faction identity.
 
-| Interaction | Human method | Alien method |
+| Interaction | Vanguard method | Plastai method |
 | --- | --- | --- |
 | Observe | Remote sensors, samples, tags, patrols, telemetry | Chemical traces, symbiotic observers, ecological relationships, local organisms |
 | Avoid | Route planning, schedules, vehicles, hardened shelter | Ecological corridors, timing with biological cycles, adaptive forms |
@@ -177,13 +177,13 @@ When both factions use the same interaction verb, their methods should differ in
 3. **Limits and failure** - which organisms and conditions the method can affect.
 4. **Signatures** - what the action reveals to the opposing faction and environment.
 
-No faction should be generally better at environmental interaction. Humans tend toward broad remote collection, precise instruments, rapid physical intervention, and durable infrastructure. Aliens tend toward local ecological baseline awareness, subtle redirection, living systems, and adaptation. Human methods become costly away from logistics; alien methods become weak outside compatible ecologies and biological support.
+No faction should be generally better at environmental interaction. The Vanguard tends toward broad remote collection, precise instruments, rapid physical intervention, and durable infrastructure. The Plastai tend toward local ecological baseline awareness, subtle redirection, living systems, and adaptation. Vanguard methods become costly away from logistics; Plastai methods become weak outside compatible ecologies and biological support.
 
 ### Complementary collection strengths
 
-Environmental asymmetry includes access as well as interpretation, but it should not become universal alien information superiority.
+Environmental asymmetry includes access as well as interpretation, but it should not become universal Plastai information superiority.
 
-Humans tend to excel at:
+The Vanguard tends to excel at:
 
 * Broad-area remote surveys outside established ecological networks.
 * Precise physical and chemical measurement once a sample is acquired.
@@ -192,7 +192,7 @@ Humans tend to excel at:
 
 These methods can reach unfamiliar areas and produce exact measurements, but ground truth often requires exposed personnel, logistics, and deliberate tasking.
 
-Aliens tend to excel at:
+The Plastai tend to excel at:
 
 * Detecting departures from a familiar local ecological baseline.
 * Continuous sensing through established living relationships.
@@ -207,25 +207,25 @@ Scenario balance comes from which evidence matters, where it exists, and what ea
 
 Resources are not universally faction-locked, but each faction has a primary conversion pathway.
 
-* Humans efficiently convert minerals, fuels, water, land, and manufactured inputs through extraction, logistics, and industry.
-* Aliens efficiently convert biomass, living relationships, nutrients, and genetic traits through harvest, cultivation, and growth.
+* The Vanguard efficiently converts minerals, fuels, water, land, and manufactured inputs through extraction, logistics, and industry.
+* The Plastai efficiently convert biomass, living relationships, nutrients, and genetic traits through harvest, cultivation, and growth.
 * Both may use water, territory, organisms, and captured opposing material, but doing so outside their native pathway is slower, narrower, or requires specialized capability.
 
-This is an asymmetry of systems and dependencies rather than an arbitrary prohibition. A human can farm native life, but cannot instantly integrate its genes into new units. An alien can disrupt or repurpose human material, but cannot automatically operate an industrial supply chain.
+This is an asymmetry of systems and dependencies rather than an arbitrary prohibition. Vanguard personnel can farm native life, but cannot instantly integrate its genes into new units. A Plastai entity can disrupt or repurpose human material, but cannot automatically operate an industrial supply chain.
 
 ---
 
-## Alien Exploitation Of Life
+## Plastai Exploitation Of Life
 
-Alien ecological fluency enables unique biological uses, but aliens remain exploitative.
+Plastai ecological fluency enables unique biological uses, but the Plastai remain exploitative.
 
 ### Harvest
 
-Aliens may consume organisms or populations for biomass and nursery support. Harvest changes population structure, predator-prey relationships, movement, remains, and nutrient flow. Those changes create signatures that humans may observe without understanding the cause.
+The Plastai may consume organisms or populations for biomass and nursery support. Harvest changes population structure, predator-prey relationships, movement, remains, and nutrient flow. Those changes create signatures that the Vanguard may observe without understanding the cause.
 
 ### Genetic acquisition
 
-Aliens may collect biological material to unlock or refine adaptations. Acquisition should depend on access to particular organisms or traits, not an abstract universal research resource. Removing rare or ecologically important organisms may have consequences beyond the immediate gain.
+The Plastai may collect biological material to unlock or refine adaptations. Acquisition should depend on access to particular organisms or traits, not an abstract universal research resource. Removing rare or ecologically important organisms may have consequences beyond the immediate gain.
 
 ### Nursery cultivation
 
@@ -237,17 +237,17 @@ Titan growth may demand biomass, genetic diversity, ecological stability, or con
 
 ### Symbiosis without benevolence
 
-Aliens can sustain or protect species that serve them. That relationship may be mutually beneficial, coercive, selectively bred, or parasitic. Native status does not make alien action ecologically neutral.
+The Plastai can sustain or protect species that serve them. That relationship may be mutually beneficial, coercive, selectively bred, or parasitic. Native status does not make Plastai action ecologically neutral.
 
 ---
 
-## Human Exploitation Of Life And Habitat
+## Vanguard Exploitation Of Life And Habitat
 
-Human environmental interaction is not limited to suffering hazards.
+Vanguard environmental interaction is not limited to suffering hazards.
 
 ### Resource extraction
 
-Mining, water withdrawal, logging, fuel collection, and soil use alter habitat and ecological flows. Humans understand the industrial output precisely while often understanding indirect biological consequences poorly.
+Mining, water withdrawal, logging, fuel collection, and soil use alter habitat and ecological flows. The Vanguard understands the industrial output precisely while often understanding indirect biological consequences poorly.
 
 ### Barriers and access control
 
@@ -255,7 +255,7 @@ Fences, trenches, roads, culverts, lights, acoustic deterrents, and cleared corr
 
 ### Capture and study
 
-Humans may tag, contain, sample, breed, or study organisms to improve taxonomy and operational knowledge. Captivity can distort behavior, and a local sample may not explain a population-scale process.
+The Vanguard may tag, contain, sample, breed, or study organisms to improve taxonomy and operational knowledge. Captivity can distort behavior, and a local sample may not explain a population-scale process.
 
 ### Habitat engineering
 
@@ -263,7 +263,7 @@ Drainage, controlled burns, water management, contamination control, reserves, a
 
 ### Industrial domestication
 
-Humans may eventually use native organisms for food, materials, detection, transport, or environmental management. Domestication is slow, infrastructure-dependent, and distinct from alien biological integration.
+The Vanguard may eventually use native organisms for food, materials, detection, transport, or environmental management. Domestication is slow, infrastructure-dependent, and distinct from Plastai biological integration.
 
 ---
 
@@ -273,9 +273,9 @@ Environmental interaction should create chains, not isolated transactions.
 
 Examples:
 
-* Killing predators increases grazing pressure near a human route.
+* Killing predators increases grazing pressure near a Vanguard route.
 * Fencing protects a depot but funnels a migrating herd toward another facility.
-* Alien harvest deprives a nursery's symbiont of prey and changes its emitted chemistry.
+* Plastai harvest deprives a nursery's symbiont of prey and changes its emitted chemistry.
 * Protecting one species reveals what a faction values.
 * Resource extraction lowers water availability and makes normally separate populations converge.
 * Redirecting dangerous wildlife pushes it into the opposing faction's area, where it may be mistaken for deliberate attack.
@@ -342,8 +342,8 @@ Examples:
 
 Geography should influence:
 
-* Human logistics
-* Alien ecology
+* Vanguard logistics
+* Plastai ecology
 * Expansion
 * Mobility
 * Reconnaissance
@@ -351,7 +351,7 @@ Geography should influence:
 
 ---
 
-## Human Taxonomy Blindness
+## Vanguard Taxonomy Blindness
 
 Humanity arrives with limited biological knowledge.
 
@@ -366,16 +366,16 @@ Humans know the planet contains extensive life.
 
 Humans do not possess a complete biological catalog.
 
-Humans cannot automatically distinguish:
+The Vanguard cannot automatically distinguish:
 
 * Native wildlife
-* Alien castes
+* Plastai castes
 * Ecological disturbances
-* Alien biological infrastructure
+* Plastai biological infrastructure
 * Naturally occurring behavior
 * Artificially influenced behavior
 
-Human sensors detect observations rather than classifications.
+Vanguard sensors detect observations rather than classifications.
 
 Examples:
 
@@ -386,11 +386,11 @@ Examples:
 
 Not:
 
-* Alien scout detected
-* Alien soldier detected
-* Alien structure detected
+* Plastai scout detected
+* Plastai soldier detected
+* Plastai structure detected
 
-Humans observe phenomena and must infer causes.
+The Vanguard observes phenomena and must infer causes.
 
 ---
 
@@ -404,18 +404,18 @@ Movement detected:
 
 * Wildlife migration
 * Predator activity
-* Alien scout movement
+* Plastai scout movement
 
 Infrastructure damage:
 
 * Predator attack
 * Stampede
-* Alien assault
+* Plastai assault
 
 Population shifts:
 
 * Natural ecological change
-* Alien harvesting
+* Plastai harvesting
 * Environmental pressure
 
 Players should frequently ask:
@@ -461,7 +461,7 @@ Examples:
 * Migratory megafauna
 * Apex predators
 
-The ecosystem should feel rich enough that humans cannot realistically catalog everything.
+The ecosystem should feel rich enough that the Vanguard cannot realistically catalog everything.
 
 The existence of large numbers of species reinforces uncertainty.
 
@@ -489,16 +489,16 @@ Hostility is not universal.
 
 Some species may:
 
-* Threaten Humans only.
-* Threaten Aliens only.
+* Threaten the Vanguard only.
+* Threaten the Plastai only.
 * Threaten both factions.
 * Ignore both factions.
 
 This creates asymmetric geography.
 
-A region that is dangerous for Humans may be relatively safe for Aliens.
+A region that is dangerous for the Vanguard may be relatively safe for the Plastai.
 
-A region that is safe for Humans may be avoided by Aliens.
+A region that is safe for the Vanguard may be avoided by the Plastai.
 
 The same geography is understood differently by each faction.
 
@@ -523,9 +523,9 @@ These species may occasionally create meaningful strategic problems for either f
 
 ---
 
-## The Alien Relationship To The Ecosystem
+## The Plastai Relationship To The Ecosystem
 
-Aliens are native to the planet.
+The Plastai are native to the planet.
 
 They possess extensive ecological knowledge.
 
@@ -539,13 +539,13 @@ They understand:
 
 However, they are not masters of the ecosystem.
 
-The ecosystem continues functioning independently of alien desires.
+The ecosystem continues functioning independently of Plastai desires.
 
 Native organisms maintain their own behaviors and needs.
 
 ---
 
-## Alien Castes And Wildlife
+## Plastai Castes And Wildlife
 
 The Plastai possess directly controlled units.
 
@@ -557,15 +557,15 @@ The simulation knows the difference.
 
 The Vanguard generally does not.
 
-Alien Castes should blend naturally into the broader biosphere.
+Plastai Castes should blend naturally into the broader biosphere.
 
-Humans should not be able to reliably identify Alien Castes at long range through appearance alone.
+The Vanguard should not be able to reliably identify Plastai Castes at long range through appearance alone.
 
 ---
 
 ## Ecological Influence
 
-Any native species may be strategically relevant, but only biologically compatible species are candidates for alien influence or integration.
+Any native species may be strategically relevant, but only biologically compatible species are candidates for Plastai influence or integration.
 
 Influence is not magical.
 
@@ -606,9 +606,9 @@ Observation = Enemy
 
 ---
 
-## Human Relationship To The World
+## Vanguard Relationship To The World
 
-Humans view the planet as:
+The Vanguard views the planet as:
 
 * Terrain
 * Resources
@@ -616,13 +616,13 @@ Humans view the planet as:
 * Hazards
 * Unknown biological systems
 
-Humans seek to understand and exploit the environment.
+The Vanguard seeks to understand and exploit the environment.
 
 ---
 
-## Alien Relationship To The World
+## Plastai Relationship To The World
 
-Aliens view the planet as:
+The Plastai view the planet as:
 
 * Habitat
 * Nutrient flow
@@ -630,15 +630,15 @@ Aliens view the planet as:
 * Ecological connectivity
 * Biomass
 
-Aliens seek to harvest, influence, and reshape the ecosystem in service of the Titan.
+The Plastai seek to harvest, influence, and reshape the ecosystem in service of the Titan.
 
 ---
 
 ## Asymmetric Knowledge
 
-Humans understand industry and technology.
+The Vanguard understands industry and technology.
 
-Aliens understand ecology and biology.
+The Plastai understand ecology and biology.
 
 Neither faction possesses perfect information.
 
@@ -654,8 +654,8 @@ This asymmetry is central to Project Signal.
 
 Important events should emerge naturally from interactions between:
 
-* Humans
-* Aliens
+* Vanguard
+* Plastai
 * Wildlife
 * Geography
 * Climate

@@ -19,9 +19,11 @@ The goal is to prove the information model before implementing complex gameplay 
 
 ## Core Thesis
 
-Humans fight an intelligence war against an unknown biological system.
+The Vanguard fights an intelligence war against an unknown biological system.
 
-Aliens fight an evolutionary war against an industrial system.
+The Plastai fight an evolutionary war against an industrial system.
+
+`Vanguard` and `Plastai` are the proper names of the two command factions. Use `human` and `alien` only as biological or descriptive terms. Never use `Alien` as a faction identifier because independent alien organisms and environmental life are not automatically Plastai.
 
 ---
 
@@ -58,23 +60,23 @@ Do not add:
 
 The player must determine confidence, importance, and threat level themselves.
 
-Humans are strong at interpreting industrial systems and weak at interpreting ecological or alien biological systems.
+The Vanguard is strong at interpreting industrial systems and weak at interpreting ecological or alien biological systems.
 
-Aliens are strong at interpreting ecological systems and weak at interpreting industrial systems.
+The Plastai are strong at interpreting ecological systems and weak at interpreting industrial systems.
 
 The same World Event should produce different interpretations depending on faction expertise.
 
 Example:
 
 * Omniscient Reality: 10 herbivores migrated east.
-* Human Reality: Large animal movement observed.
-* Alien Reality: Docile herbivore migration detected.
+* Vanguard Reality: Large animal movement observed.
+* Plastai Reality: Docile herbivore migration detected.
 
 Example:
 
 * Omniscient Reality: Refinery online and producing fuel.
-* Human Reality: Refinery construction completed.
-* Alien Reality: Persistent industrial disturbance detected.
+* Vanguard Reality: Refinery construction completed.
+* Plastai Reality: Persistent industrial disturbance detected.
 
 ---
 
@@ -82,11 +84,11 @@ Example:
 
 The game contains:
 
-* Human Reality
-* Alien Reality
+* Vanguard Reality
+* Plastai Reality
 * Omniscient Reality
 
-Human Reality and Alien Reality are different interpretations of the same World State.
+Vanguard Reality and Plastai Reality are different interpretations of the same World State.
 
 Players never access Omniscient Reality during gameplay.
 
@@ -106,9 +108,9 @@ Prototype 0 must prove:
 * Wildlife entities
 * Deterministic WEGO turns
 * Objective events and physical signatures
-* Human and alien collection
+* Vanguard and Plastai collection
 * Faction-specific observations and reports
-* Objective, human, and alien chronological records
+* Objective, Vanguard, and Plastai chronological records
 * Human-readable after-action report
 
 Prototype 0 explicitly excludes:
@@ -138,7 +140,7 @@ Current priorities:
 * Objective event -> physical signature -> collection -> observation -> faction report pipeline
 * `The Empty Corridor` multi-turn vertical slice
 * JSON Lines technical artifacts
-* Markdown AAR comparing objective, human, and alien records
+* Markdown AAR comparing objective, Vanguard, and Plastai records
 
 ---
 

@@ -22,11 +22,11 @@ The replay should teach players without providing assistance during gameplay.
 
 ## Match Summary
 
-Human Objective:
+Vanguard Objective:
 
 Construct and launch an evacuation rocket.
 
-Alien Objective:
+Plastai Objective:
 
 Complete a Titan Organism and establish a mature ecosystem network.
 
@@ -36,12 +36,12 @@ Both sides interfere with each other because doing so improves their own chances
 
 ---
 
-## Human Understanding During The Match
+## Vanguard Understanding During The Match
 
-The human commander believes:
+The Vanguard commander believes:
 
-* The eastern refinery decoy is attracting alien attention.
-* The northern valley is likely the center of alien activity.
+* The eastern refinery decoy is attracting Plastai attention.
+* The northern valley is likely the center of Plastai activity.
 * The western logistics corridor is secure.
 * The Titan threat has been delayed significantly.
 
@@ -54,13 +54,13 @@ Based on these assumptions:
 
 ---
 
-## Alien Understanding During The Match
+## Plastai Understanding During The Match
 
-The alien commander believes:
+The Plastai commander believes:
 
 * The eastern refinery is a decoy.
-* The western logistics corridor supports critical human infrastructure.
-* Human attention is focused on the wrong region.
+* The western logistics corridor supports critical Vanguard infrastructure.
+* Vanguard attention is focused on the wrong region.
 * Titan development remains concealed.
 
 Based on these assumptions:
@@ -77,11 +77,11 @@ Based on these assumptions:
 The replay reveals:
 
 * The eastern refinery decoy was exposed several turns earlier.
-* The human commander never learned this.
-* The northern valley contained only minor alien activity.
+* The Vanguard commander never learned this.
+* The northern valley contained only minor Plastai activity.
 * The western logistics corridor supplied rocket construction.
-* Alien scouts correctly identified the dependency.
-* Human artillery repeatedly struck low-value targets.
+* Plastai scouts correctly identified the dependency.
+* Vanguard artillery repeatedly struck low-value targets.
 
 Neither commander possessed a complete picture.
 
@@ -139,7 +139,7 @@ The routes support rocket construction.
 
 ### Turn 44
 
-Alien raid destroys a logistics hub.
+Plastai raid destroys a logistics hub.
 
 Vanguard Reality:
 
@@ -179,7 +179,7 @@ The replay encourages questions such as:
 
 * Why did I believe the decoy was still working?
 * Why did I ignore the western corridor?
-* Why did the alien player prioritize that region?
+* Why did the Plastai player prioritize that region?
 * When did the Titan project become detectable?
 * What clues did I overlook?
 * Which assumptions were correct?

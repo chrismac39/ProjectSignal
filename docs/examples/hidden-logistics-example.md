@@ -6,9 +6,9 @@
 
 This example demonstrates how logistics can be more important than frontline forces.
 
-The human commander focuses on visible military strength.
+The Vanguard commander focuses on visible military strength.
 
-The alien commander focuses on dependency.
+The Plastai commander focuses on dependency.
 
 Neither commander possesses complete information.
 
@@ -16,13 +16,13 @@ Neither commander possesses complete information.
 
 ## Omniscient Reality
 
-The human military presence consists of:
+The Vanguard military presence consists of:
 
 * Northern artillery park.
 * Western sensor station.
 * Southern security outposts.
 
-The most important human asset is none of these.
+The most important Vanguard asset is none of these.
 
 The most important asset is a concealed ammunition depot located in a wooded valley.
 
@@ -53,7 +53,7 @@ Attention is focused on frontline operations.
 
 ## Plastai Reality
 
-The aliens observe:
+The Plastai observe:
 
 * Repeated convoy movement.
 * Persistent ecological disruption.
@@ -70,7 +70,7 @@ The activity appears significant.
 
 ### Turn 41
 
-Alien scouts detect repeated movement through a forest corridor.
+Plastai scouts detect repeated movement through a forest corridor.
 
 The pattern differs from normal environmental activity.
 
@@ -86,7 +86,7 @@ Additional scouts observe:
 * Consistent route usage.
 * Heavy ecological disturbance.
 
-The aliens conclude that the route is important.
+The Plastai conclude that the route is important.
 
 The reason remains unknown.
 
@@ -94,7 +94,7 @@ The reason remains unknown.
 
 ### Turn 45
 
-The alien player faces a choice:
+The Plastai player faces a choice:
 
 * Continue observing.
 * Attack the route.
@@ -111,7 +111,7 @@ The destination is identified.
 
 A hidden depot exists within the valley.
 
-The aliens still do not know exactly what the depot stores.
+The Plastai still do not know exactly what the depot stores.
 
 However, they determine it is strategically important.
 
@@ -145,7 +145,7 @@ No replacement supplies exist.
 
 The degradation has already begun.
 
-The human commander does not yet realize it.
+The Vanguard commander does not yet realize it.
 
 ---
 
@@ -171,7 +171,7 @@ It was a critical dependency.
 
 ## Alternative Outcome
 
-The aliens attack the artillery directly.
+The Plastai attack the artillery directly.
 
 Several guns are destroyed.
 
@@ -183,7 +183,7 @@ The overall impact is limited.
 
 ---
 
-The aliens attack the depot.
+The Plastai attack the depot.
 
 No artillery is destroyed.
 
@@ -203,11 +203,11 @@ A commander who misunderstands dependencies may defend the wrong locations.
 
 ## Replay View
 
-Human assumption:
+Vanguard assumption:
 
 The artillery park was the critical asset.
 
-Alien assumption:
+Plastai assumption:
 
 The convoy route indicated a critical dependency.
 
@@ -221,8 +221,8 @@ The replay reveals how both commanders interpreted the same battlefield differen
 
 ## Core Principle
 
-Humans depend on logistics.
+The Vanguard depends on logistics.
 
-Many human capabilities are only as strong as the supply networks supporting them.
+Many Vanguard capabilities are only as strong as the supply networks supporting them.
 
 The destruction of a dependency can be more important than the destruction of the capability itself.

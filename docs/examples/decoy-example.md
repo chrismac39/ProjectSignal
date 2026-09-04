@@ -24,7 +24,7 @@ The owner of a decoy usually does not know whether the deception succeeded.
 
 ## Omniscient Reality
 
-The human commander operates:
+The Vanguard commander operates:
 
 * A real ammunition depot in the western valley.
 * A real refinery in the south.
@@ -57,13 +57,13 @@ The commander sees:
 
 The commander knows which sites matter.
 
-The commander does not know what the aliens believe.
+The commander does not know what the Plastai believe.
 
 ---
 
 ## Plastai Reality
 
-Alien ecological sensing detects:
+Plastai ecological sensing detects:
 
 * Persistent heat.
 * Habitat disruption.
@@ -71,7 +71,7 @@ Alien ecological sensing detects:
 
 All three sites appear important.
 
-The alien player must decide where to investigate.
+The Plastai player must decide where to investigate.
 
 ---
 
@@ -93,9 +93,9 @@ The signal is real.
 
 ### Turn 33
 
-Alien scouts identify three suspicious locations.
+Plastai scouts identify three suspicious locations.
 
-The alien player cannot investigate all of them immediately.
+The Plastai player cannot investigate all of them immediately.
 
 A choice must be made.
 
@@ -103,7 +103,7 @@ A choice must be made.
 
 ### Turn 35
 
-An alien scout reaches the eastern basin.
+A Plastai scout reaches the eastern basin.
 
 Observation:
 
@@ -131,17 +131,17 @@ The refinery is likely a decoy.
 
 The scout withdraws.
 
-The alien player shifts attention elsewhere.
+The Plastai player shifts attention elsewhere.
 
-The human player receives no notification.
+The Vanguard player receives no notification.
 
 ---
 
-## Human Assumption
+## Vanguard Assumption
 
-The human commander continues believing:
+The Vanguard commander continues believing:
 
-The fake refinery is consuming alien attention.
+The fake refinery is consuming Plastai attention.
 
 Additional resources are invested into maintaining the deception.
 
@@ -151,9 +151,9 @@ Additional resources are invested into maintaining the deception.
 
 The deception has already been penetrated.
 
-The aliens are now observing the western valley.
+The Plastai are now observing the western valley.
 
-The human commander does not know this.
+The Vanguard commander does not know this.
 
 ---
 
@@ -161,7 +161,7 @@ The human commander does not know this.
 
 ### Decoy Success
 
-The alien player attacks the fake refinery.
+The Plastai player attacks the fake refinery.
 
 The real depot remains undiscovered.
 
@@ -171,7 +171,7 @@ The deception created strategic value.
 
 ### Partial Success
 
-The alien player eventually discovers the truth.
+The Plastai player eventually discovers the truth.
 
 Several turns of reconnaissance effort were consumed.
 
@@ -181,7 +181,7 @@ The deception still created value.
 
 ### Failure
 
-The alien player identifies the decoy quickly.
+The Plastai player identifies the decoy quickly.
 
 Little attention is wasted.
 
@@ -201,7 +201,7 @@ A decoy that consumes three turns of enemy attention may be more valuable than a
 
 ## Replay View
 
-Human assumption:
+Vanguard assumption:
 
 The fake refinery protected the western depot.
 
@@ -209,9 +209,9 @@ Plastai reality:
 
 The fake refinery was exposed on Turn 36.
 
-Alien reconnaissance shifted immediately afterward.
+Plastai reconnaissance shifted immediately afterward.
 
-The human commander never learned this during the match.
+The Vanguard commander never learned this during the match.
 
 Only the replay reveals the true sequence of events.
 

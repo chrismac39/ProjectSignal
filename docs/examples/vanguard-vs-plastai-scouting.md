@@ -1,4 +1,4 @@
-# Human vs Alien Scouting Example
+# Vanguard vs Plastai Scouting Example
 
 > Status: Illustrative future example. General movement and scouting systems are not implemented in Prototype 0.
 
@@ -6,7 +6,7 @@
 
 This example shows the same operational area being interpreted differently by each faction.
 
-The goal is to demonstrate that humans and aliens follow the same intelligence loop:
+The goal is to demonstrate that the Vanguard and Plastai follow the same intelligence loop:
 
 Signal
 → Investigation
@@ -19,17 +19,17 @@ but perceive different signals and draw different conclusions.
 
 ## Omniscient Reality
 
-A human refinery operates in a valley near a forested mountain range.
+A Vanguard refinery operates in a valley near a forested mountain range.
 
-The human commander believes the valley is secure because:
+The Vanguard commander believes the valley is secure because:
 
 * A forward base blocks the main road.
 * Artillery covers the southern approach.
 * The mountain range appears impassable to vehicles.
 
-However, alien scout organisms have entered the forest through a burrow network beneath the mountain.
+However, Plastai scout organisms have entered the forest through a burrow network beneath the mountain.
 
-The aliens have not attacked.
+The Plastai have not attacked.
 
 They are observing.
 
@@ -37,7 +37,7 @@ They are observing.
 
 ## Vanguard Reality
 
-The human commander sees:
+The Vanguard commander sees:
 
 * Refinery operational.
 * Forward base online.
@@ -45,7 +45,7 @@ The human commander sees:
 * No hostile contacts.
 * Wildlife movement slightly reduced near the forest.
 
-Human working interpretation:
+Vanguard working interpretation:
 
 The refinery is secure.
 
@@ -55,7 +55,7 @@ The reduced wildlife activity is noted but not prioritized.
 
 ## Plastai Reality
 
-The alien intelligence sees:
+The Plastai intelligence sees:
 
 * Habitat disruption.
 * Persistent heat.
@@ -63,9 +63,9 @@ The alien intelligence sees:
 * Wildlife avoidance around the refinery.
 * Burrow scouts established in nearby forest.
 
-Alien working interpretation:
+Plastai working interpretation:
 
-A significant human industrial node exists in the valley.
+A significant Vanguard industrial node exists in the valley.
 
 Exact function is unknown.
 
@@ -75,13 +75,13 @@ Exact function is unknown.
 
 ### Turn 12
 
-Alien detects ecological silence near the valley.
+The Plastai detect ecological silence near the valley.
 
 Signal:
 
-Possible human activity.
+Possible Vanguard activity.
 
-Alien action:
+Plastai action:
 
 Dispatch burrow scouts through the mountain network.
 
@@ -89,13 +89,13 @@ Dispatch burrow scouts through the mountain network.
 
 ### Turn 13
 
-Human logistics convoy reaches the refinery.
+Vanguard logistics convoy reaches the refinery.
 
-Human view:
+Vanguard view:
 
 Routine supply movement.
 
-Alien view:
+Plastai view:
 
 Mechanical disturbance increases.
 
@@ -105,9 +105,9 @@ The repeated disturbance corroborates the earlier report.
 
 ### Turn 14
 
-Alien scouts observe repeated traffic patterns.
+Plastai scouts observe repeated traffic patterns.
 
-Alien assessment:
+Plastai assessment:
 
 The site is probably not a minor outpost.
 
@@ -117,7 +117,7 @@ It may be fuel, production, or storage.
 
 ### Turn 15
 
-Human commander reallocates drones elsewhere.
+The Vanguard commander reallocates drones elsewhere.
 
 Reason:
 
@@ -127,9 +127,9 @@ No direct threat detected near refinery.
 
 ### Turn 16
 
-Alien confirms the refinery is important but does not yet know whether it is fuel, ammo, production, or command infrastructure.
+The Plastai confirm the refinery is important but do not yet know whether it is fuel, ammo, production, or command infrastructure.
 
-Alien action options:
+Plastai action options:
 
 * Continue observation.
 * Raid the convoy route.
@@ -140,13 +140,13 @@ Alien action options:
 
 ## Design Lesson
 
-The human player was not defeated because the simulation hid evidence their collectors acquired.
+The Vanguard player was not defeated because the simulation hid evidence their collectors acquired.
 
-The human player was defeated because their operational picture was incomplete.
+The Vanguard player was defeated because their operational picture was incomplete.
 
-The alien player did not have perfect knowledge.
+The Plastai player did not have perfect knowledge.
 
-The alien had a signal, chose to investigate, and accumulated corroborating evidence over time.
+The Plastai had a signal, chose to investigate, and accumulated corroborating evidence over time.
 
 The core gameplay is not vision versus fog.
 

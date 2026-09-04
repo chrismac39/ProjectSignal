@@ -8,11 +8,11 @@ The Vanguard is the industrial advance force of a future human colonial effort a
 
 Unlike the Plastai, Vanguard forces solve problems through technology, logistics, infrastructure, and organization.
 
-Humans do not possess deep ecological understanding.
+The Vanguard does not possess deep ecological understanding.
 
 They seek to establish the infrastructure and planet-space connection that will make future permanent settlement possible.
 
-The Human experience should emphasize planning, logistics, reconnaissance, and decision-making under incomplete information.
+The Vanguard experience should emphasize planning, logistics, reconnaissance, and decision-making under incomplete information.
 
 ---
 
@@ -20,7 +20,7 @@ The Human experience should emphasize planning, logistics, reconnaissance, and d
 
 ## An Expeditionary Civilization
 
-Humans are newcomers.
+The Vanguard is newly arrived.
 
 The planet existed long before their arrival.
 
@@ -43,9 +43,9 @@ Every operation requires planning and support.
 
 ## Industrial Rather Than Biological
 
-Humans project power through industry.
+The Vanguard projects power through industry.
 
-Human civilization creates:
+Vanguard civilization creates:
 
 * Roads
 * Railways
@@ -56,13 +56,13 @@ Human civilization creates:
 * Vehicles
 * Logistics hubs
 
-Human strength comes from organization and technology rather than ecological integration.
+Vanguard strength comes from organization and technology rather than ecological integration.
 
 ---
 
 ## The World Is Not Understood
 
-Humans arrive with incomplete knowledge.
+The Vanguard arrives with incomplete knowledge.
 
 Prior to arrival, humanity possesses:
 
@@ -71,14 +71,14 @@ Prior to arrival, humanity possesses:
 * Atmospheric readings
 * Long-range observation
 
-Humans know the planet contains:
+The Vanguard knows the planet contains:
 
 * Extensive ecosystems
 * Megaflora
 * Megafauna
 * Complex biological activity
 
-Humans do not possess a complete understanding of the world.
+The Vanguard does not possess a complete understanding of the world.
 
 The unknown is a persistent feature of gameplay.
 
@@ -88,7 +88,7 @@ The unknown is a persistent feature of gameplay.
 
 ## Establish A Permanent Presence
 
-Humans seek to transform a hostile and uncertain environment into a sustainable civilization.
+The Vanguard seeks to transform a hostile and uncertain environment into a sustainable civilization.
 
 This requires:
 
@@ -104,9 +104,9 @@ The Vanguard's long-term objective is to secure humanity's future on the planet.
 
 ## Expansion Through Development
 
-Humans do not expand through adaptation.
+The Vanguard does not expand through adaptation.
 
-Humans expand through investment.
+The Vanguard expands through investment.
 
 New territory becomes useful when:
 
@@ -124,7 +124,7 @@ Infrastructure is the foundation of expansion.
 
 ## Material Resources
 
-Human civilization depends upon physical resources extracted from the environment.
+Vanguard civilization depends upon physical resources extracted from the environment.
 
 Examples may include:
 
@@ -140,7 +140,7 @@ Specific resource implementations remain flexible.
 
 ## Personnel
 
-Humans rely upon people.
+The Vanguard relies upon people.
 
 Personnel may be required for:
 
@@ -150,7 +150,7 @@ Personnel may be required for:
 * Logistics
 * Security
 
-Human capabilities are constrained by available manpower.
+Vanguard capabilities are constrained by available manpower.
 
 ---
 
@@ -177,7 +177,7 @@ There is no global human inventory. Material exists at extraction sites, product
 
 ## Civilization Made Visible
 
-Human power should have physical presence in the simulated world.
+Vanguard power should have physical presence in the simulated world.
 
 Examples include:
 
@@ -189,7 +189,7 @@ Examples include:
 * Sensor stations
 * Settlements
 
-Human influence is visible and material.
+Vanguard influence is visible and material.
 
 ---
 
@@ -203,7 +203,7 @@ Infrastructure enables:
 * Information gathering
 * Military operations
 
-Humans become stronger by building systems rather than evolving new forms.
+The Vanguard becomes stronger by building systems rather than evolving new forms.
 
 ---
 
@@ -211,7 +211,7 @@ Humans become stronger by building systems rather than evolving new forms.
 
 ## Information Is Valuable
 
-Humans begin with incomplete understanding.
+The Vanguard begins with incomplete understanding.
 
 Reconnaissance is necessary because:
 
@@ -226,7 +226,7 @@ Information is a resource.
 
 ## Investigation Over Omniscience
 
-Human players should frequently encounter situations where:
+Vanguard players should frequently encounter situations where:
 
 * Something happened.
 * The cause is unknown.
@@ -234,23 +234,23 @@ Human players should frequently encounter situations where:
 
 The challenge is deciding which observations deserve attention.
 
-## Human Collection Advantage
+## Vanguard Collection Advantage
 
-Humans compensate for weak ecological intuition with reach, instrumentation, and forensic depth.
+The Vanguard compensates for weak ecological intuition with reach, instrumentation, and forensic depth.
 
 They can survey broad unfamiliar areas, preserve exact measurements, compare distant records, isolate compounds, dissect remains, and conduct intensive study of a selected site or specimen. These methods can reveal physical distinctions an alien ecological network does not naturally collect.
 
-The tradeoff is commitment. Detailed human investigation often requires access, specialist time, equipment, logistics, and an observable presence. Humans can learn deeply about one chosen problem while missing changes elsewhere.
+The tradeoff is commitment. Detailed Vanguard investigation often requires access, specialist time, equipment, logistics, and an observable presence. The Vanguard can learn deeply about one chosen problem while missing changes elsewhere.
 
 ---
 
-# Human Taxonomy Blindness
+# Vanguard Taxonomy Blindness
 
 ## Observations Rather Than Classifications
 
 Humans do not automatically understand the planet's life.
 
-Human systems report observations.
+Vanguard systems report observations.
 
 Examples:
 
@@ -260,15 +260,15 @@ Examples:
 * Infrastructure damage detected
 * Migration observed
 
-Humans do not automatically receive biological classifications.
+The Vanguard does not automatically receive biological classifications.
 
 Examples:
 
 Not:
 
-* Alien scout detected
-* Alien assault caste detected
-* Alien influence structure detected
+* Plastai scout detected
+* Plastai assault caste detected
+* Plastai influence structure detected
 
 Instead:
 
@@ -276,7 +276,7 @@ Instead:
 * Unusual activity detected
 * Coordinated movement observed
 
-Humans must infer causes from observations.
+The Vanguard must infer causes from observations.
 
 ---
 
@@ -290,21 +290,21 @@ Movement detected:
 
 * Wildlife migration
 * Predator activity
-* Alien reconnaissance
+* Plastai reconnaissance
 
 Infrastructure damage:
 
 * Predator attack
 * Stampede
-* Alien assault
+* Plastai assault
 
 Population shifts:
 
 * Seasonal change
 * Ecological disruption
-* Alien harvesting
+* Plastai harvesting
 
-Human decision-making occurs under uncertainty.
+Vanguard decision-making occurs under uncertainty.
 
 ---
 
@@ -312,7 +312,7 @@ Human decision-making occurs under uncertainty.
 
 ## Industrial Understanding
 
-Humans naturally understand:
+The Vanguard naturally understands:
 
 * Infrastructure
 * Logistics
@@ -320,13 +320,13 @@ Humans naturally understand:
 * Manufacturing
 * Resource extraction
 
-Human players can easily interpret industrial systems.
+Vanguard players can easily interpret industrial systems.
 
 ---
 
 ## Ecological Blindness
 
-Humans lack deep ecological knowledge.
+The Vanguard lacks deep ecological knowledge.
 
 They may struggle to interpret:
 
@@ -343,9 +343,9 @@ The ecosystem generates uncertainty.
 
 A physical signature is a potentially detectable consequence in the world.
 
-An observation is evidence a human collector actually acquired from a signature.
+An observation is evidence a Vanguard collector actually acquired from a signature.
 
-A report describes that observation in human terms. Meaning emerges when commanders interpret reports and act upon them.
+A report describes that observation in Vanguard industrial terms. Meaning emerges when commanders interpret reports and act upon them.
 
 This principle is central to Project Signal.
 
@@ -355,7 +355,7 @@ This principle is central to Project Signal.
 
 ## Infrastructure Mobility
 
-Humans project power through transportation networks.
+The Vanguard projects power through transportation networks.
 
 Examples include:
 
@@ -367,17 +367,17 @@ Examples include:
 
 Infrastructure determines operational reach.
 
-Humans operate primarily across the land surface, navigable surface water, and constructed or surveyed routes. Roads, rails, ports, bridges, runways, and cleared corridors convert terrain into dependable access.
+The Vanguard operates primarily across the land surface, navigable surface water, and constructed or surveyed routes. Roads, rails, ports, bridges, runways, and cleared corridors convert terrain into dependable access.
 
 Aircraft extend reach across terrain but remain logistical systems rather than unrestricted movement. They depend on bases, fuel, maintenance, weather, payload, range, and suitable information about destinations or targets.
 
-Humans may enter caves, deep water, or other hostile environments through specialized technology, but these are costly expeditions rather than default movement domains.
+The Vanguard may enter caves, deep water, or other hostile environments through specialized technology, but these are costly expeditions rather than default movement domains.
 
 ---
 
 ## Route Dependency
 
-Humans cannot instantly appear anywhere.
+The Vanguard cannot instantly appear anywhere.
 
 Operations depend upon:
 
@@ -390,7 +390,7 @@ Mobility is a strategic problem.
 
 ## Force Character
 
-Human forces are limited in number and expensive to replace, but can concentrate technology and ranged firepower.
+Vanguard forces are limited in number and expensive to replace, but can concentrate technology and ranged firepower.
 
 Their combat strengths include:
 
@@ -414,7 +414,7 @@ Examples include:
 * Migration corridors
 * Dangerous ecosystems
 
-Humans may possess technological solutions.
+The Vanguard may possess technological solutions.
 
 However, ecological barriers remain meaningful.
 
@@ -426,7 +426,7 @@ However, ecological barriers remain meaningful.
 
 Control alone is insufficient.
 
-Territory becomes valuable when connected to human systems.
+Territory becomes valuable when connected to Vanguard systems.
 
 Examples:
 
@@ -435,7 +435,7 @@ Examples:
 * Sensors deployed
 * Settlements established
 
-Human expansion is a process of development.
+Vanguard expansion is a process of development.
 
 ---
 
@@ -455,14 +455,14 @@ These regions generate uncertainty and opportunity.
 
 ## Resource And Opportunity
 
-Humans view the planet as:
+The Vanguard views the planet as:
 
 * A frontier
 * A source of resources
 * A future home
 * A strategic opportunity
 
-Humanity seeks to understand and exploit the environment.
+The Vanguard seeks to understand and exploit the environment for humanity's future.
 
 ---
 
@@ -477,13 +477,13 @@ Examples include:
 * Migration events
 * Natural disasters
 
-The planet can create challenges independent of alien activity.
+The planet can create challenges independent of Plastai activity.
 
 ## Industrial Environmental Interaction
 
-Humans can act deliberately on environmental systems even when they do not understand them fully.
+The Vanguard can act deliberately on environmental systems even when it does not understand them fully.
 
-Human methods include:
+Vanguard methods include:
 
 * Extracting minerals, water, fuels, fibers, and biological samples.
 * Building fences, trenches, roads, culverts, lighting, and cleared corridors.
@@ -491,23 +491,23 @@ Human methods include:
 * Establishing exclusion zones, reserves, controlled burns, and managed habitats.
 * Using native organisms for food, materials, research, detection, or environmental control.
 
-These methods are comparatively fast, legible to human logistics, and dependent on equipment and infrastructure. Their ecological effects may be delayed, indirect, or poorly understood.
+These methods are comparatively fast, legible to Vanguard logistics, and dependent on equipment and infrastructure. Their ecological effects may be delayed, indirect, or poorly understood.
 
-A fence is therefore not only a movement modifier. It can redirect migration, concentrate predation, identify what humans are protecting, and create a new line of disturbance that alien observers understand differently.
+A fence is therefore not only a movement modifier. It can redirect migration, concentrate predation, identify what the Vanguard is protecting, and create a new line of disturbance that Plastai observers understand differently.
 
-Resource extraction is similarly both production and communication. It changes traffic, sound, waste, water, habitat, and species behavior. Humans may know exactly what an operation produces while remaining unaware of what its ecological wake reveals.
+Resource extraction is similarly both production and communication. It changes traffic, sound, waste, water, habitat, and species behavior. The Vanguard may know exactly what an operation produces while remaining unaware of what its ecological wake reveals.
 
 See [World and Ecology](design-world-and-ecology.md) for the shared interaction model.
 
 ---
 
-# Relationship To Aliens
+# Relationship To The Plastai
 
 ## An Uncertain Presence
 
-Humans do not begin with confirmed knowledge of an intelligent alien civilization.
+The Vanguard does not begin with confirmed knowledge of an intelligent alien civilization.
 
-Instead, humans encounter:
+Instead, Vanguard personnel encounter:
 
 * Unusual observations
 * Biological anomalies
@@ -521,7 +521,7 @@ The existence, nature, and intentions of the Plastai may initially remain uncert
 
 ## Interpreting The Unknown
 
-Humans spend much of the game attempting to answer questions such as:
+Vanguard commanders spend much of the game attempting to answer questions such as:
 
 * What caused this event?
 * Is this natural?
@@ -537,9 +537,9 @@ The challenge is understanding the world.
 
 # Deception And Counter-Deception
 
-## Human Deception
+## Vanguard Deception
 
-Humans may deliberately create misleading signals.
+The Vanguard may deliberately create misleading signals.
 
 Examples:
 
@@ -549,15 +549,15 @@ Examples:
 * Sensor emissions
 * Fake expansion efforts
 
-Aliens must interpret these signals.
+The Plastai must interpret these signals.
 
 ---
 
 ## Vulnerability To Deception
 
-Humans are equally vulnerable to misinterpreting ecological activity.
+The Vanguard is equally vulnerable to misinterpreting ecological activity.
 
-Not every unusual observation represents alien action.
+Not every unusual observation represents Plastai action.
 
 This uncertainty should create meaningful strategic tension.
 
@@ -565,13 +565,13 @@ This uncertainty should create meaningful strategic tension.
 
 # Victory Philosophy
 
-Humans are the vanguard, not the completed colony.
+The Vanguard is not the completed colony.
 
 Their strategic objective is to construct and commission a planet-space interface that can support secure, sustained transfer for future colonists, replacement personnel, and heavy equipment.
 
 The exact structure remains open. A heavy shuttle complex, orbital tether, space elevator, mass driver, or another architecture may satisfy the role in a later scenario.
 
-Human victory means ending expeditionary isolation. It does not require exterminating aliens, controlling the whole planet, or resolving every environmental conflict.
+Vanguard victory means ending expeditionary isolation. It does not require exterminating the Plastai, controlling the whole planet, or resolving every environmental conflict.
 
 Final commissioning creates an unmistakable global signature and a bounded counter-operation window. If the interface remains physically supplied and operational through that crisis, the Vanguard wins.
 

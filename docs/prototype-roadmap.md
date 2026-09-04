@@ -42,11 +42,11 @@ Prove that objective, Vanguard, and Plastai records can diverge for traceable re
 - A small set of populations with independent drives
 - Condition-driven migration, avoidance, territorial, and predatory behavior
 - Shared faction interactions: observe, avoid, deter, contain, redirect, fight, exploit, and protect
-- One human habitat intervention and one alien biological intervention
+- One Vanguard habitat intervention and one Plastai biological intervention
 - Delayed ecological feedback visible in replay
 
 ### Exit Focus
-- Environmental actors initiate and propagate operational consequences without functioning as alien units or random event tables.
+- Environmental actors initiate and propagate operational consequences without functioning as Plastai units or random event tables.
 - Both factions can solve similar environmental problems through materially different methods.
 
 ## Milestone 3: Human Logistics Skeleton
@@ -69,7 +69,7 @@ Prove that objective, Vanguard, and Plastai records can diverge for traceable re
 - Alien signal interpretation of human disturbance
 
 ### Exit Focus
-- Alien growth depends on ecosystem state, not industrial extraction analogs.
+- Plastai growth depends on ecosystem state, not industrial extraction analogs.
 - Learned genetic possibilities remain distinct from material and nursery requirements.
 
 ## Milestone 5: Deception and Counter-Recon
@@ -104,7 +104,7 @@ Prove that objective, Vanguard, and Plastai records can diverge for traceable re
 - [Headless Simulation Design](headless-simulation-design.md)
 - [Design Principles](design/design-principles.md)
 - [Information Model](information-model.md)
-- [Vanguard](design/design-factions-human.md)
-- [Plastai](design/design-factions-alien.md)
+- [Vanguard](design/design-factions-vanguard.md)
+- [Plastai](design/design-factions-plastai.md)
 - [Strategic Objectives and Physical Economy](design/design-strategic-objectives-and-physical-economy.md)
 - [Replay System](replay-system.md)

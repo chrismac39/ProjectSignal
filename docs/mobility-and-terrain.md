@@ -18,9 +18,9 @@ Examples:
 
 These barriers may affect factions differently.
 
-A region that is dangerous for Humans may be relatively safe for Aliens.
+A region that is dangerous for the Vanguard may be relatively safe for the Plastai.
 
-A region that is safe for Humans may be avoided by Aliens.
+A region that is safe for the Vanguard may be avoided by the Plastai.
 
 Mobility is therefore influenced by both geography and ecology.
 
@@ -34,8 +34,8 @@ Mobility determines what information can be acquired and how quickly it can be v
 
 Examples:
 
-* A signal observed near a road may be investigated rapidly by Humans.
-* A signal observed deep within a forest ecosystem may be investigated rapidly by Aliens.
+* A signal observed near a road may be investigated rapidly by the Vanguard.
+* A signal observed deep within a forest ecosystem may be investigated rapidly by the Plastai.
 * A distant event may remain unresolved simply because neither faction can reach it in time.
 
 The ability to move is closely linked to the ability to understand the world.
@@ -44,7 +44,7 @@ The ability to move is closely linked to the ability to understand the world.
 
 ## Shared Geography, Different Operational Pictures
 
-Humans and Aliens occupy the same physical world.
+The Vanguard and Plastai occupy the same physical world.
 
 However, they do not understand or traverse it in the same way.
 
@@ -80,9 +80,9 @@ Each faction navigates a different strategic landscape despite sharing the same 
 
 Movement pathways create assumptions.
 
-Humans may assume an area is secure because it lacks road access.
+The Vanguard may assume an area is secure because it lacks road access.
 
-Aliens may assume an area is unimportant because ecological activity is minimal.
+The Plastai may assume an area is unimportant because ecological activity is minimal.
 
 Both assumptions can be exploited.
 

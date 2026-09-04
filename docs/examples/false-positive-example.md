@@ -20,9 +20,9 @@ A seasonal migration has begun.
 
 Thousands of large herbivores move from a northern basin into a central valley.
 
-No alien activity exists in the area.
+No Plastai activity exists in the area.
 
-No human activity exists in the area.
+No Vanguard activity exists in the area.
 
 The event is entirely natural.
 
@@ -43,7 +43,7 @@ The commander must decide what it means.
 Possible interpretations include:
 
 * Seasonal migration.
-* Alien feeding activity.
+* Plastai feeding activity.
 * Adaptation site development.
 * Something else entirely.
 
@@ -57,7 +57,7 @@ The migration is expected.
 
 The ecosystem is behaving normally.
 
-The alien player understands the movement immediately.
+The Plastai player understands the movement immediately.
 
 No action is taken.
 
@@ -89,13 +89,13 @@ No notifications explain why.
 
 ### Turn 24
 
-The human commander faces a choice:
+The Vanguard commander faces a choice:
 
 * Ignore it.
 * Monitor it.
 * Send scouts.
 * Divert reconnaissance assets.
-* Launch a strike on destination or source valley anticipating alien activity involved.
+* Launch a strike on destination or source valley anticipating Plastai activity.
 
 The game offers no recommendation.
 
@@ -167,7 +167,7 @@ Post-match replay reveals:
 
 The valley contained only a seasonal migration.
 
-No alien activity existed.
+No Plastai activity existed.
 
 The replay does not tell the player:
 

@@ -16,7 +16,7 @@ The example also demonstrates that discovering a strategic threat and destroying
 
 ## Omniscient Reality
 
-The aliens have begun developing a Titan Organism.
+The Plastai have begun developing a Titan Organism.
 
 The process requires:
 
@@ -58,14 +58,14 @@ Their meaning is unknown.
 
 ## Plastai Reality
 
-The alien player sees:
+The Plastai player sees:
 
 * Nutrient flows increasing.
 * Adaptation processes progressing.
 * Supporting ecosystems stabilizing.
 * Titan development advancing.
 
-The alien player understands exactly what is happening.
+The Plastai player understands exactly what is happening.
 
 Protecting the process becomes a strategic priority.
 
@@ -79,7 +79,7 @@ Wildlife populations begin shifting toward the region.
 
 The change is subtle.
 
-The human commander notices nothing unusual.
+The Vanguard commander notices nothing unusual.
 
 ---
 
@@ -136,7 +136,7 @@ No confirmation exists.
 
 ### Turn 37
 
-The commander suspects a significant alien presence.
+The commander suspects a significant Plastai presence.
 
 A long-range artillery barrage is ordered against the valley.
 
@@ -221,7 +221,7 @@ The valley is repeatedly shelled.
 
 Supporting ecosystems suffer significant damage.
 
-Alien development slows.
+Plastai development slows.
 
 However, the nursery survives.
 
@@ -255,11 +255,11 @@ Precision enables decisive action.
 
 ## Replay View
 
-Human perception:
+Vanguard perception:
 
 A series of unrelated ecological events that gradually appeared more suspicious.
 
-Alien perception:
+Plastai perception:
 
 A major strategic investment requiring protection and concealment.
 
