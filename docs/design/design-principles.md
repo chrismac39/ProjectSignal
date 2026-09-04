@@ -26,6 +26,12 @@ Aliens fight an evolutionary war against an industrial system.
 10. Deception reproduces physical evidence imperfectly and at a cost.
 11. Replay reveals information gaps and consequences without scoring the player's judgment.
 12. Combat and economy remain subordinate to the information game.
+13. Native life is not automatically part of the Plastai faction.
+14. Both factions interact with environmental life through shared operational verbs but faction-specific methods.
+15. Influence, domestication, containment, and direct control are distinct states with physical causes and observable consequences.
+16. Consumable resources, personnel, specimens, and construction inputs exist at physical locations and move through interruptible routes.
+17. Victory comes from completing a faction-specific strategic project, not requiring extermination.
+18. Final project completion creates an unmistakable signal and a bounded, physically justified counter-operation window.
 
 ## Guardrails
 
@@ -38,6 +44,8 @@ Do not add:
 * Omniscient identifiers in faction-facing records.
 * Visualization dependencies in simulation logic.
 * Combat, production, or map-control systems before their information role is proven.
+* Abstract resource pools that cannot be located, transported, intercepted, or destroyed.
+* Victory wonders that complete silently or resolve through an arbitrary countdown alone.
 
 ## Scenario Test
 

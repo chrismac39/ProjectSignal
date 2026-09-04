@@ -17,11 +17,16 @@ public sealed class RunArtifactWriter
     public string Write(SimulationRun run, string outputRoot)
     {
         var runDirectory = Path.Combine(outputRoot, run.ScenarioId);
+        if (Directory.Exists(runDirectory))
+        {
+            Directory.Delete(runDirectory, recursive: true);
+        }
+
         Directory.CreateDirectory(runDirectory);
 
         WriteJson(Path.Combine(runDirectory, "manifest.json"), new
         {
-            schemaVersion = 1,
+            schemaVersion = 2,
             engine = "ProjectSignal.Headless",
             run.ScenarioId,
             run.ScenarioTitle,
@@ -32,8 +37,8 @@ public sealed class RunArtifactWriter
         WriteJsonLines(Path.Combine(runDirectory, "orders.jsonl"), run.Turns.SelectMany(turn => turn.Orders));
         WriteJsonLines(Path.Combine(runDirectory, "objective-events.jsonl"), run.Turns.SelectMany(turn => turn.ObjectiveEvents));
         WriteJsonLines(Path.Combine(runDirectory, "signatures.jsonl"), run.Turns.SelectMany(turn => turn.Signatures));
-        WriteJsonLines(Path.Combine(runDirectory, "human-reports.jsonl"), run.Turns.SelectMany(turn => turn.HumanReports));
-        WriteJsonLines(Path.Combine(runDirectory, "alien-reports.jsonl"), run.Turns.SelectMany(turn => turn.AlienReports));
+        WriteJsonLines(Path.Combine(runDirectory, "vanguard-reports.jsonl"), run.Turns.SelectMany(turn => turn.VanguardReports));
+        WriteJsonLines(Path.Combine(runDirectory, "plastai-reports.jsonl"), run.Turns.SelectMany(turn => turn.PlastaiReports));
         WriteJsonLines(Path.Combine(runDirectory, "snapshots.jsonl"), run.Turns.Select(turn => turn.Snapshot));
         File.WriteAllText(Path.Combine(runDirectory, "aar.md"), BuildAar(run), Encoding.UTF8);
 
@@ -60,15 +65,15 @@ public sealed class RunArtifactWriter
         report.AppendLine();
         report.AppendLine("## Three-Perspective Timeline");
         report.AppendLine();
-        report.AppendLine("| Turn | Objective record | Human record | Alien record |");
+        report.AppendLine("| Turn | Objective record | Vanguard record | Plastai record |");
         report.AppendLine("| --- | --- | --- | --- |");
 
         foreach (var turn in run.Turns)
         {
             report.AppendLine(
                 $"| {turn.Turn} | {Cell(turn.ObjectiveEvents.Select(item => item.Summary))} " +
-                $"| {Cell(turn.HumanReports.Select(item => item.Description))} " +
-                $"| {Cell(turn.AlienReports.Select(item => item.Description))} |");
+                $"| {Cell(turn.VanguardReports.Select(item => item.Description))} " +
+                $"| {Cell(turn.PlastaiReports.Select(item => item.Description))} |");
         }
 
         report.AppendLine();
@@ -86,7 +91,7 @@ public sealed class RunArtifactWriter
         report.AppendLine();
         foreach (var turn in run.Turns)
         {
-            foreach (var interpretation in turn.HumanInterpretations.Concat(turn.AlienInterpretations))
+            foreach (var interpretation in turn.VanguardInterpretations.Concat(turn.PlastaiInterpretations))
             {
                 report.AppendLine($"- Turn {turn.Turn}, {interpretation.Faction}: {interpretation.Claim}");
             }

@@ -4,15 +4,19 @@
 
 ProjectSignal is a deterministic, headless operational command simulation about asymmetric perception.
 
-Humans fight an intelligence war against an unknown biological system.
+The Vanguard fights an intelligence war against an unknown biological system.
 
-Aliens fight an evolutionary war against an industrial system.
+The Plastai fight an evolutionary war against an industrial system.
 
 ## Core Loop
 
 `Signal -> Investigation -> Confirmation -> Action -> Assessment`
 
 One authoritative world produces objective events and physical signatures. Humans and aliens collect different subsets of those signatures and describe them through different expertise. Commanders act on faction reports and explicit working interpretations, never objective state.
+
+The world is strategically three-sided but has only two command factions. Independent organisms and ecological processes act from their own conditions. Humans and aliens both observe, avoid, fight, redirect, exploit, and protect environmental life through different methods.
+
+Future logistics remain physical: resources exist at places, move through interruptible routes, and are consumed by situated processes. The Vanguard ultimately seeks a sustained planet-space connection for colonists; the Plastai seek a consciously designed Titan that secures permanent ecological advantage. Either project's terminal phase becomes unmistakable and grants the opponent a bounded final counter-operation.
 
 ## Current Product
 
@@ -37,4 +41,5 @@ The first implemented scenario, `The Empty Corridor`, tests whether ecological a
 * [North Star](../north-star.md)
 * [Prototype 0 Specification](../prototype-spec.md)
 * [Scenario Design](../scenario-design.md)
+* [Strategic Objectives and Physical Economy](design-strategic-objectives-and-physical-economy.md)
 * [Implementation Status](../implementation-status.md)

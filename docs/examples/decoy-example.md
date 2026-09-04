@@ -47,7 +47,7 @@ Its purpose is to attract attention.
 
 ---
 
-## Human Reality
+## Vanguard Reality
 
 The commander sees:
 
@@ -61,7 +61,7 @@ The commander does not know what the aliens believe.
 
 ---
 
-## Alien Reality
+## Plastai Reality
 
 Alien ecological sensing detects:
 
@@ -205,7 +205,7 @@ Human assumption:
 
 The fake refinery protected the western depot.
 
-Alien reality:
+Plastai reality:
 
 The fake refinery was exposed on Turn 36.
 

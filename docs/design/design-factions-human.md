@@ -1,16 +1,16 @@
-# Human Faction
+# Vanguard
 
 > Status: Future design reference. This defines long-term faction identity, not implemented Prototype 0 systems.
 
 ## Purpose
 
-The Human Faction represents an industrial expeditionary civilization arriving on an inhabited and poorly understood world.
+The Vanguard is the industrial advance force of a future human colonial effort arriving on an inhabited and poorly understood world.
 
-Unlike the Alien Faction, Humans solve problems through technology, logistics, infrastructure, and organization.
+Unlike the Plastai, Vanguard forces solve problems through technology, logistics, infrastructure, and organization.
 
 Humans do not possess deep ecological understanding.
 
-They seek to expand, exploit resources, establish permanent settlements, and secure a future on the planet despite uncertainty.
+They seek to establish the infrastructure and planet-space connection that will make future permanent settlement possible.
 
 The Human experience should emphasize planning, logistics, reconnaissance, and decision-making under incomplete information.
 
@@ -31,7 +31,9 @@ Humanity enters the world with:
 * Limited personnel
 * Limited logistical reach
 
-The Human Faction must build its presence over time.
+The Vanguard must build its presence over time.
+
+The vanguard cannot assume immediate reinforcement. Its personnel, specialist teams, vehicles, and complex equipment are limited. Losses remain consequential until local industry and planet-space connection reduce that isolation.
 
 Expansion is not automatic.
 
@@ -96,7 +98,7 @@ This requires:
 * Territorial expansion
 * Risk management
 
-The Human Faction's long-term objective is to secure humanity's future on the planet.
+The Vanguard's long-term objective is to secure humanity's future on the planet.
 
 ---
 
@@ -167,6 +169,8 @@ Examples include:
 
 Logistics are a strategic asset rather than a background mechanic.
 
+There is no global human inventory. Material exists at extraction sites, production facilities, depots, carriers, and consuming units. Industrial ownership without physical delivery does not enable construction, movement, or fire.
+
 ---
 
 # Infrastructure
@@ -229,6 +233,14 @@ Human players should frequently encounter situations where:
 * Multiple explanations are plausible.
 
 The challenge is deciding which observations deserve attention.
+
+## Human Collection Advantage
+
+Humans compensate for weak ecological intuition with reach, instrumentation, and forensic depth.
+
+They can survey broad unfamiliar areas, preserve exact measurements, compare distant records, isolate compounds, dissect remains, and conduct intensive study of a selected site or specimen. These methods can reveal physical distinctions an alien ecological network does not naturally collect.
+
+The tradeoff is commitment. Detailed human investigation often requires access, specialist time, equipment, logistics, and an observable presence. Humans can learn deeply about one chosen problem while missing changes elsewhere.
 
 ---
 
@@ -355,6 +367,12 @@ Examples include:
 
 Infrastructure determines operational reach.
 
+Humans operate primarily across the land surface, navigable surface water, and constructed or surveyed routes. Roads, rails, ports, bridges, runways, and cleared corridors convert terrain into dependable access.
+
+Aircraft extend reach across terrain but remain logistical systems rather than unrestricted movement. They depend on bases, fuel, maintenance, weather, payload, range, and suitable information about destinations or targets.
+
+Humans may enter caves, deep water, or other hostile environments through specialized technology, but these are costly expeditions rather than default movement domains.
+
 ---
 
 ## Route Dependency
@@ -369,6 +387,19 @@ Operations depend upon:
 * Infrastructure quality
 
 Mobility is a strategic problem.
+
+## Force Character
+
+Human forces are limited in number and expensive to replace, but can concentrate technology and ranged firepower.
+
+Their combat strengths include:
+
+* Long-range direct and indirect fire.
+* Precision effects when collection and targeting are adequate.
+* Vehicles, aircraft, sensors, and engineered defenses.
+* Rapid concentration along prepared routes.
+
+Their firepower depends on ammunition, fuel, maintenance, communication, suitable firing positions, and target information. Cutting those dependencies should matter more than simply reducing a global combat value.
 
 ---
 
@@ -448,6 +479,26 @@ Examples include:
 
 The planet can create challenges independent of alien activity.
 
+## Industrial Environmental Interaction
+
+Humans can act deliberately on environmental systems even when they do not understand them fully.
+
+Human methods include:
+
+* Extracting minerals, water, fuels, fibers, and biological samples.
+* Building fences, trenches, roads, culverts, lighting, and cleared corridors.
+* Capturing, tagging, deterring, relocating, or destroying organisms.
+* Establishing exclusion zones, reserves, controlled burns, and managed habitats.
+* Using native organisms for food, materials, research, detection, or environmental control.
+
+These methods are comparatively fast, legible to human logistics, and dependent on equipment and infrastructure. Their ecological effects may be delayed, indirect, or poorly understood.
+
+A fence is therefore not only a movement modifier. It can redirect migration, concentrate predation, identify what humans are protecting, and create a new line of disturbance that alien observers understand differently.
+
+Resource extraction is similarly both production and communication. It changes traffic, sound, waste, water, habitat, and species behavior. Humans may know exactly what an operation produces while remaining unaware of what its ecological wake reveals.
+
+See [World and Ecology](design-world-and-ecology.md) for the shared interaction model.
+
 ---
 
 # Relationship To Aliens
@@ -464,7 +515,7 @@ Instead, humans encounter:
 * Infrastructure losses
 * Ecological disturbances
 
-The existence, nature, and intentions of the Alien Faction may initially remain uncertain.
+The existence, nature, and intentions of the Plastai may initially remain uncertain.
 
 ---
 
@@ -514,16 +565,14 @@ This uncertainty should create meaningful strategic tension.
 
 # Victory Philosophy
 
-Humans are not attempting to preserve the ecosystem.
+Humans are the vanguard, not the completed colony.
 
-Humans are attempting to establish civilization.
+Their strategic objective is to construct and commission a planet-space interface that can support secure, sustained transfer for future colonists, replacement personnel, and heavy equipment.
 
-Success is measured through:
+The exact structure remains open. A heavy shuttle complex, orbital tether, space elevator, mass driver, or another architecture may satisfy the role in a later scenario.
 
-* Expansion
-* Infrastructure
-* Resource security
-* Territorial control
-* Long-term sustainability
+Human victory means ending expeditionary isolation. It does not require exterminating aliens, controlling the whole planet, or resolving every environmental conflict.
 
-The Human Faction wins by transforming an uncertain frontier into a stable and enduring human presence.
+Final commissioning creates an unmistakable global signature and a bounded counter-operation window. If the interface remains physically supplied and operational through that crisis, the Vanguard wins.
+
+See [Strategic Objectives and Physical Economy](design-strategic-objectives-and-physical-economy.md) for the canonical future model.

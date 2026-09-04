@@ -39,7 +39,7 @@ It is resilient, concealed, and difficult to destroy without precise targeting i
 
 ---
 
-## Human Reality
+## Vanguard Reality
 
 The commander observes:
 
@@ -56,7 +56,7 @@ Their meaning is unknown.
 
 ---
 
-## Alien Reality
+## Plastai Reality
 
 The alien player sees:
 

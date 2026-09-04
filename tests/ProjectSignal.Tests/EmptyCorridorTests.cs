@@ -12,13 +12,13 @@ public sealed class EmptyCorridorTests
         var run = RunScenario();
 
         var firstTurn = run.Turns[0];
-        Assert.Single(firstTurn.HumanReports);
-        Assert.Equal(3, firstTurn.AlienReports.Count);
-        Assert.Contains(firstTurn.HumanReports, report =>
+        Assert.Single(firstTurn.VanguardReports);
+        Assert.Equal(3, firstTurn.PlastaiReports.Count);
+        Assert.Contains(firstTurn.VanguardReports, report =>
             report.Description.Contains("animal activity", StringComparison.Ordinal));
-        Assert.DoesNotContain(firstTurn.HumanReports, report =>
+        Assert.DoesNotContain(firstTurn.VanguardReports, report =>
             report.Description.Contains("nursery", StringComparison.OrdinalIgnoreCase));
-        Assert.Contains(firstTurn.AlienReports, report =>
+        Assert.Contains(firstTurn.PlastaiReports, report =>
             report.Description.Contains("Nursery root chemistry", StringComparison.Ordinal));
     }
 
@@ -29,13 +29,13 @@ public sealed class EmptyCorridorTests
         var thirdTurn = run.Turns[2];
 
         Assert.Contains(thirdTurn.Orders, order =>
-            order.Faction == Faction.Human && order.Kind == "RerouteConvoy");
+            order.Faction == Faction.Vanguard && order.Kind == "RerouteConvoy");
         Assert.Contains(thirdTurn.Orders, order =>
-            order.Faction == Faction.Alien && order.Kind == "ExtendTrailNetwork");
+            order.Faction == Faction.Plastai && order.Kind == "ExtendTrailNetwork");
         Assert.Contains(thirdTurn.Snapshot.ObjectiveFacts, fact =>
-            fact == "Human convoy rerouted west: True");
+            fact == "Vanguard convoy rerouted west: True");
         Assert.Contains(thirdTurn.Snapshot.ObjectiveFacts, fact =>
-            fact == "Alien network observed alternate route: True");
+            fact == "Plastai network observed alternate route: True");
     }
 
     [Fact]
@@ -58,7 +58,7 @@ public sealed class EmptyCorridorTests
             "confidence", "probability", "threat rating", "importance", "reliability", "recommend"
         };
         var reports = RunScenario().Turns
-            .SelectMany(turn => turn.HumanReports.Concat(turn.AlienReports));
+            .SelectMany(turn => turn.VanguardReports.Concat(turn.PlastaiReports));
 
         foreach (var report in reports)
         {
@@ -83,6 +83,11 @@ public sealed class EmptyCorridorTests
 
         try
         {
+            var staleRunDirectory = Path.Combine(outputRoot, "empty-corridor");
+            Directory.CreateDirectory(staleRunDirectory);
+            File.WriteAllText(Path.Combine(staleRunDirectory, "human-reports.jsonl"), "stale schema v1 artifact");
+            File.WriteAllText(Path.Combine(staleRunDirectory, "alien-reports.jsonl"), "stale schema v1 artifact");
+
             var runDirectory = new RunArtifactWriter().Write(RunScenario(), outputRoot);
             var expectedFiles = new[]
             {
@@ -90,24 +95,35 @@ public sealed class EmptyCorridorTests
                 "orders.jsonl",
                 "objective-events.jsonl",
                 "signatures.jsonl",
-                "human-reports.jsonl",
-                "alien-reports.jsonl",
+                "vanguard-reports.jsonl",
+                "plastai-reports.jsonl",
                 "snapshots.jsonl",
                 "aar.md"
             };
 
             Assert.All(expectedFiles, file => Assert.True(File.Exists(Path.Combine(runDirectory, file)), file));
+            Assert.False(File.Exists(Path.Combine(runDirectory, "human-reports.jsonl")));
+            Assert.False(File.Exists(Path.Combine(runDirectory, "alien-reports.jsonl")));
 
             var aar = File.ReadAllText(Path.Combine(runDirectory, "aar.md"));
             Assert.Contains("Three-Perspective Timeline", aar, StringComparison.Ordinal);
-            Assert.Contains("Humans observed ecological silence", aar, StringComparison.Ordinal);
+            Assert.Contains("The Vanguard observed ecological silence", aar, StringComparison.Ordinal);
             Assert.Contains("RerouteConvoy", aar, StringComparison.Ordinal);
+            Assert.Contains("| Vanguard |", aar, StringComparison.Ordinal);
+            Assert.Contains("| Plastai |", aar, StringComparison.Ordinal);
+            Assert.DoesNotContain("| Human |", aar, StringComparison.Ordinal);
+            Assert.DoesNotContain("| Alien |", aar, StringComparison.Ordinal);
 
             var signatureJson = File.ReadLines(Path.Combine(runDirectory, "signatures.jsonl")).First();
-            var humanReportJson = File.ReadLines(Path.Combine(runDirectory, "human-reports.jsonl")).First();
+            var vanguardReportJson = File.ReadLines(Path.Combine(runDirectory, "vanguard-reports.jsonl")).First();
+            var plastaiReportJson = File.ReadLines(Path.Combine(runDirectory, "plastai-reports.jsonl")).First();
             Assert.Contains("sourceEventId", signatureJson, StringComparison.Ordinal);
-            Assert.DoesNotContain("sourceEventId", humanReportJson, StringComparison.Ordinal);
-            Assert.Contains("\"faction\":\"Human\"", humanReportJson, StringComparison.Ordinal);
+            Assert.DoesNotContain("sourceEventId", vanguardReportJson, StringComparison.Ordinal);
+            Assert.Contains("\"faction\":\"Vanguard\"", vanguardReportJson, StringComparison.Ordinal);
+            Assert.Contains("\"faction\":\"Plastai\"", plastaiReportJson, StringComparison.Ordinal);
+
+            var manifestJson = File.ReadAllText(Path.Combine(runDirectory, "manifest.json"));
+            Assert.Contains("\"schemaVersion\":2", manifestJson, StringComparison.Ordinal);
         }
         finally
         {

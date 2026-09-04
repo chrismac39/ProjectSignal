@@ -41,6 +41,8 @@ Every substantial document should identify one of these statuses near its title:
 | WEGO phases and ordering | [Operational Turn Model](operational-turn-model.md) |
 | Records, artifacts, and AAR purpose | [Replay System](replay-system.md) |
 | Scenario quality and catalog | [Scenario Design](scenario-design.md) |
+| Environmental agency and faction interaction | [World and Ecology](design/design-world-and-ecology.md) |
+| Physical economy and long-term strategic objectives | [Strategic Objectives and Physical Economy](design/design-strategic-objectives-and-physical-economy.md) |
 | Completed and next work | [Implementation Status](implementation-status.md) |
 | Deferred decisions | [Open Questions](open-questions.md) |
 

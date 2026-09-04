@@ -31,11 +31,12 @@ Start with [Documentation Guide](documentation-guide.md) for authority and maint
 
 These documents explore later systems. They are directional, not current implementation commitments.
 
-* [Human Faction](design/design-factions-human.md)
-* [Alien Faction](design/design-factions-alien.md)
+* [Vanguard](design/design-factions-human.md)
+* [Plastai](design/design-factions-alien.md)
 * [World and Ecology](design/design-world-and-ecology.md)
 * [Mobility and Terrain](mobility-and-terrain.md)
 * [Deception and Reconnaissance](design/design-deception-and-recon.md)
+* [Strategic Objectives and Physical Economy](design/design-strategic-objectives-and-physical-economy.md)
 
 ## Illustrative Examples
 

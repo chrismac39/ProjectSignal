@@ -10,8 +10,8 @@ The replay is not merely a record of battlefield events.
 
 It is a comparison between:
 
-* Human Reality
-* Alien Reality
+* Vanguard Reality
+* Plastai Reality
 * Omniscient Reality
 
 The replay reveals where assumptions were correct, where they were incorrect, and how those assumptions influenced decisions.
@@ -91,11 +91,11 @@ Neither commander possessed a complete picture.
 
 ### Turn 28
 
-Human Reality:
+Vanguard Reality:
 
 The decoy appears successful.
 
-Alien Reality:
+Plastai Reality:
 
 The decoy has already been exposed.
 
@@ -107,11 +107,11 @@ Both commanders continue acting on different assumptions.
 
 ### Turn 34
 
-Human Reality:
+Vanguard Reality:
 
 The northern valley appears increasingly suspicious.
 
-Alien Reality:
+Plastai Reality:
 
 The northern valley is strategically unimportant.
 
@@ -123,11 +123,11 @@ The real activity is occurring elsewhere.
 
 ### Turn 39
 
-Human Reality:
+Vanguard Reality:
 
 Western supply routes appear routine.
 
-Alien Reality:
+Plastai Reality:
 
 The routes appear critical.
 
@@ -141,11 +141,11 @@ The routes support rocket construction.
 
 Alien raid destroys a logistics hub.
 
-Human Reality:
+Vanguard Reality:
 
 Unexpected attack.
 
-Alien Reality:
+Plastai Reality:
 
 Deliberate targeting of a known dependency.
 

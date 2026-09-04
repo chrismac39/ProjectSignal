@@ -36,7 +36,7 @@ If the depot is lost, the artillery remains intact but becomes ineffective over 
 
 ---
 
-## Human Reality
+## Vanguard Reality
 
 The commander sees:
 
@@ -51,7 +51,7 @@ Attention is focused on frontline operations.
 
 ---
 
-## Alien Reality
+## Plastai Reality
 
 The aliens observe:
 
@@ -125,7 +125,7 @@ The depot is destroyed.
 
 ---
 
-## Immediate Human Reality
+## Immediate Vanguard Reality
 
 The artillery remains operational.
 

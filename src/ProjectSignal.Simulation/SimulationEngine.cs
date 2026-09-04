@@ -9,61 +9,61 @@ public sealed class SimulationEngine
         var state = scenario.CreateInitialState(seed);
         var reports = new Dictionary<Faction, List<FactionReport>>
         {
-            [Faction.Human] = [],
-            [Faction.Alien] = []
+            [Faction.Vanguard] = [],
+            [Faction.Plastai] = []
         };
         var interpretations = new Dictionary<Faction, List<WorkingInterpretation>>
         {
-            [Faction.Human] = [.. scenario.CreateInitialInterpretations(Faction.Human)],
-            [Faction.Alien] = [.. scenario.CreateInitialInterpretations(Faction.Alien)]
+            [Faction.Vanguard] = [.. scenario.CreateInitialInterpretations(Faction.Vanguard)],
+            [Faction.Plastai] = [.. scenario.CreateInitialInterpretations(Faction.Plastai)]
         };
         var turns = new List<TurnRecord>();
 
         for (var turn = 1; turn <= scenario.TurnCount; turn++)
         {
-            var humanSituation = BuildSituation(Faction.Human, turn, reports, interpretations);
-            var alienSituation = BuildSituation(Faction.Alien, turn, reports, interpretations);
-            var orders = scenario.ChooseOrders(humanSituation)
-                .Concat(scenario.ChooseOrders(alienSituation))
+            var vanguardSituation = BuildSituation(Faction.Vanguard, turn, reports, interpretations);
+            var plastaiSituation = BuildSituation(Faction.Plastai, turn, reports, interpretations);
+            var orders = scenario.ChooseOrders(vanguardSituation)
+                .Concat(scenario.ChooseOrders(plastaiSituation))
                 .ToArray();
 
             ValidateOrders(turn, orders);
 
             var objective = scenario.Adjudicate(state, turn, orders);
-            var humanObservations = scenario.Collect(
+            var vanguardObservations = scenario.Collect(
                 state,
-                Faction.Human,
+                Faction.Vanguard,
                 turn,
                 objective.Signatures,
                 orders);
-            var alienObservations = scenario.Collect(
+            var plastaiObservations = scenario.Collect(
                 state,
-                Faction.Alien,
+                Faction.Plastai,
                 turn,
                 objective.Signatures,
                 orders);
-            var humanReports = humanObservations.Select(scenario.Interpret).ToArray();
-            var alienReports = alienObservations.Select(scenario.Interpret).ToArray();
+            var vanguardReports = vanguardObservations.Select(scenario.Interpret).ToArray();
+            var plastaiReports = plastaiObservations.Select(scenario.Interpret).ToArray();
 
-            reports[Faction.Human].AddRange(humanReports);
-            reports[Faction.Alien].AddRange(alienReports);
+            reports[Faction.Vanguard].AddRange(vanguardReports);
+            reports[Faction.Plastai].AddRange(plastaiReports);
 
-            interpretations[Faction.Human] = [.. scenario.UpdateInterpretations(
-                BuildSituation(Faction.Human, turn, reports, interpretations))];
-            interpretations[Faction.Alien] = [.. scenario.UpdateInterpretations(
-                BuildSituation(Faction.Alien, turn, reports, interpretations))];
+            interpretations[Faction.Vanguard] = [.. scenario.UpdateInterpretations(
+                BuildSituation(Faction.Vanguard, turn, reports, interpretations))];
+            interpretations[Faction.Plastai] = [.. scenario.UpdateInterpretations(
+                BuildSituation(Faction.Plastai, turn, reports, interpretations))];
 
             turns.Add(new TurnRecord(
                 turn,
                 orders,
                 objective.Events,
                 objective.Signatures,
-                humanObservations,
-                alienObservations,
-                humanReports,
-                alienReports,
-                [.. interpretations[Faction.Human]],
-                [.. interpretations[Faction.Alien]],
+                vanguardObservations,
+                plastaiObservations,
+                vanguardReports,
+                plastaiReports,
+                [.. interpretations[Faction.Vanguard]],
+                [.. interpretations[Faction.Plastai]],
                 scenario.CaptureSnapshot(state, turn)));
         }
 

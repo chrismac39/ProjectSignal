@@ -14,6 +14,7 @@ Every scenario states:
 
 * The design question being tested.
 * The objective situation and active world processes.
+* Which environmental actors have independent drives and how current conditions affect them.
 * Each faction's objective and prior assumptions.
 * Objective events and the physical signatures they create.
 * Available collectors and their collection conditions.
@@ -35,6 +36,9 @@ A strong scenario demonstrates:
 5. **No privileged narrator** - faction reports do not tell commanders what conclusion to draw.
 6. **Traceable divergence** - the AAR can connect beliefs to collection conditions and reports.
 7. **Counterfactual value** - at least one legal alternative investigation would have exposed different evidence.
+8. **Environmental agency** - scenarios that validate the autonomous environment must derive native behavior from environmental state and drives rather than treating wildlife as neutral scenery or undeclared alien units.
+
+Tests 1 through 7 apply to current information-loop scenarios. Test 8 becomes mandatory for the Autonomous Environment milestone. Earlier scenarios may use hand-authored ecological events, but must identify that limitation rather than claiming emergent behavior.
 
 Different wording alone does not satisfy faction asymmetry.
 
@@ -48,11 +52,13 @@ Design question: Can collection access and expertise cause both factions to make
 
 Objective reality: Alien nursery growth changes soil chemistry and displaces wildlife while humans prepare a convoy route through the same corridor.
 
-Human record: A remote survey finds unusual ecological silence. A later soil sample reveals an unfamiliar biological process but not its source, intent, or function.
+Vanguard record: A remote survey finds unusual ecological silence. A later soil sample reveals an unfamiliar biological process but not its source, intent, or function.
 
-Alien record: A nursery network recognizes the ecological sequence. Separate observation is needed to distinguish human route preparation from generic mechanical disturbance.
+Plastai record: A nursery network recognizes the ecological sequence. Separate observation is needed to distinguish Vanguard route preparation from generic mechanical disturbance.
 
 Commitment: Humans reroute the convoy at a time cost. Aliens extend observation toward the prepared route and discover the alternate passage after commitment.
+
+Current limitation: Nursery growth and wildlife displacement are hand-authored objective events. The scenario demonstrates environmental causality and asymmetric reporting, not autonomous population behavior.
 
 ## Next Scenario Tests
 
@@ -79,6 +85,34 @@ Tests biological mimicry and counter-reconnaissance. Harmless organisms reproduc
 Status: Designed, not implemented.
 
 Tests ambiguous industrial interruption. A failed pumping station appears to aliens as a stopped ecological pulse followed by concentrated human activity.
+
+### The Dividing Line
+
+Status: Designed, not implemented.
+
+Tests human environmental modification. Humans fence a depot corridor to prevent repeated megafauna intrusion. The barrier protects the depot but redirects a herd into a predator breeding area, displacing predators toward an alien nursery.
+
+Vanguard record: The fence performs its intended access-control function. Later telemetry shows fewer intrusions and unexplained predator activity beyond the monitored corridor.
+
+Plastai record: A migration path is abruptly severed, herd pressure enters a breeding territory, and predators move toward the nursery. Whether the barrier is habitat destruction, deliberate ecological attack, or protection of an unknown industrial dependency remains unresolved.
+
+Decision pressure: Humans can extend the barrier, open controlled crossings, or remove it. Aliens can defend the nursery, redirect predators, investigate the protected site, or exploit the displaced herd.
+
+AAR value: Reveals that neither faction ordered the predator movement. Human infrastructure changed environmental incentives and the environment propagated the consequence.
+
+### Harvest Wake
+
+Status: Designed, not implemented.
+
+Tests alien exploitation of independent life. Aliens selectively harvest mature burrowers for nursery material and genetic traits while leaving younger animals to preserve the population.
+
+Plastai record: Harvest yield, age structure, reproductive timing, and nursery benefit are legible. Predator pressure created by removing mature burrowers is a known but competing concern.
+
+Vanguard record: Burrow entrances remain occupied, but average movement mass drops, predators range farther, and soil turnover changes. Disease, seasonal die-off, industrial contamination, and deliberate harvesting all remain plausible.
+
+Decision pressure: Humans can sample remains, watch age distribution, track predators, or treat the change as a local hazard. Aliens can continue harvest, pause for recovery, protect juveniles, or accept population collapse for immediate growth.
+
+AAR value: Shows alien symbiosis and exploitation in the same system. The aliens preserve population continuity while extracting organisms, and the ecological wake exposes activity they may not realize humans can correlate.
 
 ### Lessons That Do Not Transfer
 

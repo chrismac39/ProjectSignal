@@ -14,31 +14,42 @@ Provide post-simulation truth so players and designers can compare objective eve
 ## Records
 ### Objective Record
 - True simulation events, signatures, orders, outcomes, and snapshots.
+- Includes the environmental causal thread: independent organism behavior, ecological processes, faction interventions, and resulting secondary effects.
 
-### Human Record
-- Reports and scripted working interpretations available to humans at each decision point.
+### Vanguard Record
+- Reports and scripted working interpretations available to the Vanguard at each decision point.
 
-### Alien Record
-- Reports and scripted working interpretations available to aliens at each decision point.
+### Plastai Record
+- Reports and scripted working interpretations available to the Plastai at each decision point.
+
+### Why There Is No Environment Record
+
+The environment is strategically a third force, not a third commander or knowledge owner. It has no shared observations, reports, or beliefs.
+
+The AAR should make environmental agency legible by identifying environmentally initiated events and tracing ecological cause-and-effect within the objective record. Vanguard and Plastai columns then show what each command faction observed about that same thread.
 
 ## Implemented Artifact Contract
 
 Each completed run currently writes:
 
-* `manifest.json` - schema version, engine label, scenario identity, seed, turn count, and status.
-* `orders.jsonl` - committed human and alien orders.
+* `manifest.json` - schema version 2, engine label, scenario identity, seed, turn count, and status.
+* `orders.jsonl` - committed Vanguard and Plastai orders.
 * `objective-events.jsonl` - authoritative events and summaries.
 * `signatures.jsonl` - physical signatures with objective source-event links.
-* `human-reports.jsonl` - reports delivered to humans.
-* `alien-reports.jsonl` - reports delivered to aliens.
+* `vanguard-reports.jsonl` - reports delivered to the Vanguard.
+* `plastai-reports.jsonl` - reports delivered to the Plastai.
 * `snapshots.jsonl` - objective facts at each turn boundary.
 * `aar.md` - three-perspective timeline, decisions, working interpretations, and findings.
 
 Records are written in stable chronological order. Faction report artifacts include faction-local IDs, observation and delivery turns, source class, location, description, and collection conditions. They do not expose objective event or signature IDs.
 
+Schema version 2 replaces the former `Human` and `Alien` faction values and report filenames with `Vanguard` and `Plastai`. Prototype artifacts are regenerated rather than migrated.
+
 ## Required Evolution
 
 The in-memory turn record contains observations and working interpretations, but the artifact writer does not yet serialize them as independent chronological logs. Explicit report-to-observation provenance, engine versioning, replay loading, and re-simulation from an artifact manifest remain future work.
+
+Environmental actor identity and event-origin classification are also future artifact work. The current `objective-events.jsonl` records event kind and summary but has no general actor-origin field.
 
 ## Analysis Use Cases
 - Identify missed opportunities.

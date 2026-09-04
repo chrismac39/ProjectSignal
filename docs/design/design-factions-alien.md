@@ -1,10 +1,10 @@
-# Alien Faction
+# Plastai
 
 > Status: Future design reference. Titans, resources, castes, expansion, and victory systems are outside Prototype 0.
 
 ## Purpose
 
-The Alien Faction represents a native intelligent species embedded within the planet's ecology.
+The Plastai are a native intelligent species and organized civilization embedded within the planet's ecology.
 
 Unlike Humans, Aliens do not build an industrial civilization.
 
@@ -22,11 +22,11 @@ They seek to consume, reshape, and ultimately harvest it.
 
 ## A Native Civilization
 
-The Alien Faction is not wildlife.
+The Plastai are not wildlife.
 
-The Alien Faction is not a collection of environmental hazards.
+The Plastai are not a collection of environmental hazards.
 
-The Alien Faction is a civilization.
+The Plastai are a civilization.
 
 It possesses:
 
@@ -89,6 +89,8 @@ However, they are not masters of nature.
 
 The ecosystem remains an independent force.
 
+Native organisms are not alien units by default. They retain their own drives, can threaten alien castes and nurseries, and may resist or disrupt attempted influence.
+
 ---
 
 # The Titan
@@ -127,6 +129,8 @@ Expansion is pursued to acquire:
 * Genetic diversity
 
 The world itself is a resource.
+
+The Titan is consciously designed toward a strategic function. Genetic assimilation can unlock unknown traits and developmental possibilities, but the alien commander chooses whether and how to incorporate them.
 
 ---
 
@@ -167,6 +171,10 @@ Used to unlock new adaptations and future caste forms.
 Genetic diversity is strategically valuable.
 
 Not all regions are equally valuable.
+
+Genetic material is physical. It exists in organisms, samples, living repositories, or maintained developmental lines and must reach a suitable nursery process.
+
+Learning that a trait is possible is knowledge, not a spendable genetic currency. Producing a form that uses the trait still requires compatible biological material, nursery capacity, support, and time.
 
 ---
 
@@ -218,7 +226,7 @@ without direct observation.
 
 ## Core Concept
 
-Aliens may influence any native species.
+Native species may offer opportunities for observation, harvest, redirection, cultivation, or integration.
 
 Influence is not magical.
 
@@ -230,11 +238,17 @@ Influence requires:
 
 Influence must have a physical presence within the simulation.
 
+Alien ecological expertise improves selection and manipulation. It does not grant remote command, automatic allegiance, or cost-free conversion.
+
+Influence can fail because the organism is incompatible, conditions disrupt the mechanism, upkeep lapses, the organism adapts, or an opposing intervention severs the relationship. Failed influence consumes effort and can expose alien presence through residue, abnormal behavior, or attempted habitat change.
+
 ---
 
-## Universal Potential
+## Broad Relevance, Limited Compatibility
 
-Any species may become:
+Native life is broadly relevant to alien strategy, but relevance does not imply compatibility with influence or control.
+
+A species may be valuable as:
 
 * A threat
 * A distraction
@@ -242,9 +256,7 @@ Any species may become:
 * A sensor network
 * A weapon
 
-The limitation is cost.
-
-Not eligibility.
+Depending on its biology, aliens may only be able to observe, avoid, deter, harvest, or protect it. Redirection requires a usable behavioral or ecological lever. Cultivation requires a sustainable relationship. Direct control is limited to compatible organisms with a dedicated integration mechanism.
 
 ---
 
@@ -254,13 +266,25 @@ Aliens cannot influence every species simultaneously.
 
 Players must prioritize opportunities.
 
-The strategic question is not:
+Alien commanders must ask both whether a useful relationship is biologically possible and whether establishing it is worth the opportunity cost.
 
-"Can this species be used?"
+## Exploitation And Symbiosis
 
-The strategic question is:
+Alien interaction with native life can include:
 
-"Is this species worth using right now?"
+* Harvesting organisms for biomass or nursery inputs.
+* Acquiring genetic material for adaptations and Titan development.
+* Cultivating symbiotic species and trophic relationships.
+* Redirecting populations through chemical or ecological cues.
+* Protecting organisms that sustain alien infrastructure.
+* Suppressing predators, competitors, disease, or uncontrolled species.
+* Integrating exceptional organisms into direct command systems.
+
+These relationships range from mutualism to predation. Aliens may preserve an ecosystem because it sustains them, then overharvest another because immediate growth matters more.
+
+Alien activity should create ecological wakes: changed populations, missing age groups, altered migration, chemical residue, new dependencies, and pressure elsewhere in the food web. Humans can observe those effects without correctly identifying harvest, cultivation, or adaptation as the cause.
+
+See [World and Ecology](design-world-and-ecology.md) for the shared interaction model and control-state distinctions.
 
 ---
 
@@ -299,6 +323,10 @@ Aliens must interpret those signals.
 
 Human intentions are not automatically known.
 
+Alien observers may detect heat, vibration, waste, repetition, and habitat change while remaining unable to distinguish production from storage, maintenance from failure, or routine traffic from strategic preparation.
+
+Their collection advantage is local ecological context, not universal awareness. Living networks notice departures from familiar baselines, but provide poor coverage in sterile, distant, newly transformed, or biologically disconnected areas. Close investigation of industrial purpose requires time and exposure just as human ecological investigation does.
+
 ---
 
 ## Signals And Interpretation
@@ -328,6 +356,12 @@ Examples include:
 * Biological corridors
 
 Alien mobility is tied to ecological connectivity rather than infrastructure.
+
+Every terrain may support an alien biological solution, including subterranean systems and subsurface aquatic environments. This does not mean every caste can traverse every terrain.
+
+Access requires specialized organisms, adaptations, support relationships, or developmental investment. A burrower, deep-water organism, flyer, climber, and toxic-environment symbiont each solve different access problems and carry limitations outside their niche.
+
+Alien terrain breadth is therefore potential breadth. Committing nursery capacity and genetic design to one access form creates opportunity costs elsewhere.
 
 ---
 
@@ -406,14 +440,12 @@ The Alien relationship with Humanity is more complex than simple territorial con
 
 Aliens are not attempting to build a larger nation-state.
 
-Aliens seek to transform the world.
+Their strategic objective is to consciously design and mature a Titan-scale organism capable of permanently changing their relationship with the environment.
 
-Success is measured through:
+The mature Titan gives alien civilization a lasting environmental advantage and enough strategic power to clear opposing forces from the world if the alien player chooses. Destroying humans is not required to achieve victory; that capability is a consequence of successful maturation.
 
-* Titan growth
-* Biological adaptation
-* Ecological control
-* Resource consumption
-* Long-term planetary transformation
+Titan development consumes physically gathered biomass, nutrients, genetic material, nursery capacity, support organisms, and time. Its chosen design determines the exact dependencies and ecological signatures.
 
-The Alien Faction wins by reshaping the future of the planet itself.
+Terminal maturation creates an unmistakable global signal and a bounded counter-operation window. If the Titan remains physically supported and survives that crisis, the Plastai win.
+
+See [Strategic Objectives and Physical Economy](design-strategic-objectives-and-physical-economy.md) for the canonical future model.

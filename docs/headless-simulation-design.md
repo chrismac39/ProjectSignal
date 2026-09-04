@@ -124,13 +124,13 @@ Every completed run produces three records.
 
 The objective record contains the initial state, committed orders, adjudicated events, generated signatures, actual outcomes, and authoritative snapshots. It is available only to replay analysis, tests, and debugging.
 
-### Human record
+### Vanguard record
 
-The human record contains only information delivered through human collection and interpretation. It uses human terminology and preserves report timing, source class, location precision, and observable details.
+The Vanguard record contains only information delivered through Vanguard collection and interpretation. It uses human industrial terminology and preserves report timing, source class, location precision, and observable details.
 
-### Alien record
+### Plastai record
 
-The alien record contains only information delivered through alien collection and interpretation. It uses alien terminology and preserves report timing, source class, location precision, and observable details.
+The Plastai record contains only information delivered through Plastai collection and interpretation. It uses Plastai ecological terminology and preserves report timing, source class, location precision, and observable details.
 
 Faction records are projections built from authorized observations. They are not filtered copies of the objective record.
 

@@ -4,7 +4,7 @@
 
 ## Objective
 
-Validate that one deterministic operational simulation can produce materially different, causally traceable human and alien understandings of the same objective events.
+Validate that one deterministic operational simulation can produce materially different, causally traceable Vanguard and Plastai understandings of the same objective events.
 
 ---
 
@@ -13,15 +13,17 @@ Validate that one deterministic operational simulation can produce materially di
 * Standalone `net8.0` console runtime
 * Deterministic scripted WEGO turns
 * One hand-authored operational area
-* Wildlife and an alien ecological process
-* One human route or industrial process
-* Human and alien collection capabilities
+* Wildlife and a Plastai ecological process
+* One Vanguard route or industrial process
+* Vanguard and Plastai collection capabilities
 * Objective events with one-to-many physical signatures
 * Faction-specific observations and reports
 * One investigation choice that distinguishes plausible causes
-* Immutable objective, human, and alien turn records
+* Immutable objective, Vanguard, and Plastai turn records
 * JSON Lines technical artifacts
 * Human-readable Markdown after-action report
+
+Environmental events may be hand-authored for Prototype 0, but their objective causes and signatures must remain explicit. Autonomous population behavior is deferred to the roadmap's environment milestone.
 
 ---
 
@@ -45,7 +47,7 @@ Validate that one deterministic operational simulation can produce materially di
 A completed scripted scenario can:
 
 1. Produce at least one objective event that creates several physical signatures.
-2. Deliver different evidence to human and alien collectors for causal reasons.
+2. Deliver different evidence to Vanguard and Plastai collectors for causal reasons.
 3. Present at least two plausible explanations for an early observation.
 4. Commit a consequential order before either side has complete information.
 5. Use later collection or assessment to distinguish some explanations without automatically revealing truth.

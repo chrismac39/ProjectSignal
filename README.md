@@ -4,7 +4,7 @@ ProjectSignal is a prototype codename.
 
 ProjectSignal is a headless operational command simulation about asymmetric perception, imperfect information, logistics, reconnaissance, deception, and adaptation.
 
-"Humans fight an intelligence war against an unknown biological system. Aliens fight an evolutionary war against an industrial system."
+"The Vanguard fights an intelligence war against an unknown biological system. The Plastai fight an evolutionary war against an industrial system."
 
 ## Status
 Headless simulation design and Prototype 0 scaffolding.

@@ -35,7 +35,7 @@ They are observing.
 
 ---
 
-## Human Reality
+## Vanguard Reality
 
 The human commander sees:
 
@@ -53,7 +53,7 @@ The reduced wildlife activity is noted but not prioritized.
 
 ---
 
-## Alien Reality
+## Plastai Reality
 
 The alien intelligence sees:
 

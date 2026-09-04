@@ -58,6 +58,22 @@ The runtime uses distinct types for each stage:
 
 Objective IDs must not be reused as faction report IDs. Faction code must not correlate reports through hidden shared identity.
 
+## Environmental Actor Boundary
+
+`Faction` represents command and knowledge ownership and therefore remains `Human` or `Alien`. The environment should not be added as `Faction.Environment` because it does not submit strategic orders, receive reports, form a unified situation, or share knowledge.
+
+Future autonomous-environment work should instead add objective-state concepts for environmental actors and processes. Those concepts need to represent:
+
+* Species or process identity in objective reality.
+* Local state and drives.
+* Relationships such as predation, competition, symbiosis, containment, influence, and direct control.
+* Conditions that trigger behavior or state transitions.
+* Objective events and physical signatures produced by environmental action.
+
+Directly controlled organisms belong to the controlling faction for order validation while retaining their biological identity in objective state. Influenced, attracted, cultivated, or contained organisms remain environmental actors.
+
+This model is not implemented in the current generic domain records. It is planned for the Autonomous Environment milestone and should be introduced through a focused scenario rather than a universal ecology framework.
+
 ## Dependency Direction
 
 `Scenarios -> Simulation -> Domain`
@@ -89,7 +105,7 @@ Included:
 
 * Deterministic multi-turn WEGO orchestration
 * Small hand-authored geography
-* Scripted human and alien orders
+* Scripted Vanguard and Plastai orders
 * Wildlife and one biological process
 * One human industrial or logistics process
 * Signatures, collection, and expertise-driven reports

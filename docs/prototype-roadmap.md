@@ -6,14 +6,14 @@ This roadmap keeps the headless simulation focused on information and asymmetric
 
 ## Milestone 0: Headless Information Loop
 ### Goal
-Prove that objective, human, and alien records can diverge for traceable reasons and affect scripted operational decisions.
+Prove that objective, Vanguard, and Plastai records can diverge for traceable reasons and affect scripted operational decisions.
 
 ### Include
 - Standalone .NET solution
 - Deterministic WEGO turn sequence
 - Hand-authored operational area
 - Objective events and physical signatures
-- Human and alien collection and reporting
+- Vanguard and Plastai collection and reporting
 - Scripted investigation and commitment
 - JSON Lines run records and Markdown AAR
 
@@ -37,26 +37,42 @@ Prove that objective, human, and alien records can diverge for traceable reasons
 ### Exit Focus
 - The full Signal -> Investigation -> Confirmation -> Action -> Assessment loop is testable across more than one scenario mechanism.
 
-## Milestone 2: Human Logistics Skeleton
+## Milestone 2: Autonomous Environment Skeleton
+### Include
+- A small set of populations with independent drives
+- Condition-driven migration, avoidance, territorial, and predatory behavior
+- Shared faction interactions: observe, avoid, deter, contain, redirect, fight, exploit, and protect
+- One human habitat intervention and one alien biological intervention
+- Delayed ecological feedback visible in replay
+
+### Exit Focus
+- Environmental actors initiate and propagate operational consequences without functioning as alien units or random event tables.
+- Both factions can solve similar environmental problems through materially different methods.
+
+## Milestone 3: Human Logistics Skeleton
 ### Include
 - Physical depots, routes, and ammo/fuel movement
+- Located extraction, storage, shipment, delivery, and consumption records
+- Transport capacity and handling time without individual-item bookkeeping
 - Route disruption
 - Basic fire support only when target confirmation exists
 
 ### Exit Focus
 - Human capability is visibly tied to logistics health and information quality.
+- No human action spends material from a locationless global pool.
 
-## Milestone 3: Alien Ecosystem Skeleton
+## Milestone 4: Alien Cultivation And Adaptation Skeleton
 ### Include
-- Wildlife populations
-- Ecological harvesting and cultivation
-- Basic alien adaptation logic
+- Physical biomass, nutrient, specimen, and living-transport flows
+- Ecological harvesting, cultivation, nursery capacity, and population stewardship
+- Deliberate alien adaptation using physically acquired compatible material
 - Alien signal interpretation of human disturbance
 
 ### Exit Focus
 - Alien growth depends on ecosystem state, not industrial extraction analogs.
+- Learned genetic possibilities remain distinct from material and nursery requirements.
 
-## Milestone 4: Deception and Counter-Recon
+## Milestone 5: Deception and Counter-Recon
 ### Include
 - Decoy signals
 - Scouting penetration
@@ -66,18 +82,29 @@ Prove that objective, human, and alien records can diverge for traceable reasons
 ### Exit Focus
 - Deception creates uncertainty and can be validated or disproven through recon.
 
-## Milestone 5: First Playable Objective Race
+## Milestone 6: First Playable Objective Race
 ### Include
-- Simple independent objectives for both factions
-- Basic conflict, disruption, and delay mechanics
+- A simplified human planet-space interface project
+- A simplified consciously designed alien Titan project
+- Multiple physical dependencies for each project
+- Ambiguous precursor signatures that reconnaissance can interpret
+- Basic conflict, indirect disruption, and delay mechanics
+- Unmistakable terminal commissioning and maturation signals
+- A bounded final counter-operation window
 
 ### Guardrail
-- Avoid annihilation victory as the core win condition.
+- Victory comes from completing a strategic project, not annihilating the opposing faction.
+- The terminal window follows physical project conditions and cannot be extended indefinitely by superficial damage.
+
+### Exit Focus
+- A faction can discover and disrupt an opposing project through its physical dependencies rather than receiving a labeled objective marker.
+- An undisrupted terminal project ends the game after a finite, comprehensible response opportunity.
 
 ## Cross-References
 - [Headless Simulation Design](headless-simulation-design.md)
 - [Design Principles](design/design-principles.md)
 - [Information Model](information-model.md)
-- [Human Faction](design/design-factions-human.md)
-- [Alien Faction](design/design-factions-alien.md)
+- [Vanguard](design/design-factions-human.md)
+- [Plastai](design/design-factions-alien.md)
+- [Strategic Objectives and Physical Economy](design/design-strategic-objectives-and-physical-economy.md)
 - [Replay System](replay-system.md)

@@ -8,11 +8,17 @@ This document defines the enduring identity of ProjectSignal. It should change r
 
 ## Core Thesis
 
-Humans fight an intelligence war against an unknown biological system.
+The Vanguard fights an intelligence war against an unknown biological system.
 
-Aliens fight an evolutionary war against an industrial system.
+The Plastai fight an evolutionary war against an industrial system.
 
 ProjectSignal is an operational command simulation about making consequential decisions from incomplete, asymmetric, and sometimes misleading evidence.
+
+## Faction Names
+
+**Vanguard** is the proper name of the human expeditionary faction. **Plastai** is the proper name of the native alien civilization whose members consciously shape living systems.
+
+Use these names for the organized command factions. Use **human** and **alien** when describing biology, expertise, artifacts, perspectives, or information-layer identifiers. Not every alien organism belongs to the Plastai, just as not every future human presence is part of the Vanguard.
 
 ## The Central Experience
 
@@ -55,9 +61,25 @@ Reconnaissance is not a button that reveals truth. It is the commitment of time,
 
 Wildlife, ecology, weather, terrain, and other processes create real events and signatures without serving either faction. Environmental activity is not decorative noise; it participates in causality and can alter operations.
 
+ProjectSignal is therefore a three-sided world with two command factions. Vanguard and Plastai commanders issue strategic orders. The environment has no unified commander or victory condition, but its organisms and systems act from their own drives and can oppose, assist, expose, or outlast either faction.
+
+Aliens are native and ecologically fluent, not owners of the biosphere. Humans are newcomers and industrially capable, not limited to passive observation. Both factions can observe, avoid, deter, fight, redirect, exploit, and protect environmental life. Their methods, costs, knowledge, and consequences differ.
+
+Alien control of an organism must be caused by a specific biological mechanism and paid for through collection, cultivation, or adaptation. Human alteration of an ecosystem must likewise be caused by physical activity such as extraction, fencing, clearance, containment, transport, or habitat modification.
+
 ### Action creates information
 
 Movement, collection, concealment, logistics, and intervention all leave physical consequences. A faction may learn about an opponent from how that opponent investigates, not only from what the opponent attacks.
+
+### Resources exist in the world
+
+ProjectSignal has no magical resource pool, abstract mana, or inventory detached from location.
+
+Material, biomass, water, fuel, ammunition, construction inputs, specimens, personnel, and other consumed resources exist in objective state. They must be gathered or produced, stored, moved through a route, and delivered where they are used. They can be observed, delayed, diverted, captured, spoiled, destroyed, or cut off.
+
+The simulation may aggregate physical flows at operational scale. It must not erase the location, movement, dependency, or disruption that gives logistics strategic meaning.
+
+Knowledge, designs, and learned genetic possibilities are not consumable resources. Acquiring them still requires physical observation, specimens, experimentation, infrastructure, and time.
 
 ### Deception obeys the world
 
@@ -70,6 +92,22 @@ The after-action report is part of the core experience, not a debugging appendix
 ### Combat remains subordinate
 
 Combat, logistics, production, and adaptation exist to create and resolve information problems. They should not displace the signal, investigation, commitment, and assessment loop.
+
+### Victory ends foundational dependence
+
+The Vanguard is an expeditionary human force. It seeks to construct a planet-space interface capable of establishing a secure, sustained connection for future colonists. The exact architecture may vary, but victory means humanity is no longer an isolated and replaceability-limited foothold.
+
+The Plastai seek to consciously design and mature a Titan-scale organism. Genetic assimilation can unlock unknown traits and alter the design, but the project remains an intentional strategic undertaking. A mature Titan gives the Plastai permanent advantage over the environment and enough power to clear opposing forces if they choose. Extermination is a possible consequence of that power, not the victory requirement.
+
+Neither side wins primarily by annihilating the other. Both may advance their strategic projects with limited direct conflict, but their extraction, cultivation, logistics, and construction disturb the same world and expose opportunities for interference.
+
+### Completion creates a terminal crisis
+
+Strategic projects produce ambiguous precursor signatures while they are being assembled. Entering final commissioning or maturation produces an unmistakable global signal and begins a bounded last-response phase.
+
+The opposing faction receives a real but finite opportunity to neutralize, disable, starve, delay, or otherwise break the terminal process. The window follows physical conditions such as launch preparation, structural commissioning, biological maturation, and continued supply. It is not an unexplained game timer and cannot be extended indefinitely through trivial harassment.
+
+If the terminal process survives the response window, the project completes and the constructing faction wins.
 
 ## Product Direction
 

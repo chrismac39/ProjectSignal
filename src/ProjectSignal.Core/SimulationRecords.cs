@@ -2,8 +2,8 @@ namespace ProjectSignal.Core;
 
 public enum Faction
 {
-    Human,
-    Alien
+    Vanguard,
+    Plastai
 }
 
 public readonly record struct Location(string Area)
@@ -81,12 +81,12 @@ public sealed record TurnRecord(
     IReadOnlyList<Order> Orders,
     IReadOnlyList<ObjectiveEvent> ObjectiveEvents,
     IReadOnlyList<PhysicalSignature> Signatures,
-    IReadOnlyList<Observation> HumanObservations,
-    IReadOnlyList<Observation> AlienObservations,
-    IReadOnlyList<FactionReport> HumanReports,
-    IReadOnlyList<FactionReport> AlienReports,
-    IReadOnlyList<WorkingInterpretation> HumanInterpretations,
-    IReadOnlyList<WorkingInterpretation> AlienInterpretations,
+    IReadOnlyList<Observation> VanguardObservations,
+    IReadOnlyList<Observation> PlastaiObservations,
+    IReadOnlyList<FactionReport> VanguardReports,
+    IReadOnlyList<FactionReport> PlastaiReports,
+    IReadOnlyList<WorkingInterpretation> VanguardInterpretations,
+    IReadOnlyList<WorkingInterpretation> PlastaiInterpretations,
     WorldSnapshot Snapshot);
 
 public sealed record SimulationRun(

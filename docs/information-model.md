@@ -13,13 +13,13 @@ This document owns the vocabulary for the evidence pipeline. See [Technical Arch
 - Used for replay, spectating, development, and analysis.
 - Not exposed during normal play.
 
-### Human Reality
-- Reports and explicit working interpretations available to the human commander.
-- Built from human observations, logistics telemetry, and reconnaissance.
+### Vanguard Reality
+- Reports and explicit working interpretations available to the Vanguard commander.
+- Built from Vanguard observations, logistics telemetry, and reconnaissance.
 
-### Alien Reality
-- Reports and explicit working interpretations available to the alien intelligence.
-- Built from alien observations, disturbance patterns, and scouting.
+### Plastai Reality
+- Reports and explicit working interpretations available to the Plastai intelligence.
+- Built from Plastai observations, disturbance patterns, and scouting.
 
 ## Core Knowledge Units
 Do not use one generic signal record for every stage. Preserve the causal chain so replay can explain where divergence occurred.
@@ -28,6 +28,8 @@ Do not use one generic signal record for every stage. Preserve the causal chain 
 - An occurrence in authoritative world state.
 - Contains its actual participants, cause, time, and outcome.
 - Never available to faction logic.
+- May originate from Vanguard action, Plastai action, environmental behavior, or an interaction between them.
+- Objective origin does not become faction knowledge unless collected evidence supports attribution.
 
 ### Physical Signature
 - A detectable physical consequence of an objective event.
@@ -47,6 +49,26 @@ Do not use one generic signal record for every stage. Preserve the causal chain 
 ### Working Interpretation
 - A player-authored or scenario-scripted claim about what reports mean.
 - Remains separate from reports so the simulation never presents a conclusion as sensed fact.
+- Is created by scenario logic in Prototype 0 and may become commander-authored in a future interactive system.
+- Can combine several reports, preserve competing explanations, and state what remains unresolved.
+
+Example:
+
+* Report: "The sample contains an unfamiliar active biological compound."
+* Working interpretation: "A biological process is changing the corridor; its source and intent remain unknown."
+
+## Actor And Attribution Model
+
+Objective reality distinguishes Vanguard personnel, Plastai entities, directly controlled organisms, and independent environmental actors.
+
+The environment does not receive a faction reality, reports, or working interpretations. Its organisms and processes act from objective state and local behavior rules.
+
+Faction reports should describe observed behavior and qualities before attribution. For example:
+
+* "Large organisms converging on the fence line" is an observation.
+* "The Plastai are driving organisms toward the depot" is a working interpretation unless discriminating evidence supports Plastai influence.
+
+Plastai ecological expertise may allow a report to distinguish stress, migration, territorial defense, or known influence mechanisms. It does not reveal another organism's hidden cause or future behavior automatically.
 
 ### Recommended Fields
 - Faction-local record ID

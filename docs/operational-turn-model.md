@@ -40,6 +40,19 @@ Determinism requires:
 
 Faction priority must not be hidden inside incidental collection ordering. If order interactions require initiative or simultaneous-effect rules, those rules must become explicit scenario-independent policy before use.
 
+## Environmental Resolution
+
+The environment does not submit commander orders. Environmental actors resolve from their current state, local drives, and conditions during Execution.
+
+A scenario must state the ordering whenever faction action and environmental reaction could change the result. A useful default sequence for future generalization is:
+
+1. Apply committed interventions that change immediate conditions.
+2. Resolve environmental processes and organism responses from those conditions.
+3. Resolve continuing faction tasks and movement affected by that response.
+4. Generate signatures from every resulting objective event.
+
+This is not yet a universal engine rule. It is a requirement that scenarios avoid unexplained ordering until repeated cases justify one.
+
 ## Order Validation
 
 The current engine validates that every committed order targets the active turn and that order IDs are unique within the turn.

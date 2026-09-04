@@ -28,7 +28,7 @@ The event is entirely natural.
 
 ---
 
-## Human Reality
+## Vanguard Reality
 
 The commander observes:
 
@@ -51,7 +51,7 @@ The game does not identify the correct answer.
 
 ---
 
-## Alien Reality
+## Plastai Reality
 
 The migration is expected.
 
