@@ -1,0 +1,7 @@
+﻿{"id":"EV-T1-01","turn":1,"kind":"NurseryGrowth","location":{"area":"Central Corridor"},"summary":"Plastai nursery growth altered soil chemistry across the central watershed."}
+{"id":"EV-T1-02","turn":1,"kind":"WildlifeMigration","location":{"area":"Central Corridor"},"summary":"Grazers abandoned the central corridor in response to nursery chemistry."}
+{"id":"EV-T1-03","turn":1,"kind":"RoutePreparation","location":{"area":"North Approach"},"summary":"Vanguard route crews made repeated preparation passes toward the central corridor."}
+{"id":"EV-T2-01","turn":2,"kind":"SoilSampling","location":{"area":"Central Corridor"},"summary":"A Vanguard field team removed a soil sample from the nursery watershed."}
+{"id":"EV-T2-02","turn":2,"kind":"RouteObservation","location":{"area":"North Approach"},"summary":"Plastai vibration organisms remained near the Vanguard route for one turn."}
+{"id":"EV-T3-01","turn":3,"kind":"ConvoyCommitment","location":{"area":"Western Spur"},"summary":"The Vanguard convoy entered the western spur, adding two turns of travel and avoiding the nursery."}
+{"id":"EV-T3-02","turn":3,"kind":"TrailNetworkExtension","location":{"area":"North Approach"},"summary":"Plastai trail organisms extended their observation network around the prepared route."}

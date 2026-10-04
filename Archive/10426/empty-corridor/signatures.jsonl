@@ -1,0 +1,10 @@
+﻿{"id":"SIG-T1-01","sourceEventId":"EV-T1-01","turn":1,"kind":"SoilChemistry","location":{"area":"Central Corridor"},"observableDetail":"A propagating active compound is changing soil and water chemistry."}
+{"id":"SIG-T1-02","sourceEventId":"EV-T1-02","turn":1,"kind":"WildlifeAbsence","location":{"area":"Central Corridor"},"observableDetail":"Large-animal presence is substantially below the seasonal baseline."}
+{"id":"SIG-T1-03","sourceEventId":"EV-T1-02","turn":1,"kind":"WildlifeDisplacement","location":{"area":"Central Corridor"},"observableDetail":"Grazers are moving away from the watershed along lowland paths."}
+{"id":"SIG-T1-04","sourceEventId":"EV-T1-03","turn":1,"kind":"SurfaceCompression","location":{"area":"North Approach"},"observableDetail":"Repeated heavy compression and mechanical vibration mark the northern surface."}
+{"id":"SIG-T2-01","sourceEventId":"EV-T1-01","turn":2,"kind":"SoilChemistry","location":{"area":"Central Corridor"},"observableDetail":"The active soil compound forms a gradient toward the central nursery."}
+{"id":"SIG-T2-02","sourceEventId":"EV-T1-03","turn":2,"kind":"TrafficCadence","location":{"area":"North Approach"},"observableDetail":"Mechanical passes repeat at transport intervals and return north."}
+{"id":"SIG-T2-03","sourceEventId":"EV-T2-01","turn":2,"kind":"SoilIntrusion","location":{"area":"Central Corridor"},"observableDetail":"A small area of living soil was cut, contained, and removed."}
+{"id":"SIG-T3-01","sourceEventId":"EV-T3-01","turn":3,"kind":"ConvoyTelemetry","location":{"area":"Western Spur"},"observableDetail":"Authenticated convoy telemetry records route entry and projected delay."}
+{"id":"SIG-T3-02","sourceEventId":"EV-T3-01","turn":3,"kind":"RouteCessation","location":{"area":"Central Corridor"},"observableDetail":"Preparation vibration ceased without heavy passage through the central corridor."}
+{"id":"SIG-T3-03","sourceEventId":"EV-T3-01","turn":3,"kind":"AlternateCompression","location":{"area":"Western Spur"},"observableDetail":"Heavy mechanical compression appeared along the western watershed boundary."}

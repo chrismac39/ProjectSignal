@@ -1,0 +1,6 @@
+﻿{"id":"V-O-T1-01","turn":1,"faction":"Vanguard","kind":"RemoteSurvey","destination":{"area":"Central Corridor"},"intent":"Check the planned route before convoy commitment."}
+{"id":"P-O-T1-01","turn":1,"faction":"Plastai","kind":"TendNursery","destination":{"area":"Central Corridor"},"intent":"Continue the nursery growth cycle."}
+{"id":"V-O-T2-01","turn":2,"faction":"Vanguard","kind":"CollectSoilSample","destination":{"area":"Central Corridor"},"intent":"Distinguish environmental change from deliberate route clearing."}
+{"id":"P-O-T2-01","turn":2,"faction":"Plastai","kind":"ObserveSurfaceCadence","destination":{"area":"North Approach"},"intent":"Distinguish transit preparation from an isolated disturbance."}
+{"id":"V-O-T3-01","turn":3,"faction":"Vanguard","kind":"RerouteConvoy","destination":{"area":"Western Spur"},"intent":"Avoid the unresolved biological change in the central corridor."}
+{"id":"P-O-T3-01","turn":3,"faction":"Plastai","kind":"ExtendTrailNetwork","destination":{"area":"North Approach"},"intent":"Observe where the prepared Vanguard passage enters the watershed."}
