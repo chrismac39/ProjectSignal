@@ -159,6 +159,10 @@ However:
 
 > **Strategic geography is primary. Local terrain exists within it rather than replacing it.**
 
+The renderer may present this geography as true 3D terrain derived from heightmaps, contour data, elevation data, or similar sources. Hillshading, textured relief, contour layers, limited perspective, and constrained camera tilt may coexist with terrain geometry where they improve geographic readability.
+
+This does not change the map into a conventional 3D RTS battlefield. Units and structures may remain sprites, icons, billboards, clusters, or simple meshes, while infrastructure and simulated systems remain primarily line-, region-, flow-, or overlay-driven. Terrain receives geometry because its form is strategic information.
+
 ---
 
 ## 6. Biome Painting Philosophy

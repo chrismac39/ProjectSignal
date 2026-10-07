@@ -160,6 +160,8 @@ Full-scale coordinates do not require full geographic fidelity.
 
 Terrain may be simplified, stylized, or hand-authored.
 
+Its presentation may be flat, relief-based, or genuinely three-dimensional. The prototype should use terrain geometry only where it economically improves the readability of elevation, valleys, passes, slopes, or other strategically meaningful geography.
+
 The scale relationships must remain meaningful.
 
 ---
@@ -765,9 +767,9 @@ The renderer follows `renderer/renderer-vision.md`.
 
 The prototype renderer only needs:
 
-* a 2D map
+* a strategic map, with 3D terrain permitted where useful
 * terrain
-* basic entity icons
+* basic entity icons, sprites, billboards, or similarly simple symbols
 * visible movement
 * selectable entities
 * signal markers
@@ -1010,7 +1012,7 @@ The initial prototype does **not** require:
 * diplomacy
 * character simulation
 * individual personnel careers
-* 3D graphics
+* detailed 3D units, structures, animation, or asset pipelines
 * cinematic battles
 * detailed human characters
 * final art
@@ -1404,7 +1406,7 @@ The prototype is:
 * not an excuse to build every system simultaneously
 * not a conventional RTS with Project Signal terminology layered on top
 * not dependent on final art
-* not dependent on 3D
+* not dependent on detailed 3D game content
 * not dependent on sophisticated AI
 * not a full ecosystem simulation
 * not a full economy simulation

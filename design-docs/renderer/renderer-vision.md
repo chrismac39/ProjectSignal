@@ -31,7 +31,7 @@ Project Signal may simulate far more than any player can or should see at once. 
 
 **The simulation comes first. The renderer explains the simulation.**
 
-Project Signal is designed so that its core game works as a 2D strategic experience.
+Project Signal is designed as a strategically 2D experience. Its terrain may nevertheless use true 3D geometry when depth makes strategically meaningful geography easier to read.
 
 The renderer does not determine what exists, what moves, what consumes resources, what is detected, or what happens during combat. Those systems belong to the simulation.
 
@@ -41,24 +41,28 @@ The design must resist pressure to reshape the simulation around:
 
 * close-up tactical spectacle
 * detailed 3D unit animation
-* cinematic camera systems
+* unrestricted cinematic camera systems
 * expensive bespoke assets
 * individually rendering everything that exists
 * visual complexity that obscures strategic information
 
-A richer 3D presentation could theoretically exist in the future, but Project Signal must never depend on it.
+Using depth for terrain does not imply fully 3D game content. Most units, structures, infrastructure, signals, and analytical layers should remain symbolic unless additional dimensionality clearly improves gameplay readability.
 
 The game must first succeed as an interactive strategic map representing a real simulation.
 
 ---
 
-## 3. 2D First
+## 3. 3D Terrain, Strategic 2D Representation
 
-**The initial renderer is 2D.**
+**Use 3D rendering technology where useful to present a strategically 2D game.**
 
-This is a hard design rule.
+Terrain may be rendered as genuine geometry derived from heightmaps, contour data, elevation data, or similar terrain sources. This exception exists because terrain itself communicates strategic information: mountain mass, valleys, passes, ridgelines, basins, plateaus, slopes, rivers, and broad geographic barriers.
 
-2D is not a temporary placeholder for the real game. It is sufficient to express the game's primary interaction model.
+The camera may use enough perspective and constrained tilt to make that form legible. It should remain a strategic map camera rather than becoming an unrestricted cinematic camera or a conventional RTS camera centered on close-up battlefield spectacle.
+
+Units may remain sprites, icons, billboards, or aggregated symbols. Facilities may remain icons, sprites, billboards, or simple meshes. Roads, rail, logistics, sensor ranges, aquifers, signals, migration, weather, and similar systems remain primarily line-, region-, flow-, or overlay-driven.
+
+Terrain receiving 3D representation does not create a requirement for detailed animated units, skeletal animation, physics-heavy gameplay, detailed vegetation, complex destructible environments, or a large bespoke 3D asset pipeline. Objects become 3D only when doing so has a clear gameplay or readability benefit.
 
 The core player experience consists of:
 
@@ -72,7 +76,7 @@ The core player experience consists of:
 
 None of these require a three-dimensional tactical battlefield.
 
-A 2D renderer must therefore be treated as a first-class presentation model rather than as a prototype limitation.
+The hard distinction is between terrain geometry and gameplay representation: the map may use depth, while the game remains strategic, symbolic, and simulation-first.
 
 ---
 
@@ -167,7 +171,7 @@ The same world is presented differently at different scales.
 
 At the widest theater scale, the player should primarily see:
 
-* major geography
+* terrain form and major geography
 * large weather systems
 * strategic regions
 * major infrastructure networks
@@ -178,6 +182,7 @@ At the widest theater scale, the player should primarily see:
 
 At intermediate scale, the player may see:
 
+* local terrain structure, valleys, and passes
 * movement corridors
 * logistics routes
 * regional infrastructure
@@ -192,7 +197,7 @@ At closer scale, the player may see:
 
 * individual strategically relevant entities
 * specific facilities
-* detailed local terrain
+* local terrain relationships
 * individual routes
 * combat relationships
 * detailed signal sources
@@ -211,6 +216,8 @@ This is a core design principle.
 Zooming inward should reveal different representations of the same underlying simulation.
 
 Zooming outward should aggregate those representations into strategically useful higher-level information.
+
+Zooming inward should not merely replace strategic symbols with increasingly detailed 3D models. Even at the closest scale, detailed 3D tactical simulation is not required.
 
 Examples include:
 
@@ -237,6 +244,11 @@ The player should be able to distinguish:
 * elevation
 * mountain systems
 * valleys
+* passes
+* ridgelines
+* basins
+* plateaus
+* slopes
 * plains
 * forests
 * wetlands
@@ -248,6 +260,8 @@ The player should be able to distinguish:
 The map should communicate broad physical structure before fine detail.
 
 A player looking at a region should be able to understand why movement, settlement, logistics, ecology, detection, or combat might behave differently there.
+
+Terrain may use true 3D geometry, textured relief, hillshading, contour layers, or combinations of these techniques. Terrain chunking and terrain level-of-detail may be used to preserve theater-scale performance. The implementation remains unresolved.
 
 Terrain must remain visually coherent even when additional strategic overlays are active.
 
@@ -277,13 +291,18 @@ Elevation must be strategically readable.
 
 Possible presentation techniques include:
 
+* heightmaps
+* elevation meshes
 * shading
 * contour lines
 * relief
 * subtle elevation coloring
 * hillshading
+* textured terrain geometry
 
 No specific method is mandated yet.
+
+Contour information may coexist with true terrain elevation. Geometry should not prevent analytical layers from communicating exact or approximate elevation where that helps strategic interpretation.
 
 Whatever method is chosen must clearly communicate:
 
@@ -1477,7 +1496,7 @@ The first renderer does not need:
 * sophisticated animation
 * detailed units
 * cinematic effects
-* 3D terrain
+* high-fidelity terrain rendering
 * photorealistic environments
 * elaborate combat spectacle
 
@@ -1497,6 +1516,8 @@ The first renderer succeeds when the simulation becomes understandable.
 
 An ugly but legible simulation viewer is more valuable than an attractive renderer attached to shallow systems.
 
+The prototype may use 3D terrain if it is the clearest economical way to communicate geography, but it does not require detailed 3D game content.
+
 ---
 
 ## 63. Engine Agnosticism
@@ -1504,6 +1525,8 @@ An ugly but legible simulation viewer is more valuable than an attractive render
 This document does not mandate:
 
 * PixiJS
+* Three.js
+* Babylon.js
 * Godot
 * Unity
 * Unreal
@@ -1513,7 +1536,7 @@ This document does not mandate:
 
 Those are architecture decisions.
 
-The design requirement is a performant 2D strategic renderer capable of representing the necessary world, information layers, interaction model, and semantic zoom.
+The design requirement is a performant strategic renderer capable of representing terrain form, primarily symbolic game objects, information layers, the interaction model, and semantic zoom. A 3D-capable framework is valid because terrain may be genuinely three-dimensional, but no framework or dimensional technique is selected here.
 
 Technology serves the renderer doctrine.
 
@@ -1562,7 +1585,8 @@ They are stories produced by the simulation and made understandable by the rende
 
 The renderer must not become:
 
-* dependent on 3D
+* dependent on detailed 3D game content
+* a conventional fully 3D RTS
 * primarily a close-up tactical battlefield viewer
 * visual spectacle at the expense of information
 * a giant wall of icons
@@ -1595,11 +1619,12 @@ The world simulation, information model, and strategic decisions remain primary.
 The following renderer questions remain unresolved:
 
 * exact renderer technology
-* PixiJS versus another 2D solution
+* exact 2D- and 3D-capable rendering approach
 * exact art style
-* exact camera behavior
+* exact camera perspective and tilt constraints
 * exact minimum and maximum zoom
 * exact terrain rendering technique
+* exact terrain data sources, chunking, and level-of-detail
 * exact unit and icon style
 * exact surface-to-subsurface transition
 * exact overlay interface
@@ -1619,7 +1644,7 @@ They do not reopen the established principles that:
 
 * the game is simulation-first
 * the map is the primary interface
-* the initial renderer is 2D
+* terrain may use 3D geometry while gameplay representation remains strategically 2D
 * strategic readability takes precedence
 * faction knowledge limits what the renderer may reveal
 * semantic zoom changes representation
@@ -1644,7 +1669,8 @@ Any future renderer feature should be tested against the following questions:
 * Can weather and ecology be read without overwhelming the map?
 * Does it reinforce meaningful faction asymmetry?
 * Can the same simulation state be represented differently at different scales?
-* Does this work without requiring 3D?
+* Does any use of 3D communicate terrain or another strategically meaningful relationship?
+* Does it avoid creating an unnecessary requirement for detailed 3D game content?
 * Does this expose useful strategic information rather than merely another simulation variable?
 * Does it preserve the distinction between evidence and interpretation?
 * Does it help the player understand consequences?

@@ -1153,9 +1153,15 @@ The ideal expert player is better because they notice and interpret more, not be
 
 # 24. Presentation
 
-Project Signal should work as a 2D strategic game.
+Project Signal is strategically 2D even when terrain is rendered with true 3D geometry.
 
-The core design does not depend on fully simulated 3D battles.
+Terrain may use heightmaps, elevation meshes, contour data, hillshading, textured relief, terrain level-of-detail, and similar techniques because terrain itself carries strategic information. Elevation, mountain mass, valleys, passes, ridgelines, basins, plateaus, slopes, rivers, and geographic barriers should be visually legible.
+
+The camera may use limited perspective or constrained tilt where depth improves geographic readability. It should remain a strategic map camera rather than becoming an unrestricted cinematic or close-up tactical camera.
+
+Units, structures, infrastructure, signals, weather, and other strategic state may remain sprites, icons, billboards, simple meshes, lines, overlays, clusters, or other aggregated symbols. Terrain receiving geometry does not create a requirement for detailed 3D units, animation, physics-heavy gameplay, destructible environments, or a bespoke 3D asset pipeline.
+
+The core design does not depend on fully simulated 3D battles or conventional 3D RTS presentation.
 
 The player should perceive a giant operational theater through:
 
@@ -1173,7 +1179,7 @@ The simulation comes first.
 
 The renderer explains the simulation.
 
-A visually spectacular 3D implementation may someday be possible, but it must never become a prerequisite for proving the game.
+The renderer may use 3D technology where it helps present a strategically 2D game. Strategic readability remains more important than physical realism.
 
 ---
 
